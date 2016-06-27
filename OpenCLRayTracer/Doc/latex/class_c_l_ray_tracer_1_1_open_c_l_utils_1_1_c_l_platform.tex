@@ -1,0 +1,163 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Platform Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+
+
+{\ttfamily \#include $<$C\+L\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2a06417446f80c99b965a3195d56bc96}{get\+Platform\+Vendor} () const 
+\item 
+std\+::string \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a40181506f0437304fa5aed612692694b}{get\+Platform\+Name} () const 
+\item 
+std\+::string \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a04d906c241a534e4dc42239f7ac74758}{get\+Platform\+Profile} () const 
+\item 
+std\+::string \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a25e19fc3360361a89d5ff632db1433ee}{get\+Platform\+Extensions} () const 
+\item 
+std\+::string \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a1bd75c01dd72e49cb2e900dc1c03e07c}{get\+Platform\+Supported\+C\+L\+Version} () const 
+\item 
+int \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a21bf865ef948fcffe2b76e52c899f1d6}{get\+Num\+Of\+Devices} () const 
+\item 
+const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{C\+L\+Device} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a52a78c49e84ac4813e10b590d045a3e9}{get\+Device\+By\+Index} (int index) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_ae521775717f3b8e708e0e839d912f7c0}{create\+C\+L\+Context} (cl\+\_\+context\+\_\+properties $\ast$props, int device\+Index, cl\+\_\+context \&output\+Context, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+const cl\+\_\+platform\+\_\+id \& \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_aa967f14b85bcd28f17db4e8527df0146}{get\+C\+L\+Platform\+Id} () const 
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2f8a44f1863605f5e4716ee9fa495583}{$\sim$\+C\+L\+Platform} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries C\+L\+Interface}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a5fc9f0bcd6f72497582dc939d72f0013}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a5fc9f0bcd6f72497582dc939d72f0013}
+
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&o, const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform}{C\+L\+Platform} \&p)\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_aacc996ed74765009f4e9c4e67d8afa66}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_aacc996ed74765009f4e9c4e67d8afa66}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class Platform encapsulates a Open\+CL platform 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!````~C\+L\+Platform@{$\sim$\+C\+L\+Platform}}
+\index{````~C\+L\+Platform@{$\sim$\+C\+L\+Platform}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+Platform()}{~CLPlatform()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::$\sim$\+C\+L\+Platform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2f8a44f1863605f5e4716ee9fa495583}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2f8a44f1863605f5e4716ee9fa495583}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!create\+C\+L\+Context@{create\+C\+L\+Context}}
+\index{create\+C\+L\+Context@{create\+C\+L\+Context}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{create\+C\+L\+Context(cl\+\_\+context\+\_\+properties $\ast$props, int device\+Index, cl\+\_\+context \&output\+Context, Common\+::\+Errata \&err) const }{createCLContext(cl_context_properties *props, int deviceIndex, cl_context &outputContext, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::create\+C\+L\+Context (
+\begin{DoxyParamCaption}
+\item[{cl\+\_\+context\+\_\+properties $\ast$}]{props, }
+\item[{int}]{device\+Index, }
+\item[{cl\+\_\+context \&}]{output\+Context, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_ae521775717f3b8e708e0e839d912f7c0}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_ae521775717f3b8e708e0e839d912f7c0}
+Creates an object that encapsulates Open\+CL context for specified device associated with this platform 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em props} & Context properties \\
+\hline
+ & {\em device\+Index} & Index of device within the platform, to create context for \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+C\+L\+Platform\+Id@{get\+C\+L\+Platform\+Id}}
+\index{get\+C\+L\+Platform\+Id@{get\+C\+L\+Platform\+Id}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+C\+L\+Platform\+Id() const }{getCLPlatformId() const }}]{\setlength{\rightskip}{0pt plus 5cm}const cl\+\_\+platform\+\_\+id\& C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+C\+L\+Platform\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_aa967f14b85bcd28f17db4e8527df0146}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_aa967f14b85bcd28f17db4e8527df0146}
+Returns ID of this platform \begin{DoxyReturn}{Returns}
+Platform ID 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Device\+By\+Index@{get\+Device\+By\+Index}}
+\index{get\+Device\+By\+Index@{get\+Device\+By\+Index}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Device\+By\+Index(int index) const }{getDeviceByIndex(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+L\+Device}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Device\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a52a78c49e84ac4813e10b590d045a3e9}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a52a78c49e84ac4813e10b590d045a3e9}
+Retrieves device object by device index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Desired device index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object that encapsulates a Device at the specified index 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Num\+Of\+Devices@{get\+Num\+Of\+Devices}}
+\index{get\+Num\+Of\+Devices@{get\+Num\+Of\+Devices}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Num\+Of\+Devices() const }{getNumOfDevices() const }}]{\setlength{\rightskip}{0pt plus 5cm}int C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Num\+Of\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a21bf865ef948fcffe2b76e52c899f1d6}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a21bf865ef948fcffe2b76e52c899f1d6}
+Returns number of devices associated with this platform \begin{DoxyReturn}{Returns}
+Number of devices associated with this platform 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Platform\+Extensions@{get\+Platform\+Extensions}}
+\index{get\+Platform\+Extensions@{get\+Platform\+Extensions}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Platform\+Extensions() const }{getPlatformExtensions() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Platform\+Extensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a25e19fc3360361a89d5ff632db1433ee}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a25e19fc3360361a89d5ff632db1433ee}
+Returns platform extensions \begin{DoxyReturn}{Returns}
+Platform extensions 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Platform\+Name@{get\+Platform\+Name}}
+\index{get\+Platform\+Name@{get\+Platform\+Name}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Platform\+Name() const }{getPlatformName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Platform\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a40181506f0437304fa5aed612692694b}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a40181506f0437304fa5aed612692694b}
+Returns platform Name \begin{DoxyReturn}{Returns}
+Platform Name 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Platform\+Profile@{get\+Platform\+Profile}}
+\index{get\+Platform\+Profile@{get\+Platform\+Profile}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Platform\+Profile() const }{getPlatformProfile() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Platform\+Profile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a04d906c241a534e4dc42239f7ac74758}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a04d906c241a534e4dc42239f7ac74758}
+Returns platform Profile \begin{DoxyReturn}{Returns}
+Platform Profile 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Platform\+Supported\+C\+L\+Version@{get\+Platform\+Supported\+C\+L\+Version}}
+\index{get\+Platform\+Supported\+C\+L\+Version@{get\+Platform\+Supported\+C\+L\+Version}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Platform\+Supported\+C\+L\+Version() const }{getPlatformSupportedCLVersion() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Platform\+Supported\+C\+L\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a1bd75c01dd72e49cb2e900dc1c03e07c}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a1bd75c01dd72e49cb2e900dc1c03e07c}
+Returns Open\+CL version supported by this platform \begin{DoxyReturn}{Returns}
+Open\+CL version supported by this platform 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}!get\+Platform\+Vendor@{get\+Platform\+Vendor}}
+\index{get\+Platform\+Vendor@{get\+Platform\+Vendor}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform}}
+\subsubsection[{\texorpdfstring{get\+Platform\+Vendor() const }{getPlatformVendor() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Platform\+::get\+Platform\+Vendor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2a06417446f80c99b965a3195d56bc96}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform_a2a06417446f80c99b965a3195d56bc96}
+Returns platform vendor \begin{DoxyReturn}{Returns}
+Platform Vendor 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/C\+L\+Interface.\+h\end{DoxyCompactItemize}

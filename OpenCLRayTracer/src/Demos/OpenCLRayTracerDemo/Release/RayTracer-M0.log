@@ -1,0 +1,14 @@
+﻿Build started 15/06/2016 15:05:15.
+     1>Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\ExperimentApps\RayTracer-M0\RayTracer-M0.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         E:\Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\RayTracer-M0.exe" /NOLOGO /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\3.0\\lib\x86\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\RayTracer-M0.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\RayTracer-M0.lib" /MACHINE:X86 /SAFESEH:NO "Release\RayTracer-M0.obj"
+         "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\OpenCLUtils.lib"
+         "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\CLRayTracerEngine.lib"
+         Generating code
+         Finished generating code
+         RayTracer-M0.vcxproj -> E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Release\RayTracer-M0.exe
+     1>Done Building Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\ExperimentApps\RayTracer-M0\RayTracer-M0.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.03

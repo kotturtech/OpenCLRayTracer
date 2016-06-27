@@ -1,0 +1,384 @@
+\hypertarget{group__g12}{}\section{General Helper Structures}
+\label{group__g12}\index{General Helper Structures@{General Helper Structures}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera}{Camera}
+\item 
+struct \hyperlink{struct_ray}{Ray}
+\item 
+struct \hyperlink{struct_contact}{Contact}
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion}
+\item 
+struct \hyperlink{struct_matrix4}{Matrix4}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries cam\+Position}(cam)~\hyperlink{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}{get\+Translate}(\&((cam).view\+Transform))\hypertarget{group__g12_ga315f815a8472fbf5f5cd38996b3fbe27}{}\label{group__g12_ga315f815a8472fbf5f5cd38996b3fbe27}
+
+\item 
+\#define {\bfseries cam\+Position\+\_\+const}(cam)~\hyperlink{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}{get\+Translate\+\_\+const}(\&((cam).view\+Transform))\hypertarget{group__g12_ga0adfc0a1c4b17f235372e3195a715d7b}{}\label{group__g12_ga0adfc0a1c4b17f235372e3195a715d7b}
+
+\item 
+\#define {\bfseries contact\+Dist}~normal\+Andintersection\+Distance.\+w\hypertarget{group__g12_ga199cfc5b9dce36c17bf8386b86d8f9ea}{}\label{group__g12_ga199cfc5b9dce36c17bf8386b86d8f9ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera}{Camera} {\bfseries A\+L\+I\+G\+N\+ED} (16)\hypertarget{group__g12_gaea33ae48b635ad9b2743def63fa6f706}{}\label{group__g12_gaea33ae48b635ad9b2743def63fa6f706}
+
+\item 
+struct \hyperlink{struct_ray}{Ray} \hyperlink{group__g12_ga058f44d2ffec7f4fb4c6d7bdb978f4c6}{generate\+Ray} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_camera}{Camera} $\ast$camera, C\+L\+\_\+\+U\+I\+NT pixel\+Index)
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion} \hyperlink{group__g12_ga8e90961bd8e958f842a255b663bbda6e}{zero\+Rotation} ()
+\item 
+void \hyperlink{group__g12_ga2f45f34d3f9c9772ede30ea194d34657}{normalize\+Quaternion} (struct \hyperlink{struct_quaternion}{Quaternion} $\ast$q)
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion} \hyperlink{group__g12_gaa23c7bc48e9d48b785b695ec40123440}{mult} (R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) mult, R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) mult2)
+\item 
+void \hyperlink{group__g12_gaff678888c35ddafcc3f7ed58046f8d9b}{rotate\+By\+Vector} (struct \hyperlink{struct_quaternion}{Quaternion} $\ast$o, C\+L\+\_\+\+F\+L\+O\+A\+T3 rot)
+\item 
+struct \hyperlink{struct_matrix4}{Matrix4} \hyperlink{group__g12_gaf163e6982adb392dfe7dfc845c66d81e}{identity\+Transform} ()
+\item 
+void \hyperlink{group__g12_ga87905ca25c2eada7209c07e156951dc0}{matrix\+Multiply} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$B, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$result)
+\item 
+void \hyperlink{group__g12_gac5d8d3988ebf6814b6f9adfd1fb0b4d2}{fill\+Translate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, C\+L\+\_\+\+F\+L\+O\+A\+T3 t)
+\item 
+void \hyperlink{group__g12_gab120779e5ed91425889e3c8ac2a165e6}{fill\+Rotate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, C\+L\+\_\+\+F\+L\+O\+A\+T3 euler\+Angles)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga210c2abe104b8b2bf78aa4c5ca33de5f}{transform\+Vector\+By\+Matrix} (C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_matrix4}{Matrix4} $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga8c5db929860b2dd7c915ba6036ea9ec7}{transform\+Vector\+By\+Matrix\+\_\+const} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_matrix4}{Matrix4} $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}{get\+Translate} (C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}{get\+Translate\+\_\+const} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+void \hyperlink{group__g12_ga67283bc5432875c8ad3382d2a6fe3eae}{set\+Translate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6c3506781257c6c000660710a6ac5c3c}{forward} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6ecb966628ac6a5e4092bbd4b2fd3967}{up} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6eb604fd7b5a01a34c5edc05ce242b0a}{side} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+void \hyperlink{group__g12_ga6d2b0a26a653d5d180b73f7224b4b3e8}{set\+Forward} (C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6c3506781257c6c000660710a6ac5c3c}{forward}, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+void \hyperlink{group__g12_ga8482fa67d493ed2da669a730f2215831}{set\+Orientation\+And\+Pos} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform, R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) q, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT const struct \hyperlink{struct_contact}{Contact} {\bfseries N\+O\+\_\+\+C\+O\+N\+T\+A\+CT} = \{ 0, 0, \{0,0\},\{0,0,0,0\}\}\hypertarget{group__g12_ga50cd5e0d8225ce74c7b54e349f19c437}{}\label{group__g12_ga50cd5e0d8225ce74c7b54e349f19c437}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{General Helper Structures@{General Helper Structures}!fill\+Rotate@{fill\+Rotate}}
+\index{fill\+Rotate@{fill\+Rotate}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{fill\+Rotate(struct Matrix4 $\ast$\+A, C\+L\+\_\+\+F\+L\+O\+A\+T3 euler\+Angles)}{fillRotate(struct Matrix4 *A, CL_FLOAT3 eulerAngles)}}]{\setlength{\rightskip}{0pt plus 5cm}void fill\+Rotate (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matrix4} $\ast$}]{A, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{euler\+Angles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_gab120779e5ed91425889e3c8ac2a165e6}{}\label{group__g12_gab120779e5ed91425889e3c8ac2a165e6}
+Fills rotation matrix according to vector using Euler angles 
+\begin{DoxyParams}{Parameters}
+{\em A} & Pointer to matrix to fill \\
+\hline
+{\em t} & Rotation vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!fill\+Translate@{fill\+Translate}}
+\index{fill\+Translate@{fill\+Translate}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{fill\+Translate(struct Matrix4 $\ast$\+A, C\+L\+\_\+\+F\+L\+O\+A\+T3 t)}{fillTranslate(struct Matrix4 *A, CL_FLOAT3 t)}}]{\setlength{\rightskip}{0pt plus 5cm}void fill\+Translate (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matrix4} $\ast$}]{A, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_gac5d8d3988ebf6814b6f9adfd1fb0b4d2}{}\label{group__g12_gac5d8d3988ebf6814b6f9adfd1fb0b4d2}
+Fills translation matrix according to vector 
+\begin{DoxyParams}{Parameters}
+{\em A} & Pointer to matrix to fill \\
+\hline
+{\em t} & Translation vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!forward@{forward}}
+\index{forward@{forward}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{forward(\+R\+E\+F(struct Matrix4) transform)}{forward(REF(struct Matrix4) transform)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 forward (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf Matrix4})}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga6c3506781257c6c000660710a6ac5c3c}{}\label{group__g12_ga6c3506781257c6c000660710a6ac5c3c}
+Obtains the forward vector of the transform 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unit forward vector of the specified transform 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!generate\+Ray@{generate\+Ray}}
+\index{generate\+Ray@{generate\+Ray}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{generate\+Ray(\+C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T struct Camera $\ast$camera, C\+L\+\_\+\+U\+I\+N\+T pixel\+Index)}{generateRay(CL_CONSTANT struct Camera *camera, CL_UINT pixelIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Ray} generate\+Ray (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct {\bf Camera} $\ast$}]{camera, }
+\item[{C\+L\+\_\+\+U\+I\+NT}]{pixel\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g12_ga058f44d2ffec7f4fb4c6d7bdb978f4c6}{}\label{group__g12_ga058f44d2ffec7f4fb4c6d7bdb978f4c6}
+Generates ray according to camera settings and pixel index 
+\begin{DoxyParams}{Parameters}
+{\em camera} & The camera data \\
+\hline
+{\em pixel\+Index} & Index of a pixel for which a ray should be generated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A ray for the pixel at index of a pixel 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!get\+Translate@{get\+Translate}}
+\index{get\+Translate@{get\+Translate}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{get\+Translate(\+C\+L\+\_\+\+G\+L\+O\+B\+A\+L struct Matrix4 $\ast$transform)}{getTranslate(CL_GLOBAL struct Matrix4 *transform)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 get\+Translate (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+G\+L\+O\+B\+AL struct {\bf Matrix4} $\ast$}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}{}\label{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}
+Retrieves translation vector from transform matrix 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Translate component vector 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!get\+Translate\+\_\+const@{get\+Translate\+\_\+const}}
+\index{get\+Translate\+\_\+const@{get\+Translate\+\_\+const}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{get\+Translate\+\_\+const(\+C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T struct Matrix4 $\ast$transform)}{getTranslate_const(CL_CONSTANT struct Matrix4 *transform)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 get\+Translate\+\_\+const (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct {\bf Matrix4} $\ast$}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}{}\label{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}
+Retrieves translation vector from transform matrix -\/ Constant pointer version 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Translate component vector 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!identity\+Transform@{identity\+Transform}}
+\index{identity\+Transform@{identity\+Transform}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{identity\+Transform()}{identityTransform()}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Matrix4} identity\+Transform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g12_gaf163e6982adb392dfe7dfc845c66d81e}{}\label{group__g12_gaf163e6982adb392dfe7dfc845c66d81e}
+Returns identity matrix \begin{DoxyReturn}{Returns}
+Identity matrix 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!matrix\+Multiply@{matrix\+Multiply}}
+\index{matrix\+Multiply@{matrix\+Multiply}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{matrix\+Multiply(struct Matrix4 $\ast$\+A, struct Matrix4 $\ast$\+B, struct Matrix4 $\ast$result)}{matrixMultiply(struct Matrix4 *A, struct Matrix4 *B, struct Matrix4 *result)}}]{\setlength{\rightskip}{0pt plus 5cm}void matrix\+Multiply (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matrix4} $\ast$}]{A, }
+\item[{struct {\bf Matrix4} $\ast$}]{B, }
+\item[{struct {\bf Matrix4} $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga87905ca25c2eada7209c07e156951dc0}{}\label{group__g12_ga87905ca25c2eada7209c07e156951dc0}
+Multiplies matrix A by matrix B 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em A} & Pointer to matrix A \\
+\hline
+ & {\em B} & Pointer to matrix B \\
+\hline
+\mbox{\tt out}  & {\em result} & The result of multiplication -\/ A X B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!mult@{mult}}
+\index{mult@{mult}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{mult(\+R\+E\+F(struct Quaternion) mult, R\+E\+F(struct Quaternion) mult2)}{mult(REF(struct Quaternion) mult, REF(struct Quaternion) mult2)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Quaternion} mult (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf Quaternion})}]{mult, }
+\item[{R\+EF(struct {\bf Quaternion})}]{mult2}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g12_gaa23c7bc48e9d48b785b695ec40123440}{}\label{group__g12_gaa23c7bc48e9d48b785b695ec40123440}
+Multiplies the quaternion by the given quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mult} & \hyperlink{struct_quaternion}{Quaternion} to multiply \\
+\hline
+{\em mult2} & The quaternion by which to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of multiplication 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!normalize\+Quaternion@{normalize\+Quaternion}}
+\index{normalize\+Quaternion@{normalize\+Quaternion}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{normalize\+Quaternion(struct Quaternion $\ast$q)}{normalizeQuaternion(struct Quaternion *q)}}]{\setlength{\rightskip}{0pt plus 5cm}void normalize\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Quaternion} $\ast$}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga2f45f34d3f9c9772ede30ea194d34657}{}\label{group__g12_ga2f45f34d3f9c9772ede30ea194d34657}
+Normalises the quaternion to unit length, making it a valid orientation quaternion. 
+\begin{DoxyParams}{Parameters}
+{\em q} & \hyperlink{struct_quaternion}{Quaternion} to normalize \\
+\hline
+\end{DoxyParams}
+\index{General Helper Structures@{General Helper Structures}!rotate\+By\+Vector@{rotate\+By\+Vector}}
+\index{rotate\+By\+Vector@{rotate\+By\+Vector}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{rotate\+By\+Vector(struct Quaternion $\ast$o, C\+L\+\_\+\+F\+L\+O\+A\+T3 rot)}{rotateByVector(struct Quaternion *o, CL_FLOAT3 rot)}}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+By\+Vector (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Quaternion} $\ast$}]{o, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{rot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_gaff678888c35ddafcc3f7ed58046f8d9b}{}\label{group__g12_gaff678888c35ddafcc3f7ed58046f8d9b}
+Updates orientation represented by quaternion q, by rotation vector 
+\begin{DoxyParams}{Parameters}
+{\em q} & Pointer to quaternion to update \\
+\hline
+{\em rot} & Rotation vector \\
+\hline
+\end{DoxyParams}
+\index{General Helper Structures@{General Helper Structures}!set\+Forward@{set\+Forward}}
+\index{set\+Forward@{set\+Forward}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{set\+Forward(\+C\+L\+\_\+\+F\+L\+O\+A\+T3 forward, struct Matrix4 $\ast$transform)}{setForward(CL_FLOAT3 forward, struct Matrix4 *transform)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Forward (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{forward, }
+\item[{struct {\bf Matrix4} $\ast$}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga6d2b0a26a653d5d180b73f7224b4b3e8}{}\label{group__g12_ga6d2b0a26a653d5d180b73f7224b4b3e8}
+Sets forward vector for input transform and adjusts the transform accordingly,for orthonormal basis 
+\begin{DoxyParams}{Parameters}
+{\em forward} & New forward vector \\
+\hline
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\index{General Helper Structures@{General Helper Structures}!set\+Orientation\+And\+Pos@{set\+Orientation\+And\+Pos}}
+\index{set\+Orientation\+And\+Pos@{set\+Orientation\+And\+Pos}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{set\+Orientation\+And\+Pos(struct Matrix4 $\ast$transform, R\+E\+F(struct Quaternion) q, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)}{setOrientationAndPos(struct Matrix4 *transform, REF(struct Quaternion) q, CL_FLOAT3 pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Orientation\+And\+Pos (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matrix4} $\ast$}]{transform, }
+\item[{R\+EF(struct {\bf Quaternion})}]{q, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga8482fa67d493ed2da669a730f2215831}{}\label{group__g12_ga8482fa67d493ed2da669a730f2215831}
+Sets this matrix to be the rotation matrix corresponding to the given quaternion and position vector. 
+\begin{DoxyParams}{Parameters}
+{\em transform} & The matrix to update \\
+\hline
+{\em q} & \hyperlink{struct_quaternion}{Quaternion} that represents orientation \\
+\hline
+{\em pos} & Position vector \\
+\hline
+\end{DoxyParams}
+\index{General Helper Structures@{General Helper Structures}!set\+Translate@{set\+Translate}}
+\index{set\+Translate@{set\+Translate}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{set\+Translate(struct Matrix4 $\ast$transform, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)}{setTranslate(struct Matrix4 *transform, CL_FLOAT3 pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Translate (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Matrix4} $\ast$}]{transform, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga67283bc5432875c8ad3382d2a6fe3eae}{}\label{group__g12_ga67283bc5432875c8ad3382d2a6fe3eae}
+Set translation component of transform matrix 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+{\em pos} & Position vector -\/ value to set in the matrix \\
+\hline
+\end{DoxyParams}
+\index{General Helper Structures@{General Helper Structures}!side@{side}}
+\index{side@{side}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{side(\+R\+E\+F(struct Matrix4) transform)}{side(REF(struct Matrix4) transform)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 side (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf Matrix4})}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga6eb604fd7b5a01a34c5edc05ce242b0a}{}\label{group__g12_ga6eb604fd7b5a01a34c5edc05ce242b0a}
+Obtains the side vector of the transform 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unit side vector of the specified transform 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!transform\+Vector\+By\+Matrix@{transform\+Vector\+By\+Matrix}}
+\index{transform\+Vector\+By\+Matrix@{transform\+Vector\+By\+Matrix}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{transform\+Vector\+By\+Matrix(\+C\+L\+\_\+\+G\+L\+O\+B\+A\+L struct Matrix4 $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)}{transformVectorByMatrix(CL_GLOBAL struct Matrix4 *matrix, CL_FLOAT3 vector)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 transform\+Vector\+By\+Matrix (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+G\+L\+O\+B\+AL struct {\bf Matrix4} $\ast$}]{matrix, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga210c2abe104b8b2bf78aa4c5ca33de5f}{}\label{group__g12_ga210c2abe104b8b2bf78aa4c5ca33de5f}
+Transforms vector by transform matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Transform matrix \\
+\hline
+{\em vector} & Vector to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed vector 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!transform\+Vector\+By\+Matrix\+\_\+const@{transform\+Vector\+By\+Matrix\+\_\+const}}
+\index{transform\+Vector\+By\+Matrix\+\_\+const@{transform\+Vector\+By\+Matrix\+\_\+const}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{transform\+Vector\+By\+Matrix\+\_\+const(\+C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T struct Matrix4 $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)}{transformVectorByMatrix_const(CL_CONSTANT struct Matrix4 *matrix, CL_FLOAT3 vector)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 transform\+Vector\+By\+Matrix\+\_\+const (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct {\bf Matrix4} $\ast$}]{matrix, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga8c5db929860b2dd7c915ba6036ea9ec7}{}\label{group__g12_ga8c5db929860b2dd7c915ba6036ea9ec7}
+Transforms vector by transform matrix -\/ Constant pointer version 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Transform matrix \\
+\hline
+{\em vector} & Vector to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed vector 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!up@{up}}
+\index{up@{up}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{up(\+R\+E\+F(struct Matrix4) transform)}{up(REF(struct Matrix4) transform)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 up (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf Matrix4})}]{transform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g12_ga6ecb966628ac6a5e4092bbd4b2fd3967}{}\label{group__g12_ga6ecb966628ac6a5e4092bbd4b2fd3967}
+Obtains the up vector of the transform 
+\begin{DoxyParams}{Parameters}
+{\em transform} & Transform matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unit up vector of the specified transform 
+\end{DoxyReturn}
+\index{General Helper Structures@{General Helper Structures}!zero\+Rotation@{zero\+Rotation}}
+\index{zero\+Rotation@{zero\+Rotation}!General Helper Structures@{General Helper Structures}}
+\subsubsection[{\texorpdfstring{zero\+Rotation()}{zeroRotation()}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Quaternion} zero\+Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g12_ga8e90961bd8e958f842a255b663bbda6e}{}\label{group__g12_ga8e90961bd8e958f842a255b663bbda6e}
+Returns a quaternion that represents zero rotation \begin{DoxyReturn}{Returns}
+Zero rotation quaternion 
+\end{DoxyReturn}

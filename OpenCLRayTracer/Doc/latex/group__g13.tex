@@ -1,0 +1,297 @@
+\hypertarget{group__g13}{}\section{Scene Buffer Utilities}
+\label{group__g13}\index{Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_scene_header}{Scene\+Header}
+\item 
+struct \hyperlink{struct_model_header}{Model\+Header}
+\item 
+struct \hyperlink{struct_mesh_header}{Mesh\+Header}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~(sizeof(struct \hyperlink{struct_scene_header}{Scene\+Header}))\hypertarget{group__g13_ga38a381d14622fcc59c6d3f07a258c036}{}\label{group__g13_ga38a381d14622fcc59c6d3f07a258c036}
+
+\item 
+\#define {\bfseries S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_scene_header}{Scene\+Header}$\ast$)(buf))\hypertarget{group__g13_ga1e3e4c054d65f47dc9a34ce0ced401d8}{}\label{group__g13_ga1e3e4c054d65f47dc9a34ce0ced401d8}
+
+\item 
+\#define {\bfseries L\+I\+G\+H\+T\+S\+\_\+\+P\+TR}(buf)~(buf + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE)\hypertarget{group__g13_gafbc9f83ffa828eb13e760b4f8811f409}{}\label{group__g13_gafbc9f83ffa828eb13e760b4f8811f409}
+
+\item 
+\#define {\bfseries S\+P\+H\+E\+R\+E\+S\+\_\+\+P\+TR}(buf)~((L\+I\+G\+H\+T\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Lights $\ast$ sizeof(struct \hyperlink{struct_light}{Light}))\hypertarget{group__g13_ga73d0d12e51e12bd2fec5df7a62bd963f}{}\label{group__g13_ga73d0d12e51e12bd2fec5df7a62bd963f}
+
+\item 
+\#define {\bfseries M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+P\+TR}(buf)~((S\+P\+H\+E\+R\+E\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Spheres $\ast$ sizeof(struct \hyperlink{struct_sphere}{Sphere}))\hypertarget{group__g13_ga4e5ffb47ecb2614e64d3a2978209c88d}{}\label{group__g13_ga4e5ffb47ecb2614e64d3a2978209c88d}
+
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+P\+TR}(buf)~((M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Materials $\ast$ sizeof(struct \hyperlink{struct_material}{Material}))\hypertarget{group__g13_ga31544aa778e216b3c9ab44a81b665b97}{}\label{group__g13_ga31544aa778e216b3c9ab44a81b665b97}
+
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~sizeof(struct \hyperlink{struct_model_header}{Model\+Header})\hypertarget{group__g13_ga3fe91a9d0fea3f5d60f0d356ab4499fe}{}\label{group__g13_ga3fe91a9d0fea3f5d60f0d356ab4499fe}
+
+\item 
+\#define {\bfseries M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~sizeof(struct \hyperlink{struct_mesh_header}{Mesh\+Header})\hypertarget{group__g13_ga5b31291343e3a317086f9bcfe99433e7}{}\label{group__g13_ga5b31291343e3a317086f9bcfe99433e7}
+
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}~C\+L\+\_\+\+F\+L\+O\+A\+T3\hypertarget{group__g13_ga44a0a5af7817f3690aedd52aca28b63d}{}\label{group__g13_ga44a0a5af7817f3690aedd52aca28b63d}
+
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+ZE}~sizeof(V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE)\hypertarget{group__g13_ga14571eb5f0eee95bf614e04c59b0207a}{}\label{group__g13_ga14571eb5f0eee95bf614e04c59b0207a}
+
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}~C\+L\+\_\+\+U\+S\+H\+O\+RT\hypertarget{group__g13_ga29f7d7e49a78f7d13ca2f709fa0205e5}{}\label{group__g13_ga29f7d7e49a78f7d13ca2f709fa0205e5}
+
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+I\+ZE}~sizeof(I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE)\hypertarget{group__g13_ga33bdc994ac7c8cda7d0df1a3369ab965}{}\label{group__g13_ga33bdc994ac7c8cda7d0df1a3369ab965}
+
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_model_header}{Model\+Header}$\ast$)(buf))\hypertarget{group__g13_ga5144dcac23e79d598f2850c3e321e4e0}{}\label{group__g13_ga5144dcac23e79d598f2850c3e321e4e0}
+
+\item 
+\#define {\bfseries M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_mesh_header}{Mesh\+Header}$\ast$)(buf))\hypertarget{group__g13_ga7e85edf6c75a9e39ed81ea1e01d4f84d}{}\label{group__g13_ga7e85edf6c75a9e39ed81ea1e01d4f84d}
+
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+B\+A\+SE}(mesh\+Buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE$\ast$)(mesh\+Buf + M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE))\hypertarget{group__g13_ga4b7a84e0f12b4c21c706c4974e755ab3}{}\label{group__g13_ga4b7a84e0f12b4c21c706c4974e755ab3}
+
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+B\+A\+SE}(mesh\+Buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE$\ast$)(\&(V\+E\+R\+T\+E\+X\+\_\+\+B\+A\+SE(mesh\+Buf)\mbox{[}M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+ER(mesh\+Buf)-\/$>$number\+Of\+Vertices\mbox{]})))\hypertarget{group__g13_gab597a7db413a7bba13f5755024c1be12}{}\label{group__g13_gab597a7db413a7bba13f5755024c1be12}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g13_ga6fd2da32e675bdc51c669deaa8fc2a72}{calculate\+A\+A\+BB} (C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$model\+Buffer)
+\item 
+struct \hyperlink{struct_scene_header}{Scene\+Header} {\bfseries A\+L\+I\+G\+N\+ED} (16)\hypertarget{group__g13_gafd2ae94bb65568ccc2f52955b76c6e5a}{}\label{group__g13_gafd2ae94bb65568ccc2f52955b76c6e5a}
+
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_light}{Light} $\ast$ \hyperlink{group__g13_ga7722fdf6e646b6428dc155128375e34a}{get\+Light\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_sphere}{Sphere} $\ast$ \hyperlink{group__g13_gab1c9d5464229d9e20cf97414fdcbc039}{get\+Sphere\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_material}{Material} $\ast$ \hyperlink{group__g13_gac140974adead8370620277bb6e196c34}{get\+Material\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$ \hyperlink{group__g13_gaa9239ad684cbf8080620660e6545e217}{get\+Model\+At\+Index} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$scene\+Buffer)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$ \hyperlink{group__g13_ga5790da37bc707dc0f27eb9a2190d144b}{get\+Mesh\+At\+Index} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$model\+Buffer)
+\item 
+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{group__g13_gae50624ab916b188150e95081b400ef2f}{get\+Vertex\+At} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{group__g13_ga66a55d590b149e140804695048f537c9}{get\+Index\+At} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+void \hyperlink{group__g13_ga020f1483f706e4baf84083f2e41c0b62}{set\+Vertex\+At} (V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE value, C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+void \hyperlink{group__g13_ga1fbd7a82bf90335f8471c95e7adaa54f}{set\+Index\+At} (I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE value, C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+C\+L\+\_\+\+U\+I\+N\+T3 \hyperlink{group__g13_ga335f68c4bd5e3c0166612a6677993535}{get\+Triangle\+Ref\+By\+Index} (C\+L\+\_\+\+G\+L\+O\+B\+AL const char $\ast$scene, C\+L\+\_\+\+U\+I\+NT triangle\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!calculate\+A\+A\+BB@{calculate\+A\+A\+BB}}
+\index{calculate\+A\+A\+BB@{calculate\+A\+A\+BB}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{calculate\+A\+A\+B\+B(\+C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$model\+Buffer)}{calculateAABB(CL_GLOBAL char *modelBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\+A\+BB} calculate\+A\+A\+BB (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{model\+Buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g13_ga6fd2da32e675bdc51c669deaa8fc2a72}{}\label{group__g13_ga6fd2da32e675bdc51c669deaa8fc2a72}
+Calculates bounding box of a triangle mesh 
+\begin{DoxyParams}{Parameters}
+{\em model\+Buffer} & -\/ Buffer that contains the model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bounding box of input model 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Index\+At@{get\+Index\+At}}
+\index{get\+Index\+At@{get\+Index\+At}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Index\+At(\+C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$mesh\+Buffer)}{getIndexAt(CL_UINT index, const CL_GLOBAL char *meshBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE get\+Index\+At (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{mesh\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_ga66a55d590b149e140804695048f537c9}{}\label{group__g13_ga66a55d590b149e140804695048f537c9}
+Get index from mesh buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ Index of requested index \\
+\hline
+{\em mesh\+Buffer} & -\/ Buffer that contains the mesh \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Light\+At\+Index@{get\+Light\+At\+Index}}
+\index{get\+Light\+At\+Index@{get\+Light\+At\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Light\+At\+Index(const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$buf, int index)}{getLightAtIndex(const CL_GLOBAL char *buf, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+G\+L\+O\+B\+AL struct {\bf Light}$\ast$ get\+Light\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{buf, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g13_ga7722fdf6e646b6428dc155128375e34a}{}\label{group__g13_ga7722fdf6e646b6428dc155128375e34a}
+Get light from scene buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em buf} & -\/ Buffer that contains the scene \\
+\hline
+{\em index} & -\/ Index of requested light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_light}{Light} at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Material\+At\+Index@{get\+Material\+At\+Index}}
+\index{get\+Material\+At\+Index@{get\+Material\+At\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Material\+At\+Index(const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$buf, int index)}{getMaterialAtIndex(const CL_GLOBAL char *buf, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+G\+L\+O\+B\+AL struct {\bf Material}$\ast$ get\+Material\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{buf, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g13_gac140974adead8370620277bb6e196c34}{}\label{group__g13_gac140974adead8370620277bb6e196c34}
+Get material from scene buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em buf} & -\/ Buffer that contains the scene \\
+\hline
+{\em index} & -\/ Index of requested material \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_material}{Material} at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Mesh\+At\+Index@{get\+Mesh\+At\+Index}}
+\index{get\+Mesh\+At\+Index@{get\+Mesh\+At\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Mesh\+At\+Index(\+C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$model\+Buffer)}{getMeshAtIndex(CL_UINT index, const CL_GLOBAL char *modelBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+G\+L\+O\+B\+AL char$\ast$ get\+Mesh\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{model\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_ga5790da37bc707dc0f27eb9a2190d144b}{}\label{group__g13_ga5790da37bc707dc0f27eb9a2190d144b}
+Get mesh from model buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ Index of requested mesh \\
+\hline
+{\em scene\+Buffer} & -\/ Buffer that contains the model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Buffer that contains Mesh at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Model\+At\+Index@{get\+Model\+At\+Index}}
+\index{get\+Model\+At\+Index@{get\+Model\+At\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Model\+At\+Index(\+C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$scene\+Buffer)}{getModelAtIndex(CL_UINT index, const CL_GLOBAL char *sceneBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+G\+L\+O\+B\+AL char$\ast$ get\+Model\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{scene\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_gaa9239ad684cbf8080620660e6545e217}{}\label{group__g13_gaa9239ad684cbf8080620660e6545e217}
+Get model from scene buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ Index of requested model \\
+\hline
+{\em scene\+Buffer} & -\/ Buffer that contains the scene \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Buffer that contains Model at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Sphere\+At\+Index@{get\+Sphere\+At\+Index}}
+\index{get\+Sphere\+At\+Index@{get\+Sphere\+At\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Sphere\+At\+Index(const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$buf, int index)}{getSphereAtIndex(const CL_GLOBAL char *buf, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+G\+L\+O\+B\+AL struct {\bf Sphere}$\ast$ get\+Sphere\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{buf, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g13_gab1c9d5464229d9e20cf97414fdcbc039}{}\label{group__g13_gab1c9d5464229d9e20cf97414fdcbc039}
+Get sphere from scene buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em buf} & -\/ Buffer that contains the scene \\
+\hline
+{\em index} & -\/ Index of requested sphere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_sphere}{Sphere} at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Triangle\+Ref\+By\+Index@{get\+Triangle\+Ref\+By\+Index}}
+\index{get\+Triangle\+Ref\+By\+Index@{get\+Triangle\+Ref\+By\+Index}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Triangle\+Ref\+By\+Index(\+C\+L\+\_\+\+G\+L\+O\+B\+A\+L const char $\ast$scene, C\+L\+\_\+\+U\+I\+N\+T triangle\+Index)}{getTriangleRefByIndex(CL_GLOBAL const char *scene, CL_UINT triangleIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+U\+I\+N\+T3 get\+Triangle\+Ref\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+G\+L\+O\+B\+AL const char $\ast$}]{scene, }
+\item[{C\+L\+\_\+\+U\+I\+NT}]{triangle\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_ga335f68c4bd5e3c0166612a6677993535}{}\label{group__g13_ga335f68c4bd5e3c0166612a6677993535}
+Gets triangle reference by index\+: Model,Submesh, and index of triangle within submesh 
+\begin{DoxyParams}{Parameters}
+{\em scene} & -\/ Buffer that contains the scene \\
+\hline
+{\em triangle\+Index} & -\/ Global index of triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector where\+: x=Model index, y=Submesh index, z=Index of triangle within submesh 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!get\+Vertex\+At@{get\+Vertex\+At}}
+\index{get\+Vertex\+At@{get\+Vertex\+At}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{get\+Vertex\+At(\+C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$mesh\+Buffer)}{getVertexAt(CL_UINT index, const CL_GLOBAL char *meshBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE get\+Vertex\+At (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{mesh\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_gae50624ab916b188150e95081b400ef2f}{}\label{group__g13_gae50624ab916b188150e95081b400ef2f}
+Get vertex from mesh buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ Index of requested index \\
+\hline
+{\em mesh\+Buffer} & -\/ Buffer that contains the mesh \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vertex at specified index 
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!set\+Index\+At@{set\+Index\+At}}
+\index{set\+Index\+At@{set\+Index\+At}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{set\+Index\+At(\+I\+N\+D\+E\+X\+\_\+\+T\+Y\+P\+E value, C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$mesh\+Buffer)}{setIndexAt(INDEX_TYPE value, CL_UINT index, const CL_GLOBAL char *meshBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Index\+At (
+\begin{DoxyParamCaption}
+\item[{I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}]{value, }
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{mesh\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_ga1fbd7a82bf90335f8471c95e7adaa54f}{}\label{group__g13_ga1fbd7a82bf90335f8471c95e7adaa54f}
+Set index in mesh buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ Index value \\
+\hline
+{\em index} & -\/ Index at which the index should be set \\
+\hline
+{\em mesh\+Buffer} & -\/ Buffer that contains the mesh \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Scene Buffer Utilities@{Scene Buffer Utilities}!set\+Vertex\+At@{set\+Vertex\+At}}
+\index{set\+Vertex\+At@{set\+Vertex\+At}!Scene Buffer Utilities@{Scene Buffer Utilities}}
+\subsubsection[{\texorpdfstring{set\+Vertex\+At(\+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+P\+E value, C\+L\+\_\+\+U\+I\+N\+T index, const C\+L\+\_\+\+G\+L\+O\+B\+A\+L char $\ast$mesh\+Buffer)}{setVertexAt(VERTEX_TYPE value, CL_UINT index, const CL_GLOBAL char *meshBuffer)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Vertex\+At (
+\begin{DoxyParamCaption}
+\item[{V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}]{value, }
+\item[{C\+L\+\_\+\+U\+I\+NT}]{index, }
+\item[{const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$}]{mesh\+Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g13_ga020f1483f706e4baf84083f2e41c0b62}{}\label{group__g13_ga020f1483f706e4baf84083f2e41c0b62}
+Set vertex in mesh buffer, at specified index 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ Vertex value \\
+\hline
+{\em index} & -\/ Index at which the vertex should be set \\
+\hline
+{\em mesh\+Buffer} & -\/ Buffer that contains the mesh \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

@@ -1,0 +1,27 @@
+﻿Build started 12/01/2016 16:35:56.
+     1>Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\OpenCLRayTracer\OpenCLRayTracer.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         E:\Visual Studio 2012\VC\bin\CL.exe /c /I"C:\Program Files (x86)\AMD APP SDK\3.0\/include" /I"E:\AMD_APP_SDK\AMD_APP_SDK_3.0\AMD APP SDK\3.0\Include" /I../../Libs/boost/boost_1_59_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CLInterface.cpp CLExecutionContext.cpp
+         CLExecutionContext.cpp
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(119): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(213): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(247): warning C4018: '>' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(266): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clexecutioncontext.cpp(67): warning C4996: 'clCreateCommandQueue': was declared deprecated
+                 c:\program files (x86)\amd app sdk\3.0\include\cl\cl.h(1359) : see declaration of 'clCreateCommandQueue'
+         CLInterface.cpp
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(119): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(213): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(247): warning C4018: '>' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.h(266): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\openclraytracer\clinterface.cpp(49): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         E:\Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\OpenCLUtils.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\3.0\\lib\x86\\" OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\OpenCLUtils.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\OpenCLUtils.lib" /MACHINE:X86 /DLL Debug\CLInterface.obj
+         Debug\CLExecutionContext.obj
+         OpenCLRayTracer.vcxproj -> E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\OpenCLUtils.dll
+     1>Done Building Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\OpenCLRayTracer\OpenCLRayTracer.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.38

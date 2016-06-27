@@ -1,0 +1,436 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Execution\+Context Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+
+
+{\ttfamily \#include $<$C\+L\+Execution\+Context.\+h$>$}
+
+Inheritance diagram for C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Execution\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a4c95e31f2a4dd4127406edbb0ba5edd1}{C\+L\+Execution\+Context} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{C\+L\+Device} \&device, const cl\+\_\+context\+\_\+properties $\ast$\+\_\+context\+Properties=N\+U\+LL)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a6b4b2a9f1e8bd3ff516c7bbae4848f61}{initialize} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a5a953bbfdd89bd898ad2e6ad55c9f634}{create\+Device\+Buffer} (\hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} access, \hyperlink{_c_l_execution_context_8h_a8e119b9b799e2e980fe86c8e6c93cca6}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Host\+Ptr\+Options} host\+Ptr\+Opts, size\+\_\+t size, cl\+\_\+mem \&output, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err, void $\ast$host\+Ptr=N\+U\+LL) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa8d5e3b745f6c543f2a78c6fd514a79d}{create\+Device\+Buffer} (\hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} access, size\+\_\+t size, cl\+\_\+mem \&output, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a01b25e47be24d16008b53e5f6431b807}{create\+Event} (boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} $>$ \&out\+Evt, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a3370232aafe19ac17dc63cee8b8f5e42}{create\+Events} (int count, std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} $>$ $>$ \&events, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ac7c1bf6d6ada5d4104e7d96dd0b15b8b}{enqueue\+Read\+Buffer} (const cl\+\_\+mem \&buffer, void $\ast$output\+Buffer, size\+\_\+t buffer\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a8b5f64a7d034773c60e39a6f280ea9b9}{enqueue\+Read\+Buffer} (const cl\+\_\+mem \&buffer, void $\ast$output\+Buffer, size\+\_\+t offset, size\+\_\+t buffer\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a091a8577503ecdb380805b2ca7cc2102}{enqueue\+Fill\+Buffer} (const cl\+\_\+mem \&buffer, void $\ast$pattern, size\+\_\+t buffer\+Size, size\+\_\+t pattern\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a45252fc7bbdf285418220b04abdb135e}{enqueue\+Write\+Buffer} (void $\ast$buffer, const cl\+\_\+mem \&output\+Buffer, size\+\_\+t buffer\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a1f9900b02109964463ce04ffa29153de}{enqueue\+Copy\+Buffer} (const cl\+\_\+mem \&buffer, const cl\+\_\+mem \&output\+Buffer, size\+\_\+t buffer\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ab9ac2f839ca431acef0aeb197d17225a}{enqueue\+Kernel} (\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{C\+L\+Kernel} \&kernel, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params}{C\+L\+Kernel\+Execute\+Params} \&params, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0dbaf20006e360e34ddc52a85246855e}{flush\+Queue} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a19fb4b24a7d6a184bb5884909761df53}{finish\+Queue} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0333381f7772462c72ffbe043d7dfeeb}{get\+Maximal\+Launch\+Exec\+Params} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{C\+L\+Kernel} \&kernel, size\+\_\+t \&compute\+Devices, size\+\_\+t \&preferred\+Workgroup\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a16f52f081efa477b9c8f34d28ce272d8}{get\+Max\+Workgroup\+For\+Kernel} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{C\+L\+Kernel} \&kernel, size\+\_\+t \&max\+W\+G\+Size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{C\+L\+Device} \& \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_afa781473cfa153504e5efbf2208faa99}{get\+Device} () const 
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa06c0a22a6f773ccca68d4ca5c51704d}{$\sim$\+C\+L\+Execution\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform}{C\+L\+Platform} \& {\bfseries \+\_\+platform}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ad34dd30602a4379d71eaa4626a5633c7}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ad34dd30602a4379d71eaa4626a5633c7}
+
+\item 
+const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{C\+L\+Device} \& {\bfseries \+\_\+device}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ab427e8d09a800f1acc361852df128e55}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ab427e8d09a800f1acc361852df128e55}
+
+\item 
+const cl\+\_\+context\+\_\+properties $\ast$ {\bfseries \+\_\+context\+Properties}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a4971df1c7754dda8244afbc22693e6d5}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a4971df1c7754dda8244afbc22693e6d5}
+
+\item 
+cl\+\_\+context {\bfseries \+\_\+cl\+Context}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a6631dc137a2ac7ca7534581949c743f5}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a6631dc137a2ac7ca7534581949c743f5}
+
+\item 
+cl\+\_\+command\+\_\+queue {\bfseries \+\_\+cl\+Command\+Queue}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0e8a021bab04d399b9c8abfb02f46353}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0e8a021bab04d399b9c8abfb02f46353}
+
+\item 
+bool {\bfseries \+\_\+initialized}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a98b83d0951e39eb57c44c6fcd30f5f63}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a98b83d0951e39eb57c44c6fcd30f5f63}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries C\+L\+Program}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a5a2118afd420ad2f664e518740aa1e5d}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a5a2118afd420ad2f664e518740aa1e5d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{C\+L\+Execution\+Context} encapsulates operations on Open\+CL command queue\+: Kernel executions, memory operations, creating synchronization events, etc. This class encapsulates partial set of those operations, and can be extended if needed 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!C\+L\+Execution\+Context@{C\+L\+Execution\+Context}}
+\index{C\+L\+Execution\+Context@{C\+L\+Execution\+Context}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{C\+L\+Execution\+Context(const C\+L\+Device \&device, const cl\+\_\+context\+\_\+properties $\ast$\+\_\+context\+Properties=\+N\+U\+L\+L)}{CLExecutionContext(const CLDevice &device, const cl_context_properties *_contextProperties=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::\+C\+L\+Execution\+Context (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Device} \&}]{device, }
+\item[{const cl\+\_\+context\+\_\+properties $\ast$}]{\+\_\+context\+Properties = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a4c95e31f2a4dd4127406edbb0ba5edd1}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a4c95e31f2a4dd4127406edbb0ba5edd1}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em device} & Object that encapsulate the Open\+CL device in use \\
+\hline
+{\em context\+Properties\mbox{[}optional\mbox{]}} & The properties of context to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{C\+L\+Device} 
+
+cl\+\_\+context\+\_\+properties in Open\+CL specification 
+\end{DoxySeeAlso}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!````~C\+L\+Execution\+Context@{$\sim$\+C\+L\+Execution\+Context}}
+\index{````~C\+L\+Execution\+Context@{$\sim$\+C\+L\+Execution\+Context}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+Execution\+Context()}{~CLExecutionContext()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::$\sim$\+C\+L\+Execution\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa06c0a22a6f773ccca68d4ca5c51704d}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa06c0a22a6f773ccca68d4ca5c51704d}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!create\+Device\+Buffer@{create\+Device\+Buffer}}
+\index{create\+Device\+Buffer@{create\+Device\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+Device\+Buffer(\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access access, C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Host\+Ptr\+Options host\+Ptr\+Opts, size\+\_\+t size, cl\+\_\+mem \&output, Common\+::\+Errata \&err, void $\ast$host\+Ptr=\+N\+U\+L\+L) const }{createDeviceBuffer(CLBufferFlags::CLBufferAccess access, CLBufferFlags::CLBufferHostPtrOptions hostPtrOpts, size_t size, cl_mem &output, Common::Errata &err, void *hostPtr=NULL) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::create\+Device\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access}}]{access, }
+\item[{{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Host\+Ptr\+Options}}]{host\+Ptr\+Opts, }
+\item[{size\+\_\+t}]{size, }
+\item[{cl\+\_\+mem \&}]{output, }
+\item[{{\bf Common\+::\+Errata} \&}]{err, }
+\item[{void $\ast$}]{host\+Ptr = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a5a953bbfdd89bd898ad2e6ad55c9f634}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a5a953bbfdd89bd898ad2e6ad55c9f634}
+Create Open\+CL memory object 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em access} & Access mode \\
+\hline
+ & {\em host\+Ptr\+Opts} & Host pointer usage \\
+\hline
+ & {\em size} & Desired size of the buffer \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!create\+Device\+Buffer@{create\+Device\+Buffer}}
+\index{create\+Device\+Buffer@{create\+Device\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+Device\+Buffer(\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access access, size\+\_\+t size, cl\+\_\+mem \&output, Common\+::\+Errata \&err) const }{createDeviceBuffer(CLBufferFlags::CLBufferAccess access, size_t size, cl_mem &output, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::create\+Device\+Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access}}]{access, }
+\item[{size\+\_\+t}]{size, }
+\item[{cl\+\_\+mem \&}]{output, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa8d5e3b745f6c543f2a78c6fd514a79d}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_aa8d5e3b745f6c543f2a78c6fd514a79d}
+Create Open\+CL memory object 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em access} & Access mode \\
+\hline
+ & {\em size} & Desired size of the buffer \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!create\+Event@{create\+Event}}
+\index{create\+Event@{create\+Event}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+Event(boost\+::shared\+\_\+ptr$<$ C\+L\+Event $>$ \&out\+Evt, Common\+::\+Errata \&err) const }{createEvent(boost::shared_ptr< CLEvent > &outEvt, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::create\+Event (
+\begin{DoxyParamCaption}
+\item[{boost\+::shared\+\_\+ptr$<$ {\bf C\+L\+Event} $>$ \&}]{out\+Evt, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a01b25e47be24d16008b53e5f6431b807}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a01b25e47be24d16008b53e5f6431b807}
+Creates object that encapsulates Open\+CL synchronization event 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!create\+Events@{create\+Events}}
+\index{create\+Events@{create\+Events}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+Events(int count, std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ C\+L\+Event $>$ $>$ \&events, Common\+::\+Errata \&err) const }{createEvents(int count, std::vector< boost::shared_ptr< CLEvent > > &events, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::create\+Events (
+\begin{DoxyParamCaption}
+\item[{int}]{count, }
+\item[{std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ {\bf C\+L\+Event} $>$ $>$ \&}]{events, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a3370232aafe19ac17dc63cee8b8f5e42}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a3370232aafe19ac17dc63cee8b8f5e42}
+Creates multiple objects that encapsulates Open\+CL synchronization event 
+\begin{DoxyParams}{Parameters}
+{\em count} & Count of desired events \\
+\hline
+{\em events} & Vector that shall be filled with created events \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Copy\+Buffer@{enqueue\+Copy\+Buffer}}
+\index{enqueue\+Copy\+Buffer@{enqueue\+Copy\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Copy\+Buffer(const cl\+\_\+mem \&buffer, const cl\+\_\+mem \&output\+Buffer, size\+\_\+t buffer\+Size, Common\+::\+Errata \&err) const }{enqueueCopyBuffer(const cl_mem &buffer, const cl_mem &outputBuffer, size_t bufferSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Copy\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const cl\+\_\+mem \&}]{buffer, }
+\item[{const cl\+\_\+mem \&}]{output\+Buffer, }
+\item[{size\+\_\+t}]{buffer\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a1f9900b02109964463ce04ffa29153de}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a1f9900b02109964463ce04ffa29153de}
+Copies Open\+CL device memory into destination memory on device 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Source Open\+CL device buffer \\
+\hline
+{\em output\+Buffer} & Destination Open\+CL device buffer \\
+\hline
+{\em buffer\+Size} & The size of the buffer that should be copied \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Fill\+Buffer@{enqueue\+Fill\+Buffer}}
+\index{enqueue\+Fill\+Buffer@{enqueue\+Fill\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Fill\+Buffer(const cl\+\_\+mem \&buffer, void $\ast$pattern, size\+\_\+t buffer\+Size, size\+\_\+t pattern\+Size, Common\+::\+Errata \&err) const }{enqueueFillBuffer(const cl_mem &buffer, void *pattern, size_t bufferSize, size_t patternSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Fill\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const cl\+\_\+mem \&}]{buffer, }
+\item[{void $\ast$}]{pattern, }
+\item[{size\+\_\+t}]{buffer\+Size, }
+\item[{size\+\_\+t}]{pattern\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a091a8577503ecdb380805b2ca7cc2102}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a091a8577503ecdb380805b2ca7cc2102}
+Fills Open\+CL device memory with defined pattern, same principle as Win32 memset 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Open\+CL device buffer \\
+\hline
+{\em pattern} & The pattern that should be filled \\
+\hline
+{\em buffer\+Size} & The size of the buffer that should be copied. Must be a multiple of pattern\+Size \\
+\hline
+{\em pattern\+Size} & pattern\+Size The size of pattern -\/ According to Open\+CL specs can be \{1, 2, 4, 8, 16, 32, 64, 128\} \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Kernel@{enqueue\+Kernel}}
+\index{enqueue\+Kernel@{enqueue\+Kernel}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Kernel(\+C\+L\+Kernel \&kernel, C\+L\+Kernel\+Execute\+Params \&params, Common\+::\+Errata \&err) const }{enqueueKernel(CLKernel &kernel, CLKernelExecuteParams &params, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Kernel (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+L\+Kernel} \&}]{kernel, }
+\item[{{\bf C\+L\+Kernel\+Execute\+Params} \&}]{params, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ab9ac2f839ca431acef0aeb197d17225a}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ab9ac2f839ca431acef0aeb197d17225a}
+Enqueues kernel execution on underlying Open\+CL command queue -\/ In simple terms, executes the kernel 
+\begin{DoxyParams}{Parameters}
+{\em Object} & that encapsulates the kernel to execute \\
+\hline
+{\em Object} & that encapsulates data about dimensions and syncronization events for kernel execution \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Read\+Buffer@{enqueue\+Read\+Buffer}}
+\index{enqueue\+Read\+Buffer@{enqueue\+Read\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Read\+Buffer(const cl\+\_\+mem \&buffer, void $\ast$output\+Buffer, size\+\_\+t buffer\+Size, Common\+::\+Errata \&err) const }{enqueueReadBuffer(const cl_mem &buffer, void *outputBuffer, size_t bufferSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Read\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const cl\+\_\+mem \&}]{buffer, }
+\item[{void $\ast$}]{output\+Buffer, }
+\item[{size\+\_\+t}]{buffer\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ac7c1bf6d6ada5d4104e7d96dd0b15b8b}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_ac7c1bf6d6ada5d4104e7d96dd0b15b8b}
+Reads Open\+CL device memory contents and writes them into host memory buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Open\+CL device buffer \\
+\hline
+{\em output\+Buffer} & Host memory pointer to destination, where memory should be copied \\
+\hline
+{\em buffer\+Size} & The size of the buffer that should be copied \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Read\+Buffer@{enqueue\+Read\+Buffer}}
+\index{enqueue\+Read\+Buffer@{enqueue\+Read\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Read\+Buffer(const cl\+\_\+mem \&buffer, void $\ast$output\+Buffer, size\+\_\+t offset, size\+\_\+t buffer\+Size, Common\+::\+Errata \&err) const }{enqueueReadBuffer(const cl_mem &buffer, void *outputBuffer, size_t offset, size_t bufferSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Read\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const cl\+\_\+mem \&}]{buffer, }
+\item[{void $\ast$}]{output\+Buffer, }
+\item[{size\+\_\+t}]{offset, }
+\item[{size\+\_\+t}]{buffer\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a8b5f64a7d034773c60e39a6f280ea9b9}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a8b5f64a7d034773c60e39a6f280ea9b9}
+Reads Open\+CL device memory contents and writes them into host memory buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Open\+CL device buffer \\
+\hline
+{\em output\+Buffer} & Host memory pointer to destination, where memory should be copied \\
+\hline
+{\em offset} & Offset index (In bytes), from which the copying should start \\
+\hline
+{\em buffer\+Size} & The size of the buffer that should be copied \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!enqueue\+Write\+Buffer@{enqueue\+Write\+Buffer}}
+\index{enqueue\+Write\+Buffer@{enqueue\+Write\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Write\+Buffer(void $\ast$buffer, const cl\+\_\+mem \&output\+Buffer, size\+\_\+t buffer\+Size, Common\+::\+Errata \&err) const }{enqueueWriteBuffer(void *buffer, const cl_mem &outputBuffer, size_t bufferSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::enqueue\+Write\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{const cl\+\_\+mem \&}]{output\+Buffer, }
+\item[{size\+\_\+t}]{buffer\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a45252fc7bbdf285418220b04abdb135e}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a45252fc7bbdf285418220b04abdb135e}
+Fills Open\+CL device memory with contents of host memory buffer 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Host buffer -\/ The source \\
+\hline
+{\em output\+Buffer} & Open\+CL device buffer -\/ The destination \\
+\hline
+{\em buffer\+Size} & The size of the buffer that should be copied \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!finish\+Queue@{finish\+Queue}}
+\index{finish\+Queue@{finish\+Queue}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{finish\+Queue(\+Common\+::\+Errata \&err) const }{finishQueue(Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::finish\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a19fb4b24a7d6a184bb5884909761df53}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a19fb4b24a7d6a184bb5884909761df53}
+Blocks until all commands on the queue are completed. Encapsulates the cl\+Finish Open\+CL method 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+cl\+Finish 
+\end{DoxySeeAlso}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!flush\+Queue@{flush\+Queue}}
+\index{flush\+Queue@{flush\+Queue}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{flush\+Queue(\+Common\+::\+Errata \&err) const }{flushQueue(Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::flush\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0dbaf20006e360e34ddc52a85246855e}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0dbaf20006e360e34ddc52a85246855e}
+Issues all queues operations to the device. Encapsulates the cl\+Flush Open\+CL method 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+cl\+Flush 
+\end{DoxySeeAlso}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{get\+Device() const }{getDevice() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+L\+Device}\& C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::get\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_afa781473cfa153504e5efbf2208faa99}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_afa781473cfa153504e5efbf2208faa99}
+Retrieves the object that encapsulates the used Open\+CL device \begin{DoxyReturn}{Returns}
+Object that encapsulates the used Open\+CL device 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!get\+Maximal\+Launch\+Exec\+Params@{get\+Maximal\+Launch\+Exec\+Params}}
+\index{get\+Maximal\+Launch\+Exec\+Params@{get\+Maximal\+Launch\+Exec\+Params}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{get\+Maximal\+Launch\+Exec\+Params(const C\+L\+Kernel \&kernel, size\+\_\+t \&compute\+Devices, size\+\_\+t \&preferred\+Workgroup\+Size, Common\+::\+Errata \&err) const }{getMaximalLaunchExecParams(const CLKernel &kernel, size_t &computeDevices, size_t &preferredWorkgroupSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::get\+Maximal\+Launch\+Exec\+Params (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Kernel} \&}]{kernel, }
+\item[{size\+\_\+t \&}]{compute\+Devices, }
+\item[{size\+\_\+t \&}]{preferred\+Workgroup\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0333381f7772462c72ffbe043d7dfeeb}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a0333381f7772462c72ffbe043d7dfeeb}
+Retrieves the work group size and number of work groups for Maximal Launch -\/ that is, the exact local workgroup size and exact number of workgroups to fill the device (Number of multiprocessors). This is useful for Persistent Thread programming style -\/ That\textquotesingle{}s where the term \char`\"{}\+Maximal Launch\char`\"{} comes from 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Kernel} & The kernel to check \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!get\+Max\+Workgroup\+For\+Kernel@{get\+Max\+Workgroup\+For\+Kernel}}
+\index{get\+Max\+Workgroup\+For\+Kernel@{get\+Max\+Workgroup\+For\+Kernel}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{get\+Max\+Workgroup\+For\+Kernel(const C\+L\+Kernel \&kernel, size\+\_\+t \&max\+W\+G\+Size, Common\+::\+Errata \&err) const }{getMaxWorkgroupForKernel(const CLKernel &kernel, size_t &maxWGSize, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::get\+Max\+Workgroup\+For\+Kernel (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Kernel} \&}]{kernel, }
+\item[{size\+\_\+t \&}]{max\+W\+G\+Size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a16f52f081efa477b9c8f34d28ce272d8}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a16f52f081efa477b9c8f34d28ce272d8}
+Retrieves the max allowed workgroup size for the specified kernel 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em kernel} & The kernel to check \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{initialize(\+Common\+::\+Errata \&err) const }{initialize(Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a6b4b2a9f1e8bd3ff516c7bbae4848f61}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context_a6b4b2a9f1e8bd3ff516c7bbae4848f61}
+Initialize the context object -\/ Should be called once per instance 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_execution_context_8h}{C\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

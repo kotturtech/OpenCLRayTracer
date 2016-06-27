@@ -1,0 +1,85 @@
+\hypertarget{_c_l_structs_8h}{}\section{Include/\+C\+L\+Data/\+C\+L\+Structs.h File Reference}
+\label{_c_l_structs_8h}\index{Include/\+C\+L\+Data/\+C\+L\+Structs.\+h@{Include/\+C\+L\+Data/\+C\+L\+Structs.\+h}}
+{\ttfamily \#include $<$C\+L\+Data\textbackslash{}\+Transform.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera}{Camera}
+\item 
+struct \hyperlink{struct_ray}{Ray}
+\item 
+struct \hyperlink{struct_contact}{Contact}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries cam\+Position}(cam)~\hyperlink{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}{get\+Translate}(\&((cam).view\+Transform))
+\item 
+\#define {\bfseries cam\+Position\+\_\+const}(cam)~\hyperlink{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}{get\+Translate\+\_\+const}(\&((cam).view\+Transform))
+\item 
+\#define {\bfseries contact\+Dist}~normal\+Andintersection\+Distance.\+w
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera}{Camera} {\bfseries A\+L\+I\+G\+N\+ED} (16)
+\item 
+struct \hyperlink{struct_ray}{Ray} \hyperlink{group__g12_ga058f44d2ffec7f4fb4c6d7bdb978f4c6}{generate\+Ray} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_camera}{Camera} $\ast$camera, C\+L\+\_\+\+U\+I\+NT pixel\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT {\bfseries F\+O\+V\+Distance}\hypertarget{_c_l_structs_8h_aced08249b32c3bc8238345c157423137}{}\label{_c_l_structs_8h_aced08249b32c3bc8238345c157423137}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries resX}\hypertarget{_c_l_structs_8h_a1d27cd9609f3b073eadd618490cbaf7f}{}\label{_c_l_structs_8h_a1d27cd9609f3b073eadd618490cbaf7f}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries resY}\hypertarget{_c_l_structs_8h_af935cc2387e6e7182d795d577a4da2ef}{}\label{_c_l_structs_8h_af935cc2387e6e7182d795d577a4da2ef}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries supersampilng\+Factor}\hypertarget{_c_l_structs_8h_a53b326912f6b98616e901e389320063e}{}\label{_c_l_structs_8h_a53b326912f6b98616e901e389320063e}
+
+\item 
+struct \hyperlink{struct_matrix4}{Matrix4} {\bfseries view\+Transform}\hypertarget{_c_l_structs_8h_a30171b6633a48a79ca98d4386b2ae969}{}\label{_c_l_structs_8h_a30171b6633a48a79ca98d4386b2ae969}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries idx}\hypertarget{_c_l_structs_8h_af8169b838dbb7634ca09621f92ddf145}{}\label{_c_l_structs_8h_af8169b838dbb7634ca09621f92ddf145}
+
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 {\bfseries origin}\hypertarget{_c_l_structs_8h_a7247c0de818d4c0f9c1900408a4c7f7e}{}\label{_c_l_structs_8h_a7247c0de818d4c0f9c1900408a4c7f7e}
+
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 {\bfseries direction}\hypertarget{_c_l_structs_8h_a7409ec9748b3ebab03cfcb5ca1891695}{}\label{_c_l_structs_8h_a7409ec9748b3ebab03cfcb5ca1891695}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries pixel\+Index}\hypertarget{_c_l_structs_8h_a908358343448d84ff2920d2bc0344d9f}{}\label{_c_l_structs_8h_a908358343448d84ff2920d2bc0344d9f}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries material\+Index}\hypertarget{_c_l_structs_8h_a6e71637fe06749a4c595a7395de267b0}{}\label{_c_l_structs_8h_a6e71637fe06749a4c595a7395de267b0}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries pad} \mbox{[}2\mbox{]}\hypertarget{_c_l_structs_8h_a2708be82486c56b957ad5f61b354bc6b}{}\label{_c_l_structs_8h_a2708be82486c56b957ad5f61b354bc6b}
+
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T4 {\bfseries normal\+Andintersection\+Distance}\hypertarget{_c_l_structs_8h_a53cd17eef53fccde7aefaac18b33f71f}{}\label{_c_l_structs_8h_a53cd17eef53fccde7aefaac18b33f71f}
+
+\item 
+C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT const struct \hyperlink{struct_contact}{Contact} {\bfseries N\+O\+\_\+\+C\+O\+N\+T\+A\+CT} = \{ 0, 0, \{0,0\},\{0,0,0,0\}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Miscellaneous \hyperlink{struct_ray}{Ray} Tracing helper classes and functions 

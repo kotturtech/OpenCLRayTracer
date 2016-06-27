@@ -1,0 +1,2 @@
+LIGHT 0.0 10.0 -330.0 1000.0
+MESH ..\..\TestModels\Skull\skull.obj

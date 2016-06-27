@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Algorithms">
+      <UniqueIdentifier>{331ccaaa-5c53-4142-a0d1-158ae3dadf31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CL headers">
+      <UniqueIdentifier>{a6e6c242-ebd5-4065-81a8-c57359444c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CL headers\Primitives">
+      <UniqueIdentifier>{4778ed80-de96-4ddb-bac5-51af6f57d24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CL Kernels">
+      <UniqueIdentifier>{b5ae49ca-7f02-4f8f-99de-f7b97b9e7cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CL Kernels\Generated">
+      <UniqueIdentifier>{0588747d-9440-4308-9b43-9d4071751c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CL headers\AccelerationStructs">
+      <UniqueIdentifier>{b1b5ad64-b9d3-4c7c-a1a2-818023fcbb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Testing">
+      <UniqueIdentifier>{3f33d4c6-ecda-4a9e-a571-9ec913543627}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Algorithms\AccelerationStructureManager.h">
+      <Filter>Header Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Algorithms\BVHManager.h">
+      <Filter>Header Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Algorithms\PrefixSum.h">
+      <Filter>Header Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Algorithms\Sorting.h">
+      <Filter>Header Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Algorithms\TwoLevelGridManager.h">
+      <Filter>Header Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\BVH.h">
+      <Filter>Header Files\CL headers\AccelerationStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\BVHData.h">
+      <Filter>Header Files\CL headers\AccelerationStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\TwoLevelGrid.h">
+      <Filter>Header Files\CL headers\AccelerationStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\TwoLevelGridData.h">
+      <Filter>Header Files\CL headers\AccelerationStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Primitives\AABB.h">
+      <Filter>Header Files\CL headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Primitives\Light.h">
+      <Filter>Header Files\CL headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Primitives\Material.h">
+      <Filter>Header Files\CL headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Primitives\Sphere.h">
+      <Filter>Header Files\CL headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Primitives\Triangle.h">
+      <Filter>Header Files\CL headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\CLPortability.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\CLStructs.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\MeshUtils.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\RTKernelUtils.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\SceneBufferParser.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Shading.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\CLData\Transform.h">
+      <Filter>Header Files\CL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Testing\BVHTest.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Testing\PrefixSumTest.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Testing\sortingTest.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Testing\TwoLevelGridTest.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Scene\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Scene\SceneDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Common\Deployment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitonicSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedSortingKernelSource.cpp">
+      <Filter>Source Files\CL Kernels\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedBVHKernelSource.cpp">
+      <Filter>Source Files\CL Kernels\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="BVHManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoLevelGridManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedTwoLevelGridKernelSource.cpp">
+      <Filter>Source Files\CL Kernels\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefixSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedPrefixSumKernelSource.cpp">
+      <Filter>Source Files\CL Kernels\Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SortKernels.cl">
+      <Filter>Source Files\CL Kernels</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BVHKernels.cl">
+      <Filter>Source Files\CL Kernels</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TwoLevelGridKernels.cl">
+      <Filter>Source Files\CL Kernels</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrefixSumKernels.cl">
+      <Filter>Source Files\CL Kernels</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

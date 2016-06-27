@@ -1,0 +1,150 @@
+\hypertarget{_scene_buffer_parser_8h}{}\section{Include/\+C\+L\+Data/\+Scene\+Buffer\+Parser.h File Reference}
+\label{_scene_buffer_parser_8h}\index{Include/\+C\+L\+Data/\+Scene\+Buffer\+Parser.\+h@{Include/\+C\+L\+Data/\+Scene\+Buffer\+Parser.\+h}}
+{\ttfamily \#include \char`\"{}C\+L\+Data\textbackslash{}\+C\+L\+Portability.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+L\+Data\textbackslash{}\+Primitives\textbackslash{}\+Sphere.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+L\+Data\textbackslash{}\+Primitives\textbackslash{}\+Light.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+L\+Data\textbackslash{}\+Primitives\textbackslash{}\+Material.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+L\+Data\textbackslash{}\+Primitives\textbackslash{}\+A\+A\+B\+B.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_scene_header}{Scene\+Header}
+\item 
+struct \hyperlink{struct_model_header}{Model\+Header}
+\item 
+struct \hyperlink{struct_mesh_header}{Mesh\+Header}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~(sizeof(struct \hyperlink{struct_scene_header}{Scene\+Header}))
+\item 
+\#define {\bfseries S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_scene_header}{Scene\+Header}$\ast$)(buf))
+\item 
+\#define {\bfseries L\+I\+G\+H\+T\+S\+\_\+\+P\+TR}(buf)~(buf + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE)
+\item 
+\#define {\bfseries S\+P\+H\+E\+R\+E\+S\+\_\+\+P\+TR}(buf)~((L\+I\+G\+H\+T\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Lights $\ast$ sizeof(struct \hyperlink{struct_light}{Light}))
+\item 
+\#define {\bfseries M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+P\+TR}(buf)~((S\+P\+H\+E\+R\+E\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Spheres $\ast$ sizeof(struct \hyperlink{struct_sphere}{Sphere}))
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+P\+TR}(buf)~((M\+A\+T\+E\+R\+I\+A\+L\+S\+\_\+\+P\+TR(buf)) + S\+C\+E\+N\+E\+\_\+\+H\+E\+A\+D\+ER(buf)-\/$>$number\+Of\+Materials $\ast$ sizeof(struct \hyperlink{struct_material}{Material}))
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~sizeof(struct \hyperlink{struct_model_header}{Model\+Header})
+\item 
+\#define {\bfseries M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~sizeof(struct \hyperlink{struct_mesh_header}{Mesh\+Header})
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}~C\+L\+\_\+\+F\+L\+O\+A\+T3
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+ZE}~sizeof(V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE)
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE}~C\+L\+\_\+\+U\+S\+H\+O\+RT
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+S\+I\+ZE}~sizeof(I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE)
+\item 
+\#define {\bfseries M\+O\+D\+E\+L\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_model_header}{Model\+Header}$\ast$)(buf))
+\item 
+\#define {\bfseries M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+ER}(buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_mesh_header}{Mesh\+Header}$\ast$)(buf))
+\item 
+\#define {\bfseries V\+E\+R\+T\+E\+X\+\_\+\+B\+A\+SE}(mesh\+Buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE$\ast$)(mesh\+Buf + M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE))
+\item 
+\#define {\bfseries I\+N\+D\+E\+X\+\_\+\+B\+A\+SE}(mesh\+Buf)~((C\+L\+\_\+\+G\+L\+O\+B\+AL I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE$\ast$)(\&(V\+E\+R\+T\+E\+X\+\_\+\+B\+A\+SE(mesh\+Buf)\mbox{[}M\+E\+S\+H\+\_\+\+H\+E\+A\+D\+ER(mesh\+Buf)-\/$>$number\+Of\+Vertices\mbox{]})))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_scene_header}{Scene\+Header} {\bfseries A\+L\+I\+G\+N\+ED} (16)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_light}{Light} $\ast$ \hyperlink{group__g13_ga7722fdf6e646b6428dc155128375e34a}{get\+Light\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_sphere}{Sphere} $\ast$ \hyperlink{group__g13_gab1c9d5464229d9e20cf97414fdcbc039}{get\+Sphere\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_material}{Material} $\ast$ \hyperlink{group__g13_gac140974adead8370620277bb6e196c34}{get\+Material\+At\+Index} (const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$buf, int index)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$ \hyperlink{group__g13_gaa9239ad684cbf8080620660e6545e217}{get\+Model\+At\+Index} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$scene\+Buffer)
+\item 
+C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$ \hyperlink{group__g13_ga5790da37bc707dc0f27eb9a2190d144b}{get\+Mesh\+At\+Index} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$model\+Buffer)
+\item 
+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{group__g13_gae50624ab916b188150e95081b400ef2f}{get\+Vertex\+At} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE \hyperlink{group__g13_ga66a55d590b149e140804695048f537c9}{get\+Index\+At} (C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+void \hyperlink{group__g13_ga020f1483f706e4baf84083f2e41c0b62}{set\+Vertex\+At} (V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE value, C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+void \hyperlink{group__g13_ga1fbd7a82bf90335f8471c95e7adaa54f}{set\+Index\+At} (I\+N\+D\+E\+X\+\_\+\+T\+Y\+PE value, C\+L\+\_\+\+U\+I\+NT index, const C\+L\+\_\+\+G\+L\+O\+B\+AL char $\ast$mesh\+Buffer)
+\item 
+C\+L\+\_\+\+U\+I\+N\+T3 \hyperlink{group__g13_ga335f68c4bd5e3c0166612a6677993535}{get\+Triangle\+Ref\+By\+Index} (C\+L\+\_\+\+G\+L\+O\+B\+AL const char $\ast$scene, C\+L\+\_\+\+U\+I\+NT triangle\+Index)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries total\+Data\+Size}\hypertarget{_scene_buffer_parser_8h_a8981d5ec9d7b1979b4b833f9bdc34484}{}\label{_scene_buffer_parser_8h_a8981d5ec9d7b1979b4b833f9bdc34484}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Primitives}\hypertarget{_scene_buffer_parser_8h_a71f6f9dc3771bf42e3fce5bb5e4e348d}{}\label{_scene_buffer_parser_8h_a71f6f9dc3771bf42e3fce5bb5e4e348d}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Lights}\hypertarget{_scene_buffer_parser_8h_a2d671436b7c2f1473634707edb6a6903}{}\label{_scene_buffer_parser_8h_a2d671436b7c2f1473634707edb6a6903}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Spheres}\hypertarget{_scene_buffer_parser_8h_a1806e069621bce313d9d82aaa01367db}{}\label{_scene_buffer_parser_8h_a1806e069621bce313d9d82aaa01367db}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Materials}\hypertarget{_scene_buffer_parser_8h_a69f69f54f164fead89175647c41e62a9}{}\label{_scene_buffer_parser_8h_a69f69f54f164fead89175647c41e62a9}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries model\+Buffer\+Size}\hypertarget{_scene_buffer_parser_8h_a4d6f4628e06f79ec4181b96cd996689c}{}\label{_scene_buffer_parser_8h_a4d6f4628e06f79ec4181b96cd996689c}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Models}\hypertarget{_scene_buffer_parser_8h_a4e57665d3794ecf93d38e58bc81660d5}{}\label{_scene_buffer_parser_8h_a4e57665d3794ecf93d38e58bc81660d5}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries total\+Number\+Of\+Triangles}\hypertarget{_scene_buffer_parser_8h_a18ab1e1b6f598ef50198b81411dbd797}{}\label{_scene_buffer_parser_8h_a18ab1e1b6f598ef50198b81411dbd797}
+
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} {\bfseries models\+Bounding\+Box}\hypertarget{_scene_buffer_parser_8h_af3c350664599bc790b753f539a5977c4}{}\label{_scene_buffer_parser_8h_af3c350664599bc790b753f539a5977c4}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries data\+Size}\hypertarget{_scene_buffer_parser_8h_a9499a43d252d792a9b35073caa9aad0b}{}\label{_scene_buffer_parser_8h_a9499a43d252d792a9b35073caa9aad0b}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Submeshes}\hypertarget{_scene_buffer_parser_8h_afcdf2be78afe883b8ba01bb6ecda22d3}{}\label{_scene_buffer_parser_8h_afcdf2be78afe883b8ba01bb6ecda22d3}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Triangles}\hypertarget{_scene_buffer_parser_8h_af33e00646395008b8988eece188e4394}{}\label{_scene_buffer_parser_8h_af33e00646395008b8988eece188e4394}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries pad}\hypertarget{_scene_buffer_parser_8h_a0a9dd66702481e9f3ae9e740ef905468}{}\label{_scene_buffer_parser_8h_a0a9dd66702481e9f3ae9e740ef905468}
+
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} {\bfseries bounding\+Box}\hypertarget{_scene_buffer_parser_8h_ac648a5b17ef6546ce67a34fb96bcb8d3}{}\label{_scene_buffer_parser_8h_ac648a5b17ef6546ce67a34fb96bcb8d3}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Vertices}\hypertarget{_scene_buffer_parser_8h_a84a8a44483643ff2498b5a783d7ff438}{}\label{_scene_buffer_parser_8h_a84a8a44483643ff2498b5a783d7ff438}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Indices}\hypertarget{_scene_buffer_parser_8h_a542da1df94b4dcf2ef4f49da17d7aecc}{}\label{_scene_buffer_parser_8h_a542da1df94b4dcf2ef4f49da17d7aecc}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries material\+Index}\hypertarget{_scene_buffer_parser_8h_a116346d5f160d49d9e8059bcdc437972}{}\label{_scene_buffer_parser_8h_a116346d5f160d49d9e8059bcdc437972}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Functions and structure that handle storing and retrieving scene setup.
+
+The scene is stored in a contiguous buffer, that contains at least the scene header that contains information about how many objects are there in the scene, and of which type. The scene may contain Spheres, Lights, 3D Models, and their materials. Each 3D model contains submeshes, which in turn consist of triangles, stored as vertices and indices.
+
+These functions were implemented to conform with Wavefront O\+BJ 3D models. Some retrieval functions are frequently used in G\+PU algorithms, and optimizing them could improve performance there and there. 

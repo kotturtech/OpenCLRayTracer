@@ -1,0 +1,114 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Event Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+
+
+{\ttfamily \#include $<$C\+L\+Execution\+Context.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a3ad35804ee316b14c479ab511e61e35d}{C\+L\+Event} (cl\+\_\+event evt=N\+U\+LL)
+\item 
+cl\+\_\+event \& \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_ade18279a8b719358ad9c6895133a1f58}{get\+C\+L\+Event} ()
+\item 
+void \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a755beac868756c6587e48a0ee752d8da}{reset} ()
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a8cc2dca0f1cd490a8f9e2cf4ad7c6d33}{wait} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a574105230c5f48321244e14a7d2e1fc0}{$\sim$\+C\+L\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_abe75eadabc30a738f649712b48e09fb4}{wait} (std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} $>$ $>$ events, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+event {\bfseries cl\+Event}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a75b6b0fd3148b1f195b4e7a5fa4e9539}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a75b6b0fd3148b1f195b4e7a5fa4e9539}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} encapsulates Open\+CL synchronization event 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!C\+L\+Event@{C\+L\+Event}}
+\index{C\+L\+Event@{C\+L\+Event}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{C\+L\+Event(cl\+\_\+event evt=\+N\+U\+L\+L)}{CLEvent(cl_event evt=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::\+C\+L\+Event (
+\begin{DoxyParamCaption}
+\item[{cl\+\_\+event}]{evt = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a3ad35804ee316b14c479ab511e61e35d}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a3ad35804ee316b14c479ab511e61e35d}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em evt} & Raw Open\+CL event object \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!````~C\+L\+Event@{$\sim$\+C\+L\+Event}}
+\index{````~C\+L\+Event@{$\sim$\+C\+L\+Event}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+Event()}{~CLEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::$\sim$\+C\+L\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a574105230c5f48321244e14a7d2e1fc0}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a574105230c5f48321244e14a7d2e1fc0}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!get\+C\+L\+Event@{get\+C\+L\+Event}}
+\index{get\+C\+L\+Event@{get\+C\+L\+Event}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{get\+C\+L\+Event()}{getCLEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}cl\+\_\+event\& C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::get\+C\+L\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_ade18279a8b719358ad9c6895133a1f58}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_ade18279a8b719358ad9c6895133a1f58}
+Returns the underlying Open\+CL event \begin{DoxyReturn}{Returns}
+Underlying Open\+CL event 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!reset@{reset}}
+\index{reset@{reset}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a755beac868756c6587e48a0ee752d8da}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a755beac868756c6587e48a0ee752d8da}
+Resets state of the event, should be called before reusing the event object \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!wait@{wait}}
+\index{wait@{wait}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{wait(\+Common\+::\+Errata \&err)}{wait(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::wait (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a8cc2dca0f1cd490a8f9e2cf4ad7c6d33}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_a8cc2dca0f1cd490a8f9e2cf4ad7c6d33}
+Wait for Open\+CL operation that should be synchronized by this event to complete 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}!wait@{wait}}
+\index{wait@{wait}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}}
+\subsubsection[{\texorpdfstring{wait(std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ C\+L\+Event $>$ $>$ events, Common\+::\+Errata \&err)}{wait(std::vector< boost::shared_ptr< CLEvent > > events, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event\+::wait (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ boost\+::shared\+\_\+ptr$<$ {\bf C\+L\+Event} $>$ $>$}]{events, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_abe75eadabc30a738f649712b48e09fb4}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event_abe75eadabc30a738f649712b48e09fb4}
+Wait for Open\+CL operation that should be synchronized by all events in event list to complete 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_execution_context_8h}{C\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

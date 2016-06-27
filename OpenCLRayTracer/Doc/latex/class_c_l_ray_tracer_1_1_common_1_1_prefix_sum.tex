@@ -1,0 +1,69 @@
+\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum}{}\section{C\+L\+Ray\+Tracer\+:\+:Common\+:\+:Prefix\+Sum Class Reference}
+\label{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum}\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}}
+
+
+{\ttfamily \#include $<$Prefix\+Sum.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a141860443551d0dc02946f863faaf604}{Prefix\+Sum} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&context)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a783f06c122a3081f4c955526c3524b67}{initialize} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_aed77ff0d3567b7672fd449e6326f9c77}{compute\+Prefix\+Sum} (cl\+\_\+mem input\+Buffer, cl\+\_\+mem output\+Buffer, size\+\_\+t size, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum}{Prefix\+Sum} -\/ Exposes functions for running the G\+PU parallel Prefix Sum algorithm 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}!Prefix\+Sum@{Prefix\+Sum}}
+\index{Prefix\+Sum@{Prefix\+Sum}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}}
+\subsubsection[{\texorpdfstring{Prefix\+Sum(const Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context \&context)}{PrefixSum(const OpenCLUtils::CLExecutionContext &context)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum\+::\+Prefix\+Sum (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&}]{context}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a141860443551d0dc02946f863faaf604}{}\label{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a141860443551d0dc02946f863faaf604}
+constructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}!compute\+Prefix\+Sum@{compute\+Prefix\+Sum}}
+\index{compute\+Prefix\+Sum@{compute\+Prefix\+Sum}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}}
+\subsubsection[{\texorpdfstring{compute\+Prefix\+Sum(cl\+\_\+mem input\+Buffer, cl\+\_\+mem output\+Buffer, size\+\_\+t size, Common\+::\+Errata \&err)}{computePrefixSum(cl_mem inputBuffer, cl_mem outputBuffer, size_t size, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum\+::compute\+Prefix\+Sum (
+\begin{DoxyParamCaption}
+\item[{cl\+\_\+mem}]{input\+Buffer, }
+\item[{cl\+\_\+mem}]{output\+Buffer, }
+\item[{size\+\_\+t}]{size, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_aed77ff0d3567b7672fd449e6326f9c77}{}\label{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_aed77ff0d3567b7672fd449e6326f9c77}
+Computes prefix sun of device array By default, this futnction assumes that the values are unsigned ints 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em input\+Buffer} & The input for the algorithm -\/ Array of unsigned integers \\
+\hline
+ & {\em output\+Buffer} & The output of the algorithm -\/ The prefix sum \\
+\hline
+ & {\em size} & Number of items in the input array -\/ Must be power of two \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum}}
+\subsubsection[{\texorpdfstring{initialize(\+Common\+::\+Errata \&err)}{initialize(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Common\+::\+Prefix\+Sum\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a783f06c122a3081f4c955526c3524b67}{}\label{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum_a783f06c122a3081f4c955526c3524b67}
+Initializes the instance of \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_prefix_sum}{Prefix\+Sum} wrapper 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Algorithms/\hyperlink{_prefix_sum_8h}{Prefix\+Sum.\+h}\end{DoxyCompactItemize}

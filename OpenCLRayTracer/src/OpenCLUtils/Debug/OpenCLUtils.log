@@ -1,0 +1,113 @@
+﻿Build started 27/06/2016 11:12:17.
+     1>Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\src\OpenCLUtils\OpenCLUtils.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Visual Studio 2012\VC\bin\CL.exe /c /I"C:\Program Files (x86)\AMD APP SDK\3.0\/include" /I"E:\AMD_APP_SDK\AMD_APP_SDK_3.0\AMD APP SDK\3.0\Include" /I../../../Libs/boost/boost_1_59_0 /I../../Include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CLExecutionContext.cpp CLGLInteropContext.cpp CLInterface.cpp
+         CLExecutionContext.cpp
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\common\errata.h(38): warning C4005: 'FILL_ERRATA' : macro redefinition
+                 e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\common\errata.h(36) : see previous definition of 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clexecutioncontext.h(201): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clexecutioncontext.h(212): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(94): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(103): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(112): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(121): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(130): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(139): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(148): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(157): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(166): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(183): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(191): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(199): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(207): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(215): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(224): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(233): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(242): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(260): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(268): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(276): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(284): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(292): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(300): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(308): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(316): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(325): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(343): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(351): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(365): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(399): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(408): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(417): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(437): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(446): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(455): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(464): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(473): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(482): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(531): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(539): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(547): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(555): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(563): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(571): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(580): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(588): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(596): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(604): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(612): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(621): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(681): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(745): warning C4018: '>' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\include\openclutils\clinterface.h(767): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(78): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(105): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(116): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(189): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(204): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(230): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(268): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(285): warning C4996: 'clCreateCommandQueue': was declared deprecated
+                 c:\program files (x86)\amd app sdk\3.0\include\cl\cl.h(1359) : see declaration of 'clCreateCommandQueue'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(288): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(314): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(322): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(353): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(372): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(392): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(417): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(436): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(468): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(484): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(500): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(525): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(544): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(563): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(622): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(636): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(641): warning C4003: not enough actual parameters for macro 'FILL_ERRATA'
+     1>e:\desktop_folder_\courses\finalpaper-raytracing\practical\finalpaperraytracer\openclraytracer\src\openclutils\clexecutioncontext.cpp(644): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         CLInterface.cpp
+         CLGLInteropContext.cpp
+       Lib:
+         E:\Visual Studio 2012\VC\bin\Lib.exe /OUT:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\\bin\Debug\OpenCLUtils.lib" OpenCL.lib opengl32.lib glu32.lib glut32.lib glew32.lib GLEW32.lib /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\3.0\\lib\x86\\" /NOLOGO Debug\CLBuffer.obj
+         Debug\CLGLExecutionContext.obj
+         Debug\CLGLInteropContext.obj
+         Debug\CLInterface.obj
+         Debug\CLExecutionContext.obj
+     1>opengl32.lib(OPENGL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in OpenCL.lib(OpenCL.dll); second definition ignored
+     1>opengl32.lib(OPENGL32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>glu32.lib(GLU32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in OpenCL.lib(OpenCL.dll); second definition ignored
+     1>glu32.lib(GLU32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>glut32.lib(glut32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in OpenCL.lib(OpenCL.dll); second definition ignored
+     1>glut32.lib(glut32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in OpenCL.lib(OpenCL.dll); second definition ignored
+     1>glew32.lib(glew32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         OpenCLUtils.vcxproj -> E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\\bin\Debug\OpenCLUtils.lib
+     1>Done Building Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\src\OpenCLUtils\OpenCLUtils.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.80

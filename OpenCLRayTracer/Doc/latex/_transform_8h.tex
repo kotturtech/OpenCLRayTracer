@@ -1,0 +1,98 @@
+\hypertarget{_transform_8h}{}\section{Include/\+C\+L\+Data/\+Transform.h File Reference}
+\label{_transform_8h}\index{Include/\+C\+L\+Data/\+Transform.\+h@{Include/\+C\+L\+Data/\+Transform.\+h}}
+{\ttfamily \#include $<$C\+L\+Data\textbackslash{}\+R\+T\+Kernel\+Utils.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion}
+\item 
+struct \hyperlink{struct_matrix4}{Matrix4}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_camera}{Camera} {\bfseries A\+L\+I\+G\+N\+ED} (16)
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion} \hyperlink{group__g12_ga8e90961bd8e958f842a255b663bbda6e}{zero\+Rotation} ()
+\item 
+void \hyperlink{group__g12_ga2f45f34d3f9c9772ede30ea194d34657}{normalize\+Quaternion} (struct \hyperlink{struct_quaternion}{Quaternion} $\ast$q)
+\item 
+struct \hyperlink{struct_quaternion}{Quaternion} \hyperlink{group__g12_gaa23c7bc48e9d48b785b695ec40123440}{mult} (R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) mult, R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) mult2)
+\item 
+void \hyperlink{group__g12_gaff678888c35ddafcc3f7ed58046f8d9b}{rotate\+By\+Vector} (struct \hyperlink{struct_quaternion}{Quaternion} $\ast$o, C\+L\+\_\+\+F\+L\+O\+A\+T3 rot)
+\item 
+struct \hyperlink{struct_matrix4}{Matrix4} \hyperlink{group__g12_gaf163e6982adb392dfe7dfc845c66d81e}{identity\+Transform} ()
+\item 
+void \hyperlink{group__g12_ga87905ca25c2eada7209c07e156951dc0}{matrix\+Multiply} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$B, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$result)
+\item 
+void \hyperlink{group__g12_gac5d8d3988ebf6814b6f9adfd1fb0b4d2}{fill\+Translate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, C\+L\+\_\+\+F\+L\+O\+A\+T3 t)
+\item 
+void \hyperlink{group__g12_gab120779e5ed91425889e3c8ac2a165e6}{fill\+Rotate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$A, C\+L\+\_\+\+F\+L\+O\+A\+T3 euler\+Angles)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga210c2abe104b8b2bf78aa4c5ca33de5f}{transform\+Vector\+By\+Matrix} (C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_matrix4}{Matrix4} $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga8c5db929860b2dd7c915ba6036ea9ec7}{transform\+Vector\+By\+Matrix\+\_\+const} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_matrix4}{Matrix4} $\ast$matrix, C\+L\+\_\+\+F\+L\+O\+A\+T3 vector)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_gaf7c337bbc999d8405021f3aaf6b98906}{get\+Translate} (C\+L\+\_\+\+G\+L\+O\+B\+AL struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga5d10bde3877494a1a9bc98ecd48f8748}{get\+Translate\+\_\+const} (C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+void \hyperlink{group__g12_ga67283bc5432875c8ad3382d2a6fe3eae}{set\+Translate} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6c3506781257c6c000660710a6ac5c3c}{forward} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6ecb966628ac6a5e4092bbd4b2fd3967}{up} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6eb604fd7b5a01a34c5edc05ce242b0a}{side} (R\+EF(struct \hyperlink{struct_matrix4}{Matrix4}) transform)
+\item 
+void \hyperlink{group__g12_ga6d2b0a26a653d5d180b73f7224b4b3e8}{set\+Forward} (C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g12_ga6c3506781257c6c000660710a6ac5c3c}{forward}, struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform)
+\item 
+void \hyperlink{group__g12_ga8482fa67d493ed2da669a730f2215831}{set\+Orientation\+And\+Pos} (struct \hyperlink{struct_matrix4}{Matrix4} $\ast$transform, R\+EF(struct \hyperlink{struct_quaternion}{Quaternion}) q, C\+L\+\_\+\+F\+L\+O\+A\+T3 pos)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{_transform_8h_ae7b65fd0ddf8d5c7d984c4d6d8d792ec}{r}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{_transform_8h_a0910d046a4c30f874f7e0283db8080c5}{j}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{_transform_8h_a609b0d8d88f41ca818c23873b67e96ba}{k}
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT {\bfseries data} \mbox{[}12\mbox{]}\hypertarget{_transform_8h_abc94b40676f3e239d9167a65973f9b96}{}\label{_transform_8h_abc94b40676f3e239d9167a65973f9b96}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Functions and structures related to Transform matrices
+
+Some matrix operations adaptrd from this source\+: \href{https://www.fastgraph.com/makegames/3drotation/3dsrce.html}{\tt https\+://www.\+fastgraph.\+com/makegames/3drotation/3dsrce.\+html} 
+
+\subsection{Variable Documentation}
+\index{Transform.\+h@{Transform.\+h}!i@{i}}
+\index{i@{i}!Transform.\+h@{Transform.\+h}}
+\subsubsection[{\texorpdfstring{i}{i}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT i}\hypertarget{_transform_8h_a6d7dbee382296495a3e23e0441282763}{}\label{_transform_8h_a6d7dbee382296495a3e23e0441282763}
+Holds the first complex component of the quaternion. \index{Transform.\+h@{Transform.\+h}!j@{j}}
+\index{j@{j}!Transform.\+h@{Transform.\+h}}
+\subsubsection[{\texorpdfstring{j}{j}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT j}\hypertarget{_transform_8h_a0910d046a4c30f874f7e0283db8080c5}{}\label{_transform_8h_a0910d046a4c30f874f7e0283db8080c5}
+Holds the second complex component of the quaternion. \index{Transform.\+h@{Transform.\+h}!k@{k}}
+\index{k@{k}!Transform.\+h@{Transform.\+h}}
+\subsubsection[{\texorpdfstring{k}{k}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT k}\hypertarget{_transform_8h_a609b0d8d88f41ca818c23873b67e96ba}{}\label{_transform_8h_a609b0d8d88f41ca818c23873b67e96ba}
+Holds the third complex component of the quaternion. \index{Transform.\+h@{Transform.\+h}!r@{r}}
+\index{r@{r}!Transform.\+h@{Transform.\+h}}
+\subsubsection[{\texorpdfstring{r}{r}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT r}\hypertarget{_transform_8h_ae7b65fd0ddf8d5c7d984c4d6d8d792ec}{}\label{_transform_8h_ae7b65fd0ddf8d5c7d984c4d6d8d792ec}
+Holds the real component of the quaternion. 

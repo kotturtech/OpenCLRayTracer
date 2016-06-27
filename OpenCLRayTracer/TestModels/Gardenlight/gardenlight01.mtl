@@ -1,0 +1,27 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  2.00.1211
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl crem
+Ka 0.0705882 0.0705882 0.0705882
+Kd 0.92549 0.913726 0.886275
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+
+newmtl styl_glass
+Ka 0.0705882 0.0705882 0.0705882
+Kd 0.901961 0.933333 0.780392
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 6.49802
+
+newmtl styl_lamp1
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 3.4822

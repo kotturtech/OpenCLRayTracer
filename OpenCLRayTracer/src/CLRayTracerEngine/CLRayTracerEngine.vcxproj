@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61C4DA78-D648-47AC-8C29-D692BA60306B}</ProjectGuid>
+    <RootNamespace>CLRayTracerData</RootNamespace>
+    <ProjectName>CLRayTracerEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(AMDAPPSDKROOT)/include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(AMDAPPSDKROOT)/include;$(AMDAPPSDKSAMPLES);../../../Libs/boost/boost_1_59_0;../../Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(AMDAPPSDKROOT)/include;$(AMDAPPSDKSAMPLES);../../../Libs/boost/boost_1_59_0;../../Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Algorithms\AccelerationStructureManager.h" />
+    <ClInclude Include="..\..\Include\Algorithms\BVHManager.h" />
+    <ClInclude Include="..\..\Include\Algorithms\PrefixSum.h" />
+    <ClInclude Include="..\..\Include\Algorithms\Sorting.h" />
+    <ClInclude Include="..\..\Include\Algorithms\TwoLevelGridManager.h" />
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\BVH.h" />
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\BVHData.h" />
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\TwoLevelGrid.h" />
+    <ClInclude Include="..\..\Include\CLData\AccelerationStructs\TwoLevelGridData.h" />
+    <ClInclude Include="..\..\Include\CLData\CLPortability.h" />
+    <ClInclude Include="..\..\Include\CLData\CLStructs.h" />
+    <ClInclude Include="..\..\Include\CLData\MeshUtils.h" />
+    <ClInclude Include="..\..\Include\CLData\Primitives\AABB.h" />
+    <ClInclude Include="..\..\Include\CLData\Primitives\Light.h" />
+    <ClInclude Include="..\..\Include\CLData\Primitives\Material.h" />
+    <ClInclude Include="..\..\Include\CLData\Primitives\Sphere.h" />
+    <ClInclude Include="..\..\Include\CLData\Primitives\Triangle.h" />
+    <ClInclude Include="..\..\Include\CLData\RTKernelUtils.h" />
+    <ClInclude Include="..\..\Include\CLData\SceneBufferParser.h" />
+    <ClInclude Include="..\..\Include\CLData\Shading.h" />
+    <ClInclude Include="..\..\Include\CLData\Transform.h" />
+    <ClInclude Include="..\..\Include\Common\Deployment.h" />
+    <ClInclude Include="..\..\Include\Scene\Scene.h" />
+    <ClInclude Include="..\..\Include\Scene\SceneDebug.h" />
+    <ClInclude Include="..\..\Include\Testing\BVHTest.h" />
+    <ClInclude Include="..\..\Include\Testing\PrefixSumTest.h" />
+    <ClInclude Include="..\..\Include\Testing\sortingTest.h" />
+    <ClInclude Include="..\..\Include\Testing\TwoLevelGridTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitonicSort.cpp" />
+    <ClCompile Include="BVHManager.cpp" />
+    <ClCompile Include="PrefixSum.cpp" />
+    <ClCompile Include="GeneratedBVHKernelSource.cpp" />
+    <ClCompile Include="GeneratedPrefixSumKernelSource.cpp" />
+    <ClCompile Include="GeneratedSortingKernelSource.cpp" />
+    <ClCompile Include="GeneratedTwoLevelGridKernelSource.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="TwoLevelGridManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCLUtils\OpenCLUtils.vcxproj">
+      <Project>{9a3d363d-80a6-44b3-8326-a8905854b94f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SortKernels.cl">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedSortingKernelSource.cpp OpenCLKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Packing OpenCL source - Sorting Kernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedSortingKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedSortingKernelSource.cpp OpenCLKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Packing OpenCL source - Sorting Kernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedSortingKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BVHKernels.cl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedBVHKernelSource.cpp BVHKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Packing CL Kernels - BVH Kernel</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedBVHKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedBVHKernelSource.cpp BVHKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Packing CL Kernels - BVH Kernel</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedBVHKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="TwoLevelGridKernels.cl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedTwoLevelGridKernelSource.cpp TwoLevelGridKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Packing CL Kernels - TwoLevelGridKernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedTwoLevelGridKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedTwoLevelGridKernelSource.cpp TwoLevelGridKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Packing CL Kernels - TwoLevelGridKernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedTwoLevelGridKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PrefixSumKernels.cl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedPrefixSumKernelSource.cpp PrefixSumKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Packing CL Kernels - Prefix Sum Kernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedPrefixSumKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe %(FullPath) $(ProjectDir)GeneratedPrefixSumKernelSource.cpp PrefixSumKernelSource</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Packing CL Kernels - Prefix Sum Kernels</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedPrefixSumKernelSource.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)..\..\BuildUtils\FileToCStringUtility.exe</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

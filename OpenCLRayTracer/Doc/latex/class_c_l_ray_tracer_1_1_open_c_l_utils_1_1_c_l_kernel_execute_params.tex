@@ -1,0 +1,91 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Kernel\+Execute\+Params Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+
+
+{\ttfamily \#include $<$C\+L\+Execution\+Context.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a3b459bbfe18d2659f172c451a30107a5}{C\+L\+Kernel\+Execute\+Params} (\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} $\ast$global\+WD, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} $\ast$local\+WD, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} $\ast$evt=N\+U\+LL)
+\item 
+void \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a862d87802bc433ac8acf1cd3eeed71d4}{add\+Event\+To\+Wait\+List} (\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} evt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Event} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a8debf260792693a64c01904ed43004c3}{event}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_ae0daedd4a1726c9ffa43b38f8e6c9920}{local\+Work\+Dimension}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_af62889e5fd651360d69ee92e23977bda}{global\+Work\+Dimension}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_aeaddbee87bcc68e36a78b517c8cddbd8}{global\+Work\+Offset}
+\item 
+std\+::vector$<$ cl\+\_\+event $>$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a2319b0deec1732ec481a75d4b188f789}{event\+Wait\+List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class C\+L\+Kernel\+Execution\+Params encapsulates the work dimensions for kernel execution 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!C\+L\+Kernel\+Execute\+Params@{C\+L\+Kernel\+Execute\+Params}}
+\index{C\+L\+Kernel\+Execute\+Params@{C\+L\+Kernel\+Execute\+Params}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{C\+L\+Kernel\+Execute\+Params(\+C\+L\+Kernel\+Work\+Dimension $\ast$global\+W\+D, C\+L\+Kernel\+Work\+Dimension $\ast$local\+W\+D, C\+L\+Event $\ast$evt=\+N\+U\+L\+L)}{CLKernelExecuteParams(CLKernelWorkDimension *globalWD, CLKernelWorkDimension *localWD, CLEvent *evt=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::\+C\+L\+Kernel\+Execute\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+L\+Kernel\+Work\+Dimension} $\ast$}]{global\+WD, }
+\item[{{\bf C\+L\+Kernel\+Work\+Dimension} $\ast$}]{local\+WD, }
+\item[{{\bf C\+L\+Event} $\ast$}]{evt = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a3b459bbfe18d2659f172c451a30107a5}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a3b459bbfe18d2659f172c451a30107a5}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em global\+WD} & Global work dimension \\
+\hline
+{\em local\+WD} & Local work dimension \\
+\hline
+{\em \mbox{[}optional\mbox{]}evt} & Synchronization event associated with kernel execution \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!add\+Event\+To\+Wait\+List@{add\+Event\+To\+Wait\+List}}
+\index{add\+Event\+To\+Wait\+List@{add\+Event\+To\+Wait\+List}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{add\+Event\+To\+Wait\+List(\+C\+L\+Event evt)}{addEventToWaitList(CLEvent evt)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::add\+Event\+To\+Wait\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+L\+Event}}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a862d87802bc433ac8acf1cd3eeed71d4}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a862d87802bc433ac8acf1cd3eeed71d4}
+Adds the input event to event wait list for kernel execution 
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!event@{event}}
+\index{event@{event}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{event}{event}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+Event}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::event}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a8debf260792693a64c01904ed43004c3}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a8debf260792693a64c01904ed43004c3}
+Event object (This class doesn\textquotesingle{}t have ownership on the object) \index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!event\+Wait\+List@{event\+Wait\+List}}
+\index{event\+Wait\+List@{event\+Wait\+List}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{event\+Wait\+List}{eventWaitList}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cl\+\_\+event$>$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::event\+Wait\+List}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a2319b0deec1732ec481a75d4b188f789}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_a2319b0deec1732ec481a75d4b188f789}
+Event wait list for kernel execution \index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!global\+Work\+Dimension@{global\+Work\+Dimension}}
+\index{global\+Work\+Dimension@{global\+Work\+Dimension}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{global\+Work\+Dimension}{globalWorkDimension}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+Kernel\+Work\+Dimension}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::global\+Work\+Dimension}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_af62889e5fd651360d69ee92e23977bda}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_af62889e5fd651360d69ee92e23977bda}
+Global work dimension (This class doesn\textquotesingle{}t have ownership on the object) \index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!global\+Work\+Offset@{global\+Work\+Offset}}
+\index{global\+Work\+Offset@{global\+Work\+Offset}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{global\+Work\+Offset}{globalWorkOffset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+Kernel\+Work\+Dimension}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::global\+Work\+Offset}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_aeaddbee87bcc68e36a78b517c8cddbd8}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_aeaddbee87bcc68e36a78b517c8cddbd8}
+Global work offset (This class doesn\textquotesingle{}t have ownership on the object) \index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}!local\+Work\+Dimension@{local\+Work\+Dimension}}
+\index{local\+Work\+Dimension@{local\+Work\+Dimension}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}}
+\subsubsection[{\texorpdfstring{local\+Work\+Dimension}{localWorkDimension}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+Kernel\+Work\+Dimension}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params\+::local\+Work\+Dimension}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_ae0daedd4a1726c9ffa43b38f8e6c9920}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params_ae0daedd4a1726c9ffa43b38f8e6c9920}
+Local work dimension (This class doesn\textquotesingle{}t have ownership on the object) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_execution_context_8h}{C\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

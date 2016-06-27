@@ -1,0 +1,186 @@
+\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context}{}\section{C\+L\+Ray\+Tracer\+:\+:C\+L\+G\+L\+Interop\+:\+:C\+L\+G\+L\+Execution\+Context Class Reference}
+\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context}\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+
+
+{\ttfamily \#include $<$C\+L\+G\+L\+Execution\+Context.\+h$>$}
+
+Inheritance diagram for C\+L\+Ray\+Tracer\+:\+:C\+L\+G\+L\+Interop\+:\+:C\+L\+G\+L\+Execution\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_af723c8184d47e2a41f72cb2690824121}{C\+L\+G\+L\+Execution\+Context} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_device}{Open\+C\+L\+Utils\+::\+C\+L\+Device} \&device, const cl\+\_\+context\+\_\+properties $\ast$\+\_\+context\+Properties=N\+U\+LL)
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a177101743f53442a579e33864368458a}{$\sim$\+C\+L\+G\+L\+Execution\+Context} ()
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a9168c916f733e28118b0f19acb97573e}{create\+C\+L\+G\+L\+Buffer} (void $\ast$data, size\+\_\+t size, boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_memory_buffer}{C\+L\+G\+L\+Memory\+Buffer} $>$ \&out\+\_\+buffer, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ada8a14d2f88ff743e65242a39536cf5e}{create\+C\+L\+G\+L\+Buffer} (size\+\_\+t size, boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_memory_buffer}{C\+L\+G\+L\+Memory\+Buffer} $>$ \&out\+\_\+buffer, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a6aa0a4371ced825dbf1ad15bc731c344}{enqueue\+Acquire\+G\+L\+Object} (std\+::vector$<$ cl\+\_\+mem $>$ objects, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{Open\+C\+L\+Utils\+::\+C\+L\+Event} \&evt, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab10596b7db9da5e60e095a6d5ed91ce4}{enqueue\+Acquire\+G\+L\+Object} (std\+::vector$<$ cl\+\_\+mem $>$ objects, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a0af4a2fceda62535297fb5b70033826b}{enqueue\+Release\+G\+L\+Object} (std\+::vector$<$ cl\+\_\+mem $>$ objects, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{Open\+C\+L\+Utils\+::\+C\+L\+Event} \&evt, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab127d4b7e70b2e5b8431e6e615003597}{enqueue\+Release\+G\+L\+Object} (std\+::vector$<$ cl\+\_\+mem $>$ objects, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context}{C\+L\+G\+L\+Execution\+Context} Extends C\+L\+Execution\+Context with Open\+C\+L/\+Open\+GL interop functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!C\+L\+G\+L\+Execution\+Context@{C\+L\+G\+L\+Execution\+Context}}
+\index{C\+L\+G\+L\+Execution\+Context@{C\+L\+G\+L\+Execution\+Context}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{C\+L\+G\+L\+Execution\+Context(const Open\+C\+L\+Utils\+::\+C\+L\+Device \&device, const cl\+\_\+context\+\_\+properties $\ast$\+\_\+context\+Properties=\+N\+U\+L\+L)}{CLGLExecutionContext(const OpenCLUtils::CLDevice &device, const cl_context_properties *_contextProperties=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::\+C\+L\+G\+L\+Execution\+Context (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Device} \&}]{device, }
+\item[{const cl\+\_\+context\+\_\+properties $\ast$}]{\+\_\+context\+Properties = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_af723c8184d47e2a41f72cb2690824121}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_af723c8184d47e2a41f72cb2690824121}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em device} & Object that encapsulate the Open\+CL device in use \\
+\hline
+{\em context\+Properties\mbox{[}optional\mbox{]}} & The properties of context to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+class C\+L\+Device 
+
+cl\+\_\+context\+\_\+properties in Open\+CL specification 
+\end{DoxySeeAlso}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!````~C\+L\+G\+L\+Execution\+Context@{$\sim$\+C\+L\+G\+L\+Execution\+Context}}
+\index{````~C\+L\+G\+L\+Execution\+Context@{$\sim$\+C\+L\+G\+L\+Execution\+Context}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+G\+L\+Execution\+Context()}{~CLGLExecutionContext()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::$\sim$\+C\+L\+G\+L\+Execution\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a177101743f53442a579e33864368458a}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a177101743f53442a579e33864368458a}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!create\+C\+L\+G\+L\+Buffer@{create\+C\+L\+G\+L\+Buffer}}
+\index{create\+C\+L\+G\+L\+Buffer@{create\+C\+L\+G\+L\+Buffer}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+C\+L\+G\+L\+Buffer(void $\ast$data, size\+\_\+t size, boost\+::shared\+\_\+ptr$<$ C\+L\+G\+L\+Memory\+Buffer $>$ \&out\+\_\+buffer, Common\+::\+Errata \&err) const }{createCLGLBuffer(void *data, size_t size, boost::shared_ptr< CLGLMemoryBuffer > &out_buffer, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::create\+C\+L\+G\+L\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{size\+\_\+t}]{size, }
+\item[{boost\+::shared\+\_\+ptr$<$ {\bf C\+L\+G\+L\+Memory\+Buffer} $>$ \&}]{out\+\_\+buffer, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a9168c916f733e28118b0f19acb97573e}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a9168c916f733e28118b0f19acb97573e}
+Create Open\+C\+L/\+Open\+GL memory object for inter-\/operation 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em data} & The host data that should be copied to the Open\+G\+L/\+Open\+CL buffer on creation \\
+\hline
+ & {\em size} & Desired size of the buffer \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!create\+C\+L\+G\+L\+Buffer@{create\+C\+L\+G\+L\+Buffer}}
+\index{create\+C\+L\+G\+L\+Buffer@{create\+C\+L\+G\+L\+Buffer}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{create\+C\+L\+G\+L\+Buffer(size\+\_\+t size, boost\+::shared\+\_\+ptr$<$ C\+L\+G\+L\+Memory\+Buffer $>$ \&out\+\_\+buffer, Common\+::\+Errata \&err) const }{createCLGLBuffer(size_t size, boost::shared_ptr< CLGLMemoryBuffer > &out_buffer, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::create\+C\+L\+G\+L\+Buffer (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size, }
+\item[{boost\+::shared\+\_\+ptr$<$ {\bf C\+L\+G\+L\+Memory\+Buffer} $>$ \&}]{out\+\_\+buffer, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ada8a14d2f88ff743e65242a39536cf5e}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ada8a14d2f88ff743e65242a39536cf5e}
+Create Open\+C\+L/\+Open\+GL memory object for inter-\/operation 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em size} & Desired size of the buffer \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!enqueue\+Acquire\+G\+L\+Object@{enqueue\+Acquire\+G\+L\+Object}}
+\index{enqueue\+Acquire\+G\+L\+Object@{enqueue\+Acquire\+G\+L\+Object}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Acquire\+G\+L\+Object(std\+::vector$<$ cl\+\_\+mem $>$ objects, Open\+C\+L\+Utils\+::\+C\+L\+Event \&evt, Common\+::\+Errata \&err) const }{enqueueAcquireGLObject(std::vector< cl_mem > objects, OpenCLUtils::CLEvent &evt, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::enqueue\+Acquire\+G\+L\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cl\+\_\+mem $>$}]{objects, }
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Event} \&}]{evt, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a6aa0a4371ced825dbf1ad15bc731c344}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a6aa0a4371ced825dbf1ad15bc731c344}
+Acquire memory object for use with Open\+CL memory operations 
+\begin{DoxyParams}{Parameters}
+{\em object} & Memory objects list \\
+\hline
+{\em evt} & Events to wait for, before proceeding to this operation \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!enqueue\+Acquire\+G\+L\+Object@{enqueue\+Acquire\+G\+L\+Object}}
+\index{enqueue\+Acquire\+G\+L\+Object@{enqueue\+Acquire\+G\+L\+Object}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Acquire\+G\+L\+Object(std\+::vector$<$ cl\+\_\+mem $>$ objects, Common\+::\+Errata \&err) const }{enqueueAcquireGLObject(std::vector< cl_mem > objects, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::enqueue\+Acquire\+G\+L\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cl\+\_\+mem $>$}]{objects, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab10596b7db9da5e60e095a6d5ed91ce4}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab10596b7db9da5e60e095a6d5ed91ce4}
+Acquire memory object for use with Open\+CL memory operations 
+\begin{DoxyParams}{Parameters}
+{\em object} & Memory objects list \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!enqueue\+Release\+G\+L\+Object@{enqueue\+Release\+G\+L\+Object}}
+\index{enqueue\+Release\+G\+L\+Object@{enqueue\+Release\+G\+L\+Object}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Release\+G\+L\+Object(std\+::vector$<$ cl\+\_\+mem $>$ objects, Open\+C\+L\+Utils\+::\+C\+L\+Event \&evt, Common\+::\+Errata \&err) const }{enqueueReleaseGLObject(std::vector< cl_mem > objects, OpenCLUtils::CLEvent &evt, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::enqueue\+Release\+G\+L\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cl\+\_\+mem $>$}]{objects, }
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Event} \&}]{evt, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a0af4a2fceda62535297fb5b70033826b}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_a0af4a2fceda62535297fb5b70033826b}
+Release memory object for use by Open\+GL 
+\begin{DoxyParams}{Parameters}
+{\em object} & Memory objects list \\
+\hline
+{\em evt} & Events to wait for, before proceeding to this operation \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}!enqueue\+Release\+G\+L\+Object@{enqueue\+Release\+G\+L\+Object}}
+\index{enqueue\+Release\+G\+L\+Object@{enqueue\+Release\+G\+L\+Object}!C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context@{C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context}}
+\subsubsection[{\texorpdfstring{enqueue\+Release\+G\+L\+Object(std\+::vector$<$ cl\+\_\+mem $>$ objects, Common\+::\+Errata \&err) const }{enqueueReleaseGLObject(std::vector< cl_mem > objects, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+C\+L\+G\+L\+Interop\+::\+C\+L\+G\+L\+Execution\+Context\+::enqueue\+Release\+G\+L\+Object (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cl\+\_\+mem $>$}]{objects, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab127d4b7e70b2e5b8431e6e615003597}{}\label{class_c_l_ray_tracer_1_1_c_l_g_l_interop_1_1_c_l_g_l_execution_context_ab127d4b7e70b2e5b8431e6e615003597}
+Release memory object for use by Open\+GL 
+\begin{DoxyParams}{Parameters}
+{\em object} & Memory objects list \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_g_l_execution_context_8h}{C\+L\+G\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

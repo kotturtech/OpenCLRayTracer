@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{81BDD88A-5AB1-47EF-8659-CAB6BC2B130E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCLUtils", "src\OpenCLUtils\OpenCLUtils.vcxproj", "{9A3D363D-80A6-44B3-8326-A8905854B94F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLRayTracerEngine", "src\CLRayTracerEngine\CLRayTracerEngine.vcxproj", "{61C4DA78-D648-47AC-8C29-D692BA60306B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCLRayTracerDemo", "src\Demos\OpenCLRayTracerDemo\OpenCLRayTracerDemo.vcxproj", "{4C4696E7-5CE8-4A55-ACD1-56F658BB6464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A3D363D-80A6-44B3-8326-A8905854B94F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A3D363D-80A6-44B3-8326-A8905854B94F}.Debug|Win32.Build.0 = Debug|Win32
+		{9A3D363D-80A6-44B3-8326-A8905854B94F}.Release|Win32.ActiveCfg = Release|Win32
+		{9A3D363D-80A6-44B3-8326-A8905854B94F}.Release|Win32.Build.0 = Release|Win32
+		{61C4DA78-D648-47AC-8C29-D692BA60306B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61C4DA78-D648-47AC-8C29-D692BA60306B}.Debug|Win32.Build.0 = Debug|Win32
+		{61C4DA78-D648-47AC-8C29-D692BA60306B}.Release|Win32.ActiveCfg = Release|Win32
+		{61C4DA78-D648-47AC-8C29-D692BA60306B}.Release|Win32.Build.0 = Release|Win32
+		{4C4696E7-5CE8-4A55-ACD1-56F658BB6464}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C4696E7-5CE8-4A55-ACD1-56F658BB6464}.Debug|Win32.Build.0 = Debug|Win32
+		{4C4696E7-5CE8-4A55-ACD1-56F658BB6464}.Release|Win32.ActiveCfg = Release|Win32
+		{4C4696E7-5CE8-4A55-ACD1-56F658BB6464}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C4696E7-5CE8-4A55-ACD1-56F658BB6464} = {81BDD88A-5AB1-47EF-8659-CAB6BC2B130E}
+	EndGlobalSection
+EndGlobal

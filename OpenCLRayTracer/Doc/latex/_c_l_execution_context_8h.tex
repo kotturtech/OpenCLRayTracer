@@ -1,0 +1,82 @@
+\hypertarget{_c_l_execution_context_8h}{}\section{Include/\+Open\+C\+L\+Utils/\+C\+L\+Execution\+Context.h File Reference}
+\label{_c_l_execution_context_8h}\index{Include/\+Open\+C\+L\+Utils/\+C\+L\+Execution\+Context.\+h@{Include/\+Open\+C\+L\+Utils/\+C\+L\+Execution\+Context.\+h}}
+{\ttfamily \#include $<$typeinfo$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$C\+L/cl.\+h$>$}\\*
+{\ttfamily \#include $<$boost/smart\+\_\+ptr.\+hpp$>$}\\*
+{\ttfamily \#include $<$Common/\+Errata.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_argument}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Argument}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_event}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Event}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_execute_params}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Execute\+Params}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_l_execution_context_8h_a52177acc0c39c1b1be9ef010a96e842b}{S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS}(kernel, ...)~\{C\+L\+Kernel\+Argument args\mbox{[}$\,$\mbox{]} = \{C\+L\+Kernel\+Argument\+::\+Dummy\+Arg,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+,C\+L\+Kernel\+Argument\+::\+Dummy\+Arg\}; \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Result} res; \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata} err; int \hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i} = 1; while(!(args\mbox{[}\hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i}\mbox{]}.is\+Dummy())) \{ res = kernel.\+set\+Kernel\+Argument(args\mbox{[}\hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i}\mbox{]},\hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i}-\/1,err); if (res != C\+L\+Ray\+Tracer\+::\+Common\+::\+Success) throw new \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_c_l_interface_exception}{C\+L\+Ray\+Tracer\+::\+Common\+::\+C\+L\+Interface\+Exception}(err); \hyperlink{_transform_8h_a6d7dbee382296495a3e23e0441282763}{i}++;\} \}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} \{ {\bfseries Read\+Only}, 
+{\bfseries Write\+Only}, 
+{\bfseries Read\+Write}
+ \}
+\item 
+enum \hyperlink{_c_l_execution_context_8h_a8e119b9b799e2e980fe86c8e6c93cca6}{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Host\+Ptr\+Options} \{ {\bfseries None}, 
+{\bfseries Copy}, 
+{\bfseries Use}, 
+{\bfseries Alloc}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Part of the Open\+CL wrapper framework. The classes expose simplified functionality for compiling Open\+CL programs and executing Open\+CL kernels. 
+
+\subsection{Macro Definition Documentation}
+\index{C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}!S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS@{S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS}}
+\index{S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS@{S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS}!C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS}{SET_KERNEL_ARGS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+A\+R\+GS(
+\begin{DoxyParamCaption}
+\item[{}]{kernel, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\{C\+L\+Kernel\+Argument args\mbox{[}$\,$\mbox{]} = \{C\+L\+Kernel\+Argument\+::\+Dummy\+Arg,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+,C\+L\+Kernel\+Argument\+::\+Dummy\+Arg\}; {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+Result} res; {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata} err; int {\bf i} = 1; while(!(args\mbox{[}{\bf i}\mbox{]}.is\+Dummy())) \{ res = kernel.\+set\+Kernel\+Argument(args\mbox{[}{\bf i}\mbox{]},{\bf i}-\/1,err); if (res != C\+L\+Ray\+Tracer\+::\+Common\+::\+Success) throw new {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+C\+L\+Interface\+Exception}(err); {\bf i}++;\} \}}\hypertarget{_c_l_execution_context_8h_a52177acc0c39c1b1be9ef010a96e842b}{}\label{_c_l_execution_context_8h_a52177acc0c39c1b1be9ef010a96e842b}
+Macro for fast setting of kernel arguments 
+
+\subsection{Enumeration Type Documentation}
+\index{C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}!C\+L\+Buffer\+Access@{C\+L\+Buffer\+Access}}
+\index{C\+L\+Buffer\+Access@{C\+L\+Buffer\+Access}!C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}}
+\subsubsection[{\texorpdfstring{C\+L\+Buffer\+Access}{CLBufferAccess}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access}}\hypertarget{_c_l_execution_context_8h_file_a354d4612d8d46b32eb5ad4a71f35694c}{}\label{_c_l_execution_context_8h_file_a354d4612d8d46b32eb5ad4a71f35694c}
+Enum Access modes for Open\+CL device memory \index{C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}!C\+L\+Buffer\+Host\+Ptr\+Options@{C\+L\+Buffer\+Host\+Ptr\+Options}}
+\index{C\+L\+Buffer\+Host\+Ptr\+Options@{C\+L\+Buffer\+Host\+Ptr\+Options}!C\+L\+Execution\+Context.\+h@{C\+L\+Execution\+Context.\+h}}
+\subsubsection[{\texorpdfstring{C\+L\+Buffer\+Host\+Ptr\+Options}{CLBufferHostPtrOptions}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Host\+Ptr\+Options}}\hypertarget{_c_l_execution_context_8h_file_a8e119b9b799e2e980fe86c8e6c93cca6}{}\label{_c_l_execution_context_8h_file_a8e119b9b799e2e980fe86c8e6c93cca6}
+Enum Host pointer usages for Open\+CL device memory allocation \begin{DoxySeeAlso}{See also}
+Open\+CL Host Pointer usage on Device memory allocation 
+\end{DoxySeeAlso}

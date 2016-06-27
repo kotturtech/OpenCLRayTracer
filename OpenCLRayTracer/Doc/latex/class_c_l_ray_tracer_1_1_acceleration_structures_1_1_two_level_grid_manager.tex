@@ -1,0 +1,228 @@
+\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager}{}\section{C\+L\+Ray\+Tracer\+:\+:Acceleration\+Structures\+:\+:Two\+Level\+Grid\+Manager Class Reference}
+\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager}\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+
+
+{\ttfamily \#include $<$Two\+Level\+Grid\+Manager.\+h$>$}
+
+Inheritance diagram for C\+L\+Ray\+Tracer\+:\+:Acceleration\+Structures\+:\+:Two\+Level\+Grid\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ab91e464f681a2287febdb27674b82d2b}{Two\+Level\+Grid\+Manager} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&context, const \hyperlink{class_c_l_ray_tracer_1_1_scene}{Scene} \&scene)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a98f2e5e78e14ebd09f23304b730d1696}{initialize} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a08dc7569f318a9422d69547331a31f16}{initialize\+Frame} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a21edb29908807e8f2ba8c97d79758e05}{construct} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a6a9f7a79568bfeb475a1ae9e1f88439d}{generate\+Contacts} (\hyperlink{struct_camera}{Camera} \&cam, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a186e22b86431d2b1c0fb92775bf6494b}{generate\+Contacts} (\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&rays, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&contacts, const unsigned int ray\+Count, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+void \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a8781999cec61fa55d570ed5cfcafa9b0}{set\+Top\+Level\+Density} (C\+L\+\_\+\+F\+L\+O\+AT value)
+\item 
+void \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a22293999d15138ef66661198a926d716}{set\+Leaf\+Density} (C\+L\+\_\+\+F\+L\+O\+AT value)
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a91ff6c8c8bf49f0a1c6f474d71bd1f35}{get\+Top\+Level\+Density} () const 
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ae6a04da5ee4f28eb5402499c9055e1c7}{get\+Leaf\+Density} () const 
+\item 
+virtual const boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ac9a677d9c2085971cd4ba758ef4be43c}{get\+Primary\+Contacts} () const 
+\item 
+C\+L\+\_\+\+U\+I\+N\+T3 \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a2dd1f43ec8af99c8a4fc93fcb0cab5dd}{get\+Resolution} () const 
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a26228fa56e267cf336cfe26e1b278f73}{get\+Bounds} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager}{Two\+Level\+Grid\+Manager} -\/ Provides interface for G\+PU implementation of acceleration structure\+: Two Level Grid 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!Two\+Level\+Grid\+Manager@{Two\+Level\+Grid\+Manager}}
+\index{Two\+Level\+Grid\+Manager@{Two\+Level\+Grid\+Manager}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{Two\+Level\+Grid\+Manager(const Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context \&context, const Scene \&scene)}{TwoLevelGridManager(const OpenCLUtils::CLExecutionContext &context, const Scene &scene)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::\+Two\+Level\+Grid\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&}]{context, }
+\item[{const {\bf Scene} \&}]{scene}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ab91e464f681a2287febdb27674b82d2b}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ab91e464f681a2287febdb27674b82d2b}
+Constructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!construct@{construct}}
+\index{construct@{construct}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{construct(\+Common\+::\+Errata \&err)}{construct(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a21edb29908807e8f2ba8c97d79758e05}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a21edb29908807e8f2ba8c97d79758e05}
+Constructs Two-\/\+Level Grid acceleration structure, according to associated scene state 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a29e770ee9fa4febf24f55ecf202d352b}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!generate\+Contacts@{generate\+Contacts}}
+\index{generate\+Contacts@{generate\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Contacts(\+Camera \&cam, Common\+::\+Errata \&err)}{generateContacts(Camera &cam, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::generate\+Contacts (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} \&}]{cam, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a6a9f7a79568bfeb475a1ae9e1f88439d}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a6a9f7a79568bfeb475a1ae9e1f88439d}
+Generates hit data for viewing rays, from the constructed Two-\/\+Level Grid 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_ab94dc605d1cee5c93de253bce69f21ca}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!generate\+Contacts@{generate\+Contacts}}
+\index{generate\+Contacts@{generate\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Contacts(\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer \&rays, Open\+C\+L\+Utils\+::\+C\+L\+Buffer \&contacts, const unsigned int ray\+Count, Common\+::\+Errata \&err)}{generateContacts(OpenCLUtils::CLBuffer &rays, OpenCLUtils::CLBuffer &contacts, const unsigned int rayCount, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::generate\+Contacts (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&}]{rays, }
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&}]{contacts, }
+\item[{const unsigned int}]{ray\+Count, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a186e22b86431d2b1c0fb92775bf6494b}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a186e22b86431d2b1c0fb92775bf6494b}
+Generates contacts for rays and fills the contacts array 
+\begin{DoxyParams}{Parameters}
+{\em rays} & The rays to be traced -\/ A device memory buffer object that contains rays as struct \hyperlink{struct_ray}{Ray} \\
+\hline
+{\em contact} & The target device memory that will contain the result -\/ For each ray rays\mbox{[}i\mbox{]} the buffer will contain data about its closest intersection with object in the scene as contacts\mbox{[}i\mbox{]}. The contact data will be stored as struct \hyperlink{struct_contact}{Contact} \\
+\hline
+{\em ray\+Count} & The number of rays to trace \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_aaa7b1d615a20126278ef27f0a5f3215c}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Bounds() const }{getBounds() const }}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\+A\+BB} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::get\+Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a26228fa56e267cf336cfe26e1b278f73}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a26228fa56e267cf336cfe26e1b278f73}
+Calculates internal grid data for use on G\+PU \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!get\+Leaf\+Density@{get\+Leaf\+Density}}
+\index{get\+Leaf\+Density@{get\+Leaf\+Density}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Leaf\+Density() const }{getLeafDensity() const }}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::get\+Leaf\+Density (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ae6a04da5ee4f28eb5402499c9055e1c7}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ae6a04da5ee4f28eb5402499c9055e1c7}
+Gets the leaf level density parameter of the grid, for leaf level resolution calculation \index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!get\+Primary\+Contacts@{get\+Primary\+Contacts}}
+\index{get\+Primary\+Contacts@{get\+Primary\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Primary\+Contacts() const }{getPrimaryContacts() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const boost\+::shared\+\_\+ptr$<${\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer}$>$ C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::get\+Primary\+Contacts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ac9a677d9c2085971cd4ba758ef4be43c}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_ac9a677d9c2085971cd4ba758ef4be43c}
+Gets the device memory buffer for primary rays -\/ result of generate\+Contacts function 
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_aeaaccc5dde154278325f1596b7bcde31}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!get\+Resolution@{get\+Resolution}}
+\index{get\+Resolution@{get\+Resolution}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Resolution() const }{getResolution() const }}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+U\+I\+N\+T3 C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::get\+Resolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a2dd1f43ec8af99c8a4fc93fcb0cab5dd}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a2dd1f43ec8af99c8a4fc93fcb0cab5dd}
+Calculates grid resolution according to grid properties \begin{DoxyReturn}{Returns}
+Grid resolution 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!get\+Top\+Level\+Density@{get\+Top\+Level\+Density}}
+\index{get\+Top\+Level\+Density@{get\+Top\+Level\+Density}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Top\+Level\+Density() const }{getTopLevelDensity() const }}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::get\+Top\+Level\+Density (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a91ff6c8c8bf49f0a1c6f474d71bd1f35}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a91ff6c8c8bf49f0a1c6f474d71bd1f35}
+Gets the top level density parameter of the grid, for top level resolution calculation \index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{initialize(\+Common\+::\+Errata \&err)}{initialize(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a98f2e5e78e14ebd09f23304b730d1696}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a98f2e5e78e14ebd09f23304b730d1696}
+Performs main initialization of the Two Level Grid structure. This initialization shoud be performed just once per instance. 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a14a5bacd261ea5c3e541ae531a128e4d}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!initialize\+Frame@{initialize\+Frame}}
+\index{initialize\+Frame@{initialize\+Frame}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{initialize\+Frame(\+Common\+::\+Errata \&err)}{initializeFrame(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::initialize\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a08dc7569f318a9422d69547331a31f16}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a08dc7569f318a9422d69547331a31f16}
+Performs initialization of a frame for Two Level Grid acceleration structure This initialization shoud be performed before each frame. Grid property change will take effect only after execution of this function. 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a3707d7588ce68855e6f086022025f1ea}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!set\+Leaf\+Density@{set\+Leaf\+Density}}
+\index{set\+Leaf\+Density@{set\+Leaf\+Density}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Leaf\+Density(\+C\+L\+\_\+\+F\+L\+O\+A\+T value)}{setLeafDensity(CL_FLOAT value)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::set\+Leaf\+Density (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+AT}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a22293999d15138ef66661198a926d716}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a22293999d15138ef66661198a926d716}
+Sets the leaf level density parameter of the grid, for leaf level resolution calculation \index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}!set\+Top\+Level\+Density@{set\+Top\+Level\+Density}}
+\index{set\+Top\+Level\+Density@{set\+Top\+Level\+Density}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Top\+Level\+Density(\+C\+L\+\_\+\+F\+L\+O\+A\+T value)}{setTopLevelDensity(CL_FLOAT value)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Two\+Level\+Grid\+Manager\+::set\+Top\+Level\+Density (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+AT}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a8781999cec61fa55d570ed5cfcafa9b0}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_two_level_grid_manager_a8781999cec61fa55d570ed5cfcafa9b0}
+Sets the top level density parameter of the grid, for top level resolution calculation 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Algorithms/\hyperlink{_two_level_grid_manager_8h}{Two\+Level\+Grid\+Manager.\+h}\end{DoxyCompactItemize}

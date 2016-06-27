@@ -1,0 +1,80 @@
+\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort}{}\section{C\+L\+Ray\+Tracer\+:\+:Common\+:\+:Bitonic\+Sort Class Reference}
+\label{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort}\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}}
+
+
+{\ttfamily \#include $<$Sorting.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_afa3186a254bf1cc88bd5582f1ebc7f07}{Bitonic\+Sort} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&context, const bool use\+Key\+Value)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Result} \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aa83725de0e4456f34f231efa8180adba}{initialize} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Result} \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aef90e35777db561268d214d31104a160}{sort} (cl\+\_\+mem input, size\+\_\+t num\+\_\+items, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Errata} \&err)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort}{Bitonic\+Sort} Provides host interface for G\+PU implementation of Bitonic Sort 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}!Bitonic\+Sort@{Bitonic\+Sort}}
+\index{Bitonic\+Sort@{Bitonic\+Sort}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}}
+\subsubsection[{\texorpdfstring{Bitonic\+Sort(const Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context \&context, const bool use\+Key\+Value)}{BitonicSort(const OpenCLUtils::CLExecutionContext &context, const bool useKeyValue)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort\+::\+Bitonic\+Sort (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&}]{context, }
+\item[{const bool}]{use\+Key\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_afa3186a254bf1cc88bd5582f1ebc7f07}{}\label{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_afa3186a254bf1cc88bd5582f1ebc7f07}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em context} & Open\+CL execution context \\
+\hline
+{\em use\+Key\+Value} & Indicates whether the sorted items are Key/\+Value pairs (C\+L\+\_\+\+U\+I\+N\+T2) or single values (C\+L\+\_\+\+U\+I\+NT) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}}
+\subsubsection[{\texorpdfstring{initialize(\+Errata \&err)}{initialize(Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aa83725de0e4456f34f231efa8180adba}{}\label{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aa83725de0e4456f34f231efa8180adba}
+Initialize Performs initialization of a \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort}{Bitonic\+Sort} instance. Must be called once per instance 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em err} & Error info, in case error occurred \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result, that indicates whether the operation succeeded or failed 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}!sort@{sort}}
+\index{sort@{sort}!C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort@{C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort}}
+\subsubsection[{\texorpdfstring{sort(cl\+\_\+mem input, size\+\_\+t num\+\_\+items, Errata \&err)}{sort(cl_mem input, size_t num_items, Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} C\+L\+Ray\+Tracer\+::\+Common\+::\+Bitonic\+Sort\+::sort (
+\begin{DoxyParamCaption}
+\item[{cl\+\_\+mem}]{input, }
+\item[{size\+\_\+t}]{num\+\_\+items, }
+\item[{{\bf Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aef90e35777db561268d214d31104a160}{}\label{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort_aef90e35777db561268d214d31104a160}
+Sorts the input array 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em input} & Device pointer to array that shoud be sorted \\
+\hline
+ & {\em num\+\_\+items} & Number of items in array to be sorted -\/ Must be power of two \\
+\hline
+\mbox{\tt out}  & {\em err} & Error info, in case error occurred \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result, that indicates whether the operation succeeded or failed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Algorithms/\hyperlink{_sorting_8h}{Sorting.\+h}\end{DoxyCompactItemize}

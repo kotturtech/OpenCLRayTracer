@@ -1,0 +1,553 @@
+\hypertarget{group__g11}{}\section{Scene Primitives}
+\label{group__g11}\index{Scene Primitives@{Scene Primitives}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}
+\item 
+struct \hyperlink{struct_light}{Light}
+\item 
+struct \hyperlink{struct_material}{Material}
+\item 
+struct \hyperlink{struct_sphere}{Sphere}
+\item 
+struct \hyperlink{struct_triangle}{Triangle}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries default\+A\+A\+BB}(aabb)~struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} aabb; fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}0\mbox{]}, F\+L\+T\+\_\+\+M\+AX,F\+L\+T\+\_\+\+M\+AX,F\+L\+T\+\_\+\+M\+AX); fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}1\mbox{]},F\+L\+T\+\_\+\+M\+IN,F\+L\+T\+\_\+\+M\+IN,F\+L\+T\+\_\+\+M\+IN);\hypertarget{group__g11_ga42f3a298a423fab06b0eee40013f0e90}{}\label{group__g11_ga42f3a298a423fab06b0eee40013f0e90}
+
+\item 
+\#define {\bfseries zero\+A\+A\+BB}(aabb)~struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} aabb; fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}0\mbox{]},0.\+0f,0.\+0f,0.\+0f); fill\+Vector3(aabb.\+bounds\mbox{[}1\mbox{]},0.\+0f,0.\+0f,0.\+0f);\hypertarget{group__g11_ga888ef75c65d6f129ae82671475cc058d}{}\label{group__g11_ga888ef75c65d6f129ae82671475cc058d}
+
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+X}(dir)~1.\+0f/(dir).\+x\hypertarget{group__g11_ga4a881913bc1401d50a02aede65d3033a}{}\label{group__g11_ga4a881913bc1401d50a02aede65d3033a}
+
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+Y}(dir)~1.\+0f/(dir).\+y\hypertarget{group__g11_ga8deb96c812cfdb3594118ea54666a9dd}{}\label{group__g11_ga8deb96c812cfdb3594118ea54666a9dd}
+
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+Z}(dir)~1.\+0f/(dir).\+z\hypertarget{group__g11_ga22223b74e9b0687980ff54410a4b7726}{}\label{group__g11_ga22223b74e9b0687980ff54410a4b7726}
+
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0}(a,  b,  fa,  fb)  
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} {\bfseries A\+L\+I\+G\+N\+ED} (16)\hypertarget{group__g11_gab802f98c49419f0ca1fdb8e8f13bafcc}{}\label{group__g11_gab802f98c49419f0ca1fdb8e8f13bafcc}
+
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_ga8627c42e218efdd10747f8b512d25035}{calculate\+Triangle\+A\+A\+BB} (C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 v3)
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_gac2da14ffb4b72e1333d2dd4c473930c6}{merge} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b)
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_ga97d7d3e9ba937b926a2203da642439e5}{merge3} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) c)
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{group__g11_ga0250138cf6d4bb5c915ef6b5abed12ef}{A\+A\+B\+B\+Intersect} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_ga85d0265d7b57d02084d8992c88c061ee}{find\+T\+Range} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)
+\item 
+bool \hyperlink{group__g11_ga5a4fb2271cfab333894518a428bff56f}{is\+Point\+Inside} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 point)
+\item 
+bool {\bfseries A\+A\+B\+B\+Contains} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) container, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) contained)\hypertarget{group__g11_ga2240fe2be1f384a7367a99257cf44599}{}\label{group__g11_ga2240fe2be1f384a7367a99257cf44599}
+
+\item 
+bool \hyperlink{group__g11_ga62fd7d801fbcac08fe1ae521b3aa6807}{A\+A\+B\+B\+Overlaps} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b)
+\item 
+float \hyperlink{group__g11_ga4b47e6b8ba1882a00b7fd38a23472a40}{diagonal\+Length} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+float \hyperlink{group__g11_ga412e039493a87f2567e0e1b183fff568}{box\+Volume} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g11_ga7d7ccd70c8a5cf7752ed34398081c607}{box\+Centroid} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_ga1ffa48cc95c3fa9e290d3adc8338398b}{project\+Triangle} (C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_gaa4001e65e8afe90e90945723654fcefa}{project\+Box} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)
+\item 
+bool {\bfseries plane\+Box\+Overlap} (C\+L\+\_\+\+F\+L\+O\+A\+T3 normal, C\+L\+\_\+\+F\+L\+O\+A\+T3 vert, C\+L\+\_\+\+F\+L\+O\+A\+T3 maxbox)\hypertarget{group__g11_ga6b0993ffac5239684dabe7683a042f66}{}\label{group__g11_ga6b0993ffac5239684dabe7683a042f66}
+
+\item 
+bool \hyperlink{group__g11_ga2b69374423be904cfe32c41bb8c1b75c}{A\+A\+B\+B\+Triangle\+Intersect} (C\+L\+\_\+\+F\+L\+O\+A\+T3 boxcenter, C\+L\+\_\+\+F\+L\+O\+A\+T3 boxhalfsize, C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2)
+\item 
+float \hyperlink{group__g11_gadddf7735ad6bfbc41d484d8d3719b9dd}{light\+Energy\+Percentage} (float distance, float light\+Energy)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T4 \hyperlink{group__g11_ga58f6a1b6a599338c9a6fcb5a6d029bd6}{sphere\+Intersect} (C\+L\+\_\+\+F\+L\+O\+A\+T4 cr, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T4 \hyperlink{group__g11_ga0f8b89073bf883b72ec999c14f4f99d8}{triangle\+Intersect} (V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE vert0, V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE vert1, V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE vert2, C\+L\+\_\+\+F\+L\+O\+A\+T3 orig, C\+L\+\_\+\+F\+L\+O\+A\+T3 dir)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 {\bfseries triangle\+Centroid} (C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2)\hypertarget{group__g11_ga4c33f615dfe1dfb29b97b0979532e20f}{}\label{group__g11_ga4c33f615dfe1dfb29b97b0979532e20f}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g11_gadb5234dc4adddee61354eb8d193da854}{aabb\+Axes} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01}{AXISTEST_X01}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga29ccc0bca4a1d7db1d25200047e12b77}{}\label{group__g11_ga29ccc0bca4a1d7db1d25200047e12b77}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p0 = a*v0.y - b*v0.z;                      \(\backslash\)
+    p2 = a*v2.y - b*v2.z;                      \(\backslash\)
+    minimum = min(p0,p2);                      \(\backslash\)
+    maximum = max(p0,p2);                      \(\backslash\)
+    rad = fa * boxhalfsize.y + fb * boxhalfsize.z;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2}{AXISTEST_X2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga17da432ed013b72e9a5826483c5e31d5}{}\label{group__g11_ga17da432ed013b72e9a5826483c5e31d5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p0 = a*v0.y - b*v0.z;                      \(\backslash\)
+    p1 = a*v1.y - b*v1.z;                      \(\backslash\)
+    minimum = min(p0,p1);                      \(\backslash\)
+    maximum = max(p0,p1);                      \(\backslash\)
+    rad = fa * boxhalfsize.y + fb * boxhalfsize.z;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02}{AXISTEST_Y02}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga75b3344ed1ccc12b6b8f76c61c6ebe40}{}\label{group__g11_ga75b3344ed1ccc12b6b8f76c61c6ebe40}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p0 = -a*v0.x + b*v0.z;                     \(\backslash\)
+    p2 = -a*v2.x + b*v2.z;                     \(\backslash\)
+    minimum = min(p0,p2);                      \(\backslash\)
+    maximum = max(p0,p2);                      \(\backslash\)
+    rad = fa * boxhalfsize.x + fb * boxhalfsize.z;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1}{AXISTEST_Y1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga9e587494a9cc817f7ed4a1a3a3beb2b7}{}\label{group__g11_ga9e587494a9cc817f7ed4a1a3a3beb2b7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p0 = -a*v0.x + b*v0.z;                     \(\backslash\)
+    p1 = -a*v1.x + b*v1.z;                     \(\backslash\)
+    minimum = min(p0,p1);                      \(\backslash\)
+    maximum = max(p0,p1);                      \(\backslash\)
+    rad = fa * boxhalfsize.x + fb * boxhalfsize.z;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0}{AXISTEST_Z0}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_gadb0c4114aa243c389a660ec7606c64c2}{}\label{group__g11_gadb0c4114aa243c389a660ec7606c64c2}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p0 = a*v0.x - b*v0.y;                  \(\backslash\)
+    p1 = a*v1.x - b*v1.y;                  \(\backslash\)
+    minimum = min(p0,p1);                  \(\backslash\)
+    maximum = max(p0,p1);                  \(\backslash\)
+    rad = fa * boxhalfsize.x + fb * boxhalfsize.y;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+\index{Scene Primitives@{Scene Primitives}!A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12}}
+\index{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12@{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12}{AXISTEST_Z12}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{fa, }
+\item[{}]{fb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_gace1b504257f5d37c359b6ca0261666e9}{}\label{group__g11_gace1b504257f5d37c359b6ca0261666e9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+p1 = a*v1.x - b*v1.y;                      \(\backslash\)
+    p2 = a*v2.x - b*v2.y;                      \(\backslash\)
+    minimum = min(p1,p2);                      \(\backslash\)
+    maximum = max(p1,p2);                      \(\backslash\)
+    rad = fa * boxhalfsize.x + fb * boxhalfsize.y;   \(\backslash\)
+    yesNoFlag = yesNoFlag && (minimum <= rad && maximum >= -rad);
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{Scene Primitives@{Scene Primitives}!A\+A\+B\+B\+Intersect@{A\+A\+B\+B\+Intersect}}
+\index{A\+A\+B\+B\+Intersect@{A\+A\+B\+B\+Intersect}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Intersect(const R\+E\+F(struct A\+A\+B\+B) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)}{AABBIntersect(const REF(struct AABB) aabb, CL_FLOAT3 ro, CL_FLOAT3 rd)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+AT A\+A\+B\+B\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const R\+EF(struct {\bf A\+A\+BB})}]{aabb, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{ro, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{rd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga0250138cf6d4bb5c915ef6b5abed12ef}{}\label{group__g11_ga0250138cf6d4bb5c915ef6b5abed12ef}
+Finds an intersection between ray and \hyperlink{struct_a_a_b_b}{A\+A\+BB} 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & The box to intersect \\
+\hline
+{\em ro} & \hyperlink{struct_ray}{Ray} Origin \\
+\hline
+{\em rd} & \hyperlink{struct_ray}{Ray} Direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{struct_ray}{Ray} parameter t, at which the intersection occurs, or 0 in case no intersection found 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!A\+A\+B\+B\+Overlaps@{A\+A\+B\+B\+Overlaps}}
+\index{A\+A\+B\+B\+Overlaps@{A\+A\+B\+B\+Overlaps}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Overlaps(\+R\+E\+F(struct A\+A\+B\+B) a, R\+E\+F(struct A\+A\+B\+B) b)}{AABBOverlaps(REF(struct AABB) a, REF(struct AABB) b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Overlaps (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{a, }
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga62fd7d801fbcac08fe1ae521b3aa6807}{}\label{group__g11_ga62fd7d801fbcac08fe1ae521b3aa6807}
+Determines if two \hyperlink{struct_a_a_b_b}{A\+A\+BB} overlap 
+\begin{DoxyParams}{Parameters}
+{\em a} & Box one \\
+\hline
+{\em b} & Box two \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true whenever boxes a and b overlap, otherwise false 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!A\+A\+B\+B\+Triangle\+Intersect@{A\+A\+B\+B\+Triangle\+Intersect}}
+\index{A\+A\+B\+B\+Triangle\+Intersect@{A\+A\+B\+B\+Triangle\+Intersect}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{A\+A\+B\+B\+Triangle\+Intersect(\+C\+L\+\_\+\+F\+L\+O\+A\+T3 boxcenter, C\+L\+\_\+\+F\+L\+O\+A\+T3 boxhalfsize, C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2)}{AABBTriangleIntersect(CL_FLOAT3 boxcenter, CL_FLOAT3 boxhalfsize, CL_FLOAT3 v0, CL_FLOAT3 v1, CL_FLOAT3 v2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+A\+B\+B\+Triangle\+Intersect (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{boxcenter, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{boxhalfsize, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v0, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v1, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga2b69374423be904cfe32c41bb8c1b75c}{}\label{group__g11_ga2b69374423be904cfe32c41bb8c1b75c}
+Determine whether a triangle and a box intersect 
+\begin{DoxyParams}{Parameters}
+{\em boxcenter} & -\/ The center of the box to test \\
+\hline
+{\em halfsize} & -\/ The half-\/size of the box to test \\
+\hline
+{\em v0} & First vertex of the triangle \\
+\hline
+{\em v1} & Second vertex of the triangle \\
+\hline
+{\em v2} & Third vertex of the triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if box and triangle do intersect 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!box\+Centroid@{box\+Centroid}}
+\index{box\+Centroid@{box\+Centroid}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{box\+Centroid(\+R\+E\+F(struct A\+A\+B\+B) aabb)}{boxCentroid(REF(struct AABB) aabb)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T3 box\+Centroid (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{aabb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga7d7ccd70c8a5cf7752ed34398081c607}{}\label{group__g11_ga7d7ccd70c8a5cf7752ed34398081c607}
+Calculates centroid of \hyperlink{struct_a_a_b_b}{A\+A\+BB} 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & Box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Centroid of the input box 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!box\+Volume@{box\+Volume}}
+\index{box\+Volume@{box\+Volume}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{box\+Volume(\+R\+E\+F(struct A\+A\+B\+B) aabb)}{boxVolume(REF(struct AABB) aabb)}}]{\setlength{\rightskip}{0pt plus 5cm}float box\+Volume (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{aabb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga412e039493a87f2567e0e1b183fff568}{}\label{group__g11_ga412e039493a87f2567e0e1b183fff568}
+Calculates volume of \hyperlink{struct_a_a_b_b}{A\+A\+BB} 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & Box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Volume of the input box 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!calculate\+Triangle\+A\+A\+BB@{calculate\+Triangle\+A\+A\+BB}}
+\index{calculate\+Triangle\+A\+A\+BB@{calculate\+Triangle\+A\+A\+BB}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{calculate\+Triangle\+A\+A\+B\+B(\+C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 v3)}{calculateTriangleAABB(CL_FLOAT3 v1, CL_FLOAT3 v2, CL_FLOAT3 v3)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\+A\+BB} calculate\+Triangle\+A\+A\+BB (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v1, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v2, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v3}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga8627c42e218efdd10747f8b512d25035}{}\label{group__g11_ga8627c42e218efdd10747f8b512d25035}
+Calculates bounding box of a triangle 
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vertex 1 \\
+\hline
+{\em v2} & Vertex 2 \\
+\hline
+{\em v3} & Vertex 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bounding box of a triangle defined by input vertices 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!diagonal\+Length@{diagonal\+Length}}
+\index{diagonal\+Length@{diagonal\+Length}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{diagonal\+Length(\+R\+E\+F(struct A\+A\+B\+B) aabb)}{diagonalLength(REF(struct AABB) aabb)}}]{\setlength{\rightskip}{0pt plus 5cm}float diagonal\+Length (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{aabb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga4b47e6b8ba1882a00b7fd38a23472a40}{}\label{group__g11_ga4b47e6b8ba1882a00b7fd38a23472a40}
+Calculates diagonal length of \hyperlink{struct_a_a_b_b}{A\+A\+BB} 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & Box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Diagonal length of the input box 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!find\+T\+Range@{find\+T\+Range}}
+\index{find\+T\+Range@{find\+T\+Range}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{find\+T\+Range(const R\+E\+F(struct A\+A\+B\+B) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)}{findTRange(const REF(struct AABB) aabb, CL_FLOAT3 ro, CL_FLOAT3 rd)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T2 find\+T\+Range (
+\begin{DoxyParamCaption}
+\item[{const R\+EF(struct {\bf A\+A\+BB})}]{aabb, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{ro, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{rd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga85d0265d7b57d02084d8992c88c061ee}{}\label{group__g11_ga85d0265d7b57d02084d8992c88c061ee}
+Finds entry and exit values of ray parameter t, at which the ray enters and exits the box 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & The box to intersect \\
+\hline
+{\em ro} & \hyperlink{struct_ray}{Ray} Origin \\
+\hline
+{\em rd} & \hyperlink{struct_ray}{Ray} Direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entry and exit values of ray parameter t. In case no intersection found, \mbox{[}0,0\mbox{]} will be returned 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!is\+Point\+Inside@{is\+Point\+Inside}}
+\index{is\+Point\+Inside@{is\+Point\+Inside}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{is\+Point\+Inside(const R\+E\+F(struct A\+A\+B\+B) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 point)}{isPointInside(const REF(struct AABB) aabb, CL_FLOAT3 point)}}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+Point\+Inside (
+\begin{DoxyParamCaption}
+\item[{const R\+EF(struct {\bf A\+A\+BB})}]{aabb, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga5a4fb2271cfab333894518a428bff56f}{}\label{group__g11_ga5a4fb2271cfab333894518a428bff56f}
+Determines whether a point is inside \hyperlink{struct_a_a_b_b}{A\+A\+BB} 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & The box to test \\
+\hline
+{\em point} & The point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if point is inside the \hyperlink{struct_a_a_b_b}{A\+A\+BB}, false otherwise 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!light\+Energy\+Percentage@{light\+Energy\+Percentage}}
+\index{light\+Energy\+Percentage@{light\+Energy\+Percentage}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{light\+Energy\+Percentage(float distance, float light\+Energy)}{lightEnergyPercentage(float distance, float lightEnergy)}}]{\setlength{\rightskip}{0pt plus 5cm}float light\+Energy\+Percentage (
+\begin{DoxyParamCaption}
+\item[{float}]{distance, }
+\item[{float}]{light\+Energy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_gadddf7735ad6bfbc41d484d8d3719b9dd}{}\label{group__g11_gadddf7735ad6bfbc41d484d8d3719b9dd}
+Calculates bounding box of a triangle 
+\begin{DoxyParams}{Parameters}
+{\em distance} & -\/ The distance to light \\
+\hline
+{\em light\+Energy} & -\/ The energy of a light source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns percentage of light energy at given distance 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!merge@{merge}}
+\index{merge@{merge}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{merge(\+R\+E\+F(struct A\+A\+B\+B) a, R\+E\+F(struct A\+A\+B\+B) b)}{merge(REF(struct AABB) a, REF(struct AABB) b)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\+A\+BB} merge (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{a, }
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_gac2da14ffb4b72e1333d2dd4c473930c6}{}\label{group__g11_gac2da14ffb4b72e1333d2dd4c473930c6}
+Calculate union of two bounding boxes 
+\begin{DoxyParams}{Parameters}
+{\em a} & Box a \\
+\hline
+{\em b} & Box b \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Union of bounding boxes 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!merge3@{merge3}}
+\index{merge3@{merge3}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{merge3(\+R\+E\+F(struct A\+A\+B\+B) a, R\+E\+F(struct A\+A\+B\+B) b, R\+E\+F(struct A\+A\+B\+B) c)}{merge3(REF(struct AABB) a, REF(struct AABB) b, REF(struct AABB) c)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\+A\+BB} merge3 (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{a, }
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{b, }
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__g11_ga97d7d3e9ba937b926a2203da642439e5}{}\label{group__g11_ga97d7d3e9ba937b926a2203da642439e5}
+Calculate union of three bounding boxes 
+\begin{DoxyParams}{Parameters}
+{\em a} & Box a \\
+\hline
+{\em b} & Box b \\
+\hline
+{\em c} & Box c \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Union of bounding boxes 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!project\+Box@{project\+Box}}
+\index{project\+Box@{project\+Box}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{project\+Box(\+R\+E\+F(struct A\+A\+B\+B) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)}{projectBox(REF(struct AABB) aabb, CL_FLOAT3 axis)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T2 project\+Box (
+\begin{DoxyParamCaption}
+\item[{R\+EF(struct {\bf A\+A\+BB})}]{aabb, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_gaa4001e65e8afe90e90945723654fcefa}{}\label{group__g11_gaa4001e65e8afe90e90945723654fcefa}
+Projects box on an axis 
+\begin{DoxyParams}{Parameters}
+{\em aabb} & Box to project \\
+\hline
+{\em axis} & Axis on which the boxe should be projected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range along the input axis, which is a projection of the box on that axis 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!project\+Triangle@{project\+Triangle}}
+\index{project\+Triangle@{project\+Triangle}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{project\+Triangle(\+C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)}{projectTriangle(CL_FLOAT3 v0, CL_FLOAT3 v1, CL_FLOAT3 v2, CL_FLOAT3 axis)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T2 project\+Triangle (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v0, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v1, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{v2, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga1ffa48cc95c3fa9e290d3adc8338398b}{}\label{group__g11_ga1ffa48cc95c3fa9e290d3adc8338398b}
+Projects triangle on an axis 
+\begin{DoxyParams}{Parameters}
+{\em v0} & Vertex one \\
+\hline
+{\em v1} & Vertex two \\
+\hline
+{\em v2} & Vertex three \\
+\hline
+{\em axis} & Axis on which the triangle should be projected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range along the input axis, which is a projection of the triangle on that axis 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!sphere\+Intersect@{sphere\+Intersect}}
+\index{sphere\+Intersect@{sphere\+Intersect}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{sphere\+Intersect(\+C\+L\+\_\+\+F\+L\+O\+A\+T4 cr, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)}{sphereIntersect(CL_FLOAT4 cr, CL_FLOAT3 ro, CL_FLOAT3 rd)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T4 sphere\+Intersect (
+\begin{DoxyParamCaption}
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T4}]{cr, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{ro, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{rd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga58f6a1b6a599338c9a6fcb5a6d029bd6}{}\label{group__g11_ga58f6a1b6a599338c9a6fcb5a6d029bd6}
+Calculates intersection data between ray and sphere 
+\begin{DoxyParams}{Parameters}
+{\em cr} & \hyperlink{struct_sphere}{Sphere} center and radius \\
+\hline
+{\em ro} & \hyperlink{struct_ray}{Ray} Origin \\
+\hline
+{\em rd} & \hyperlink{struct_ray}{Ray} Direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+In case ray intersects the sphere\+: \hyperlink{struct_contact}{Contact} normal (x,y,x) and ray parameter t (w) at which the intersection occur. In case there is no intersection w component of the result will be 0. 
+\end{DoxyReturn}
+\index{Scene Primitives@{Scene Primitives}!triangle\+Intersect@{triangle\+Intersect}}
+\index{triangle\+Intersect@{triangle\+Intersect}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{triangle\+Intersect(\+V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+P\+E vert0, V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+P\+E vert1, V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+P\+E vert2, C\+L\+\_\+\+F\+L\+O\+A\+T3 orig, C\+L\+\_\+\+F\+L\+O\+A\+T3 dir)}{triangleIntersect(VERTEX_TYPE vert0, VERTEX_TYPE vert1, VERTEX_TYPE vert2, CL_FLOAT3 orig, CL_FLOAT3 dir)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T4 triangle\+Intersect (
+\begin{DoxyParamCaption}
+\item[{V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}]{vert0, }
+\item[{V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}]{vert1, }
+\item[{V\+E\+R\+T\+E\+X\+\_\+\+T\+Y\+PE}]{vert2, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{orig, }
+\item[{C\+L\+\_\+\+F\+L\+O\+A\+T3}]{dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__g11_ga0f8b89073bf883b72ec999c14f4f99d8}{}\label{group__g11_ga0f8b89073bf883b72ec999c14f4f99d8}
+Calculates intersection data between ray and triangle  Concept adapted from\+: \href{http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/raytri/raytri.c}{\tt http\+://fileadmin.\+cs.\+lth.\+se/cs/\+Personal/\+Tomas\+\_\+\+Akenine-\/\+Moller/raytri/raytri.\+c} 
+\begin{DoxyParams}{Parameters}
+{\em vert0} & First vertex of triangle \\
+\hline
+{\em vert1} & Second vertex of triangle \\
+\hline
+{\em vert2} & Third vertex of triangle \\
+\hline
+{\em orig} & \hyperlink{struct_ray}{Ray} Origin \\
+\hline
+{\em dir} & \hyperlink{struct_ray}{Ray} Direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+In case ray intersects the triangle\+: \hyperlink{struct_contact}{Contact} normal (x,y,x) and ray parameter t (w) at which the intersection occur. In case there is no intersection w component of the result will be 0. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{Scene Primitives@{Scene Primitives}!aabb\+Axes@{aabb\+Axes}}
+\index{aabb\+Axes@{aabb\+Axes}!Scene Primitives@{Scene Primitives}}
+\subsubsection[{\texorpdfstring{aabb\+Axes}{aabbAxes}}]{\setlength{\rightskip}{0pt plus 5cm}const C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT C\+L\+\_\+\+F\+L\+O\+A\+T3 aabb\+Axes\mbox{[}3\mbox{]}}\hypertarget{group__g11_gadb5234dc4adddee61354eb8d193da854}{}\label{group__g11_gadb5234dc4adddee61354eb8d193da854}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+                                \{1.0f,0.0f,0.0f\},
+                                \{0.0f,1.0f,0.0f\},
+                                \{0.0f,0.0f,1.0f\} 
+                              \}
+\end{DoxyCode}
+Array of unit vectors that correspond to principal axes\+: Vector at index 0 -\/ Parallel to X axis, vector at index 1 -\/ Parallel to Y axis, and vector at index 2 -\/ Parallel to Z axis 

@@ -1,0 +1,215 @@
+\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager}{}\section{C\+L\+Ray\+Tracer\+:\+:Acceleration\+Structures\+:\+:B\+V\+H\+Manager Class Reference}
+\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager}\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+
+
+{\ttfamily \#include $<$B\+V\+H\+Manager.\+h$>$}
+
+Inheritance diagram for C\+L\+Ray\+Tracer\+:\+:Acceleration\+Structures\+:\+:B\+V\+H\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a44c7d81fb8a8fbf07208219261233bf5}{B\+V\+H\+Manager} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&context, const \hyperlink{class_c_l_ray_tracer_1_1_scene}{Scene} \&scene)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aa84f753d471803ed8d7df36ecd384d3b}{initialize} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a120b66507840a4e9b162ad4b3d863514}{initialize\+Frame} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a291018a731286a7f0d486b1cfc20bcdc}{construct} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_acd5ef0664268cb587c5099b0994773a3}{generate\+Contacts} (\hyperlink{struct_camera}{Camera} \&cam, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a632bf0cb2fdf48ce3f04b16a4f64e615}{generate\+Contacts} (\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&rays, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&contacts, const unsigned int ray\+Count, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+virtual const boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aedde0f4455f69e2b7854b1aae0e3583b}{get\+Primary\+Contacts} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries \+\_\+morton\+Buffer\+Items}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0860ba563afc7145e63b96657372f448}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0860ba563afc7145e63b96657372f448}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries \+\_\+device\+Local\+Memory}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aafff3e0424c27db3cad4e90153459a1b}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aafff3e0424c27db3cad4e90153459a1b}
+
+\item 
+C\+L\+\_\+\+U\+I\+NT {\bfseries \+\_\+bvh\+Leaves\+Count}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a26cbdacbf7d0be22160438df6dcf5616}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a26cbdacbf7d0be22160438df6dcf5616}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_bitonic_sort}{Common\+::\+Bitonic\+Sort} $>$ {\bfseries \+\_\+bitonic\+Sorter}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a687c33b2d71e8b5e5bcbface128b5719}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a687c33b2d71e8b5e5bcbface128b5719}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ {\bfseries \+\_\+bvh\+Nodes}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a9ea330778738a1e467c234e5c04edd9d}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a9ea330778738a1e467c234e5c04edd9d}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ {\bfseries \+\_\+sorted\+Morton\+Codes}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aa1dbd2e89b8079f7ba8c82030f1f338d}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aa1dbd2e89b8079f7ba8c82030f1f338d}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ {\bfseries \+\_\+node\+Visit\+Counters}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ace735a73db08ade00aca02fc4f85de83}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ace735a73db08ade00aca02fc4f85de83}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ {\bfseries \+\_\+primary\+Contacts\+Array}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aaee13b21f30e03f10cd686a8522fdbf9}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aaee13b21f30e03f10cd686a8522fdbf9}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{Open\+C\+L\+Utils\+::\+C\+L\+Buffer} $>$ {\bfseries \+\_\+device\+Camera}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ab04c1e2bdc5f2431ebf11730ab175570}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ab04c1e2bdc5f2431ebf11730ab175570}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program}{Open\+C\+L\+Utils\+::\+C\+L\+Program} $>$ {\bfseries \+\_\+bvh\+Program}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a5b3813130c50e428c4e3d482e2c78736}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a5b3813130c50e428c4e3d482e2c78736}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{Open\+C\+L\+Utils\+::\+C\+L\+Kernel} $>$ {\bfseries \+\_\+morton\+Calc\+Kernel}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a45d2f052bcd80fd4a8f0c3d56fe0e96d}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a45d2f052bcd80fd4a8f0c3d56fe0e96d}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{Open\+C\+L\+Utils\+::\+C\+L\+Kernel} $>$ {\bfseries \+\_\+radix\+Tree\+Build\+Kernel}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ad10eceea8e568086444e8a805c971ff8}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_ad10eceea8e568086444e8a805c971ff8}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{Open\+C\+L\+Utils\+::\+C\+L\+Kernel} $>$ {\bfseries \+\_\+bb\+Calc\+Kernel}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0f8da82584c796cda7c3d29cca9df485}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0f8da82584c796cda7c3d29cca9df485}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{Open\+C\+L\+Utils\+::\+C\+L\+Kernel} $>$ {\bfseries \+\_\+contact\+Generate\+Kernel}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0171f2a54bc88e68feb34d0a09548462}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a0171f2a54bc88e68feb34d0a09548462}
+
+\item 
+boost\+::shared\+\_\+ptr$<$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{Open\+C\+L\+Utils\+::\+C\+L\+Kernel} $>$ {\bfseries \+\_\+contact\+Generate\+Kernel2}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aac462ea62721df4ac8266cc5ca24353d}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aac462ea62721df4ac8266cc5ca24353d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager}{B\+V\+H\+Manager} -\/ The host interface to G\+PU implementation of B\+VH 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!B\+V\+H\+Manager@{B\+V\+H\+Manager}}
+\index{B\+V\+H\+Manager@{B\+V\+H\+Manager}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{B\+V\+H\+Manager(const Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context \&context, const Scene \&scene)}{BVHManager(const OpenCLUtils::CLExecutionContext &context, const Scene &scene)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::\+B\+V\+H\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&}]{context, }
+\item[{const {\bf Scene} \&}]{scene}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a44c7d81fb8a8fbf07208219261233bf5}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a44c7d81fb8a8fbf07208219261233bf5}
+Constructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!construct@{construct}}
+\index{construct@{construct}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{construct(\+Common\+::\+Errata \&err)}{construct(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a291018a731286a7f0d486b1cfc20bcdc}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a291018a731286a7f0d486b1cfc20bcdc}
+Constructs B\+VH acceleration structure, according to associated scene state 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a29e770ee9fa4febf24f55ecf202d352b}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!generate\+Contacts@{generate\+Contacts}}
+\index{generate\+Contacts@{generate\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Contacts(\+Camera \&cam, Common\+::\+Errata \&err)}{generateContacts(Camera &cam, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::generate\+Contacts (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} \&}]{cam, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_acd5ef0664268cb587c5099b0994773a3}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_acd5ef0664268cb587c5099b0994773a3}
+Generates hit data for viewing rays, from the constructed B\+VH 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_ab94dc605d1cee5c93de253bce69f21ca}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!generate\+Contacts@{generate\+Contacts}}
+\index{generate\+Contacts@{generate\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{generate\+Contacts(\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer \&rays, Open\+C\+L\+Utils\+::\+C\+L\+Buffer \&contacts, const unsigned int ray\+Count, Common\+::\+Errata \&err)}{generateContacts(OpenCLUtils::CLBuffer &rays, OpenCLUtils::CLBuffer &contacts, const unsigned int rayCount, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::generate\+Contacts (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&}]{rays, }
+\item[{{\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer} \&}]{contacts, }
+\item[{const unsigned int}]{ray\+Count, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a632bf0cb2fdf48ce3f04b16a4f64e615}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a632bf0cb2fdf48ce3f04b16a4f64e615}
+Generates contacts for rays and fills the contacts array 
+\begin{DoxyParams}{Parameters}
+{\em rays} & The rays to be traced -\/ A device memory buffer object that contains rays as struct \hyperlink{struct_ray}{Ray} \\
+\hline
+{\em contact} & The target device memory that will contain the result -\/ For each ray rays\mbox{[}i\mbox{]} the buffer will contain data about its closest intersection with object in the scene as contacts\mbox{[}i\mbox{]}. The contact data will be stored as struct \hyperlink{struct_contact}{Contact} \\
+\hline
+{\em ray\+Count} & The number of rays to trace \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_aaa7b1d615a20126278ef27f0a5f3215c}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!get\+Primary\+Contacts@{get\+Primary\+Contacts}}
+\index{get\+Primary\+Contacts@{get\+Primary\+Contacts}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Primary\+Contacts() const }{getPrimaryContacts() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const boost\+::shared\+\_\+ptr$<${\bf Open\+C\+L\+Utils\+::\+C\+L\+Buffer}$>$ C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::get\+Primary\+Contacts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aedde0f4455f69e2b7854b1aae0e3583b}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aedde0f4455f69e2b7854b1aae0e3583b}
+Retrieves the buffer of contacts that were the result of generate\+Contacts functions above 
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_aeaaccc5dde154278325f1596b7bcde31}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{initialize(\+Common\+::\+Errata \&err)}{initialize(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aa84f753d471803ed8d7df36ecd384d3b}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_aa84f753d471803ed8d7df36ecd384d3b}
+Performs main initialization of the B\+VH structure. This initialization shoud be performed just once per instance. 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a14a5bacd261ea5c3e541ae531a128e4d}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+\index{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}!initialize\+Frame@{initialize\+Frame}}
+\index{initialize\+Frame@{initialize\+Frame}!C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager@{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager}}
+\subsubsection[{\texorpdfstring{initialize\+Frame(\+Common\+::\+Errata \&err)}{initializeFrame(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+B\+V\+H\+Manager\+::initialize\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a120b66507840a4e9b162ad4b3d863514}{}\label{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_b_v_h_manager_a120b66507840a4e9b162ad4b3d863514}
+Performs initialization of a frame for B\+VH acceleration structure This initialization shoud be performed before each frame. 
+\begin{DoxyParams}{Parameters}
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_c_l_ray_tracer_1_1_acceleration_structures_1_1_acceleration_structure_manager_a3707d7588ce68855e6f086022025f1ea}{C\+L\+Ray\+Tracer\+::\+Acceleration\+Structures\+::\+Acceleration\+Structure\+Manager}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Algorithms/\hyperlink{_b_v_h_manager_8h}{B\+V\+H\+Manager.\+h}\end{DoxyCompactItemize}

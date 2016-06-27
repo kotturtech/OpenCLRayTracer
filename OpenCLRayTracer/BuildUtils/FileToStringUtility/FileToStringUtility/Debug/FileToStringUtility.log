@@ -1,0 +1,14 @@
+﻿Build started 02/03/2016 10:22:33.
+     1>Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\FileToStringUtility\FileToStringUtility.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Visual Studio 2012\VC\bin\CL.exe /c /I"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\Libs\Boost\boost_1_59_0" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FileToStringUtility.cpp
+         FileToStringUtility.cpp
+       Link:
+         E:\Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\Debug\FileToStringUtility.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\Debug\FileToStringUtility.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\Debug\FileToStringUtility.lib" /MACHINE:X86 Debug\FileToStringUtility.obj
+         Debug\stdafx.obj
+         FileToStringUtility.vcxproj -> E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\Debug\FileToStringUtility.exe
+     1>Done Building Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\FileToStringUtility\FileToStringUtility\FileToStringUtility.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.30

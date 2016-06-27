@@ -1,0 +1,155 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Program Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+
+
+{\ttfamily \#include $<$C\+L\+Execution\+Context.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aea0f85e2bbe14154ef35e76a0b2d4bfc}{C\+L\+Program} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{C\+L\+Execution\+Context} \&context)
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ad6635a77afc39084c1121976bf56dc30}{$\sim$\+C\+L\+Program} ()
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a5ca4ca6e15831c1a15288d15c6fc468f}{load\+And\+Compile} (const std\+::string \&file\+Name, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae5d8b838fbbd1634cab210aa8f0ac4f3}{load\+And\+Compile} (const std\+::string \&file\+Name, const std\+::string \&compiler\+Params, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae89ea8f8a4183e82b8378f6239c4cdc1}{compile} (const std\+::string \&kernel\+Str, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a55d7feb88a44ccc9e75ada4a570e2660}{compile} (const std\+::string \&kernel\+Str, const std\+::string \&compiler\+Params, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aa965656025b0b514a8d23d08a306539a}{get\+Kernel} (const std\+::string \&kernel\+Name, \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel}{C\+L\+Kernel} $\ast$\&kernel\+Obj, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program}{C\+L\+Program} encapsulates Open\+CL program -\/ A compiled Open\+CL object that may contain multiple kernels 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!C\+L\+Program@{C\+L\+Program}}
+\index{C\+L\+Program@{C\+L\+Program}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{C\+L\+Program(const C\+L\+Execution\+Context \&context)}{CLProgram(const CLExecutionContext &context)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::\+C\+L\+Program (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Execution\+Context} \&}]{context}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aea0f85e2bbe14154ef35e76a0b2d4bfc}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aea0f85e2bbe14154ef35e76a0b2d4bfc}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em context} & Open\+CL execution context \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!````~C\+L\+Program@{$\sim$\+C\+L\+Program}}
+\index{````~C\+L\+Program@{$\sim$\+C\+L\+Program}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+Program()}{~CLProgram()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::$\sim$\+C\+L\+Program (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ad6635a77afc39084c1121976bf56dc30}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ad6635a77afc39084c1121976bf56dc30}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!compile@{compile}}
+\index{compile@{compile}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{compile(const std\+::string \&kernel\+Str, Common\+::\+Errata \&err)}{compile(const std::string &kernelStr, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::compile (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{kernel\+Str, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae89ea8f8a4183e82b8378f6239c4cdc1}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae89ea8f8a4183e82b8378f6239c4cdc1}
+Compiles program stored in a string. Creates a log file in case error occurred. 
+\begin{DoxyParams}{Parameters}
+{\em kernel\+Str} & the string that contains the program \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!compile@{compile}}
+\index{compile@{compile}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{compile(const std\+::string \&kernel\+Str, const std\+::string \&compiler\+Params, Common\+::\+Errata \&err)}{compile(const std::string &kernelStr, const std::string &compilerParams, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::compile (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{kernel\+Str, }
+\item[{const std\+::string \&}]{compiler\+Params, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a55d7feb88a44ccc9e75ada4a570e2660}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a55d7feb88a44ccc9e75ada4a570e2660}
+Compiles program stored in a string. Creates a log file in case error occurred 
+\begin{DoxyParams}{Parameters}
+{\em kernel\+Str} & the string that contains the program \\
+\hline
+{\em compiler\+Params} & string that contains compiler options for the compiler \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!get\+Kernel@{get\+Kernel}}
+\index{get\+Kernel@{get\+Kernel}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{get\+Kernel(const std\+::string \&kernel\+Name, C\+L\+Kernel $\ast$\&kernel\+Obj, Common\+::\+Errata \&err)}{getKernel(const std::string &kernelName, CLKernel *&kernelObj, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::get\+Kernel (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{kernel\+Name, }
+\item[{{\bf C\+L\+Kernel} $\ast$\&}]{kernel\+Obj, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aa965656025b0b514a8d23d08a306539a}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_aa965656025b0b514a8d23d08a306539a}
+Creates Kernel object from program, by kernel name 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em kernel\+Name} & Desired kernel name \\
+\hline
+\mbox{\tt out}  & {\em kernel\+Obj} & Resulting kernel object \\
+\hline
+ & {\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!load\+And\+Compile@{load\+And\+Compile}}
+\index{load\+And\+Compile@{load\+And\+Compile}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{load\+And\+Compile(const std\+::string \&file\+Name, Common\+::\+Errata \&err)}{loadAndCompile(const std::string &fileName, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::load\+And\+Compile (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a5ca4ca6e15831c1a15288d15c6fc468f}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_a5ca4ca6e15831c1a15288d15c6fc468f}
+Loads Open\+CL program (cl file) and compiles the source. Creates a log file in case error occurred. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & file name and path \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}!load\+And\+Compile@{load\+And\+Compile}}
+\index{load\+And\+Compile@{load\+And\+Compile}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program}}
+\subsubsection[{\texorpdfstring{load\+And\+Compile(const std\+::string \&file\+Name, const std\+::string \&compiler\+Params, Common\+::\+Errata \&err)}{loadAndCompile(const std::string &fileName, const std::string &compilerParams, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Program\+::load\+And\+Compile (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name, }
+\item[{const std\+::string \&}]{compiler\+Params, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae5d8b838fbbd1634cab210aa8f0ac4f3}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_program_ae5d8b838fbbd1634cab210aa8f0ac4f3}
+Loads Open\+CL program (cl file) and compiles the source. Creates a log file in case error occurred. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & file name and path \\
+\hline
+{\em compiler\+Params} & string that contains compiler options for the compiler \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_execution_context_8h}{C\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

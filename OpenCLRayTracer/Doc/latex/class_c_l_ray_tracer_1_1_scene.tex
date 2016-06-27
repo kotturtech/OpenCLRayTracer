@@ -1,0 +1,111 @@
+\hypertarget{class_c_l_ray_tracer_1_1_scene}{}\section{C\+L\+Ray\+Tracer\+:\+:Scene Class Reference}
+\label{class_c_l_ray_tracer_1_1_scene}\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_scene_a89b9159336331ea6c675c7864ed3c888}{Scene} ()
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_scene_aa871fdaa2b3880416e5c502392a7e964}{$\sim$\+Scene} ()
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_scene_a60570e67d059a4f003994b481a5643b9}{load} (const char $\ast$filename, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_scene_ae7a6da6258542c4bcd4d456e3bd12c67}{load\+To\+G\+PU} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&context, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+const cl\+\_\+mem \& \hyperlink{class_c_l_ray_tracer_1_1_scene_ac45c15ae0972741cc364cbb6f816ba75}{get\+Device\+Scene\+Data} () const 
+\item 
+const char $\ast$const \hyperlink{class_c_l_ray_tracer_1_1_scene_a5de09da0e638e6a309b3cf36da570b48}{get\+Host\+Scene\+Data} () const 
+\item 
+cl\+\_\+ulong \hyperlink{class_c_l_ray_tracer_1_1_scene_a6ac5b3cba63cee7d19245d35d1aebb80}{get\+Scene\+Data\+Size} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_c_l_ray_tracer_1_1_scene}{Scene} -\/ Contains operation for loading a 3D scene from file, formatting the data and uploading to G\+PU memory 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{Scene()}{Scene()}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_scene_a89b9159336331ea6c675c7864ed3c888}{}\label{class_c_l_ray_tracer_1_1_scene_a89b9159336331ea6c675c7864ed3c888}
+constructor \index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{$\sim$\+Scene()}{~Scene()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_scene_aa871fdaa2b3880416e5c502392a7e964}{}\label{class_c_l_ray_tracer_1_1_scene_aa871fdaa2b3880416e5c502392a7e964}
+destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!get\+Device\+Scene\+Data@{get\+Device\+Scene\+Data}}
+\index{get\+Device\+Scene\+Data@{get\+Device\+Scene\+Data}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Device\+Scene\+Data() const }{getDeviceSceneData() const }}]{\setlength{\rightskip}{0pt plus 5cm}const cl\+\_\+mem\& C\+L\+Ray\+Tracer\+::\+Scene\+::get\+Device\+Scene\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_scene_ac45c15ae0972741cc364cbb6f816ba75}{}\label{class_c_l_ray_tracer_1_1_scene_ac45c15ae0972741cc364cbb6f816ba75}
+Returns pointer to Device memory, that contains the scene \begin{DoxyReturn}{Returns}
+Returns pointer to Device memory, that contains the scene 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!get\+Host\+Scene\+Data@{get\+Host\+Scene\+Data}}
+\index{get\+Host\+Scene\+Data@{get\+Host\+Scene\+Data}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Host\+Scene\+Data() const }{getHostSceneData() const }}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const C\+L\+Ray\+Tracer\+::\+Scene\+::get\+Host\+Scene\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_scene_a5de09da0e638e6a309b3cf36da570b48}{}\label{class_c_l_ray_tracer_1_1_scene_a5de09da0e638e6a309b3cf36da570b48}
+Returns pointer to Host memory, that contains the scene \begin{DoxyReturn}{Returns}
+Returns pointer to Host memory, that contains the scene 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!get\+Scene\+Data\+Size@{get\+Scene\+Data\+Size}}
+\index{get\+Scene\+Data\+Size@{get\+Scene\+Data\+Size}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{get\+Scene\+Data\+Size() const }{getSceneDataSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}cl\+\_\+ulong C\+L\+Ray\+Tracer\+::\+Scene\+::get\+Scene\+Data\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_scene_a6ac5b3cba63cee7d19245d35d1aebb80}{}\label{class_c_l_ray_tracer_1_1_scene_a6ac5b3cba63cee7d19245d35d1aebb80}
+Returns size of scene data in bytes \begin{DoxyReturn}{Returns}
+Size of scene data in bytes 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!load@{load}}
+\index{load@{load}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{load(const char $\ast$filename, Common\+::\+Errata \&err)}{load(const char *filename, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Scene\+::load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_scene_a60570e67d059a4f003994b481a5643b9}{}\label{class_c_l_ray_tracer_1_1_scene_a60570e67d059a4f003994b481a5643b9}
+Loads scene from file. The expected scene file format is explained above 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em filename} & \hyperlink{class_c_l_ray_tracer_1_1_scene}{Scene} file to load \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}!load\+To\+G\+PU@{load\+To\+G\+PU}}
+\index{load\+To\+G\+PU@{load\+To\+G\+PU}!C\+L\+Ray\+Tracer\+::\+Scene@{C\+L\+Ray\+Tracer\+::\+Scene}}
+\subsubsection[{\texorpdfstring{load\+To\+G\+P\+U(const Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context \&context, Common\+::\+Errata \&err)}{loadToGPU(const OpenCLUtils::CLExecutionContext &context, Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Scene\+::load\+To\+G\+PU (
+\begin{DoxyParamCaption}
+\item[{const {\bf Open\+C\+L\+Utils\+::\+C\+L\+Execution\+Context} \&}]{context, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_scene_ae7a6da6258542c4bcd4d456e3bd12c67}{}\label{class_c_l_ray_tracer_1_1_scene_ae7a6da6258542c4bcd4d456e3bd12c67}
+Loads scene from host memory to device memory 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Open\+CL} & context \\
+\hline
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Scene/\hyperlink{_scene_8h}{Scene.\+h}\end{DoxyCompactItemize}

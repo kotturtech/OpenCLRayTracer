@@ -1,0 +1,37 @@
+\hypertarget{struct_model_header}{}\section{Model\+Header Struct Reference}
+\label{struct_model_header}\index{Model\+Header@{Model\+Header}}
+
+
+{\ttfamily \#include $<$Scene\+Buffer\+Parser.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries data\+Size}\hypertarget{struct_model_header_ae12a5c1713b2e8aee9fbcd036119f843}{}\label{struct_model_header_ae12a5c1713b2e8aee9fbcd036119f843}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Submeshes}\hypertarget{struct_model_header_a033e15876ee52cdbe2163f6e7487fef3}{}\label{struct_model_header_a033e15876ee52cdbe2163f6e7487fef3}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries number\+Of\+Triangles}\hypertarget{struct_model_header_a773d3cf256a57628e32d4992164a2f10}{}\label{struct_model_header_a773d3cf256a57628e32d4992164a2f10}
+
+\item 
+C\+L\+\_\+\+U\+L\+O\+NG {\bfseries pad}\hypertarget{struct_model_header_aab14a6b80307cc60a7aaecb31c5ad51d}{}\label{struct_model_header_aab14a6b80307cc60a7aaecb31c5ad51d}
+
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} {\bfseries bounding\+Box}\hypertarget{struct_model_header_a53c0f7818563dd40ddd54af216de5be0}{}\label{struct_model_header_a53c0f7818563dd40ddd54af216de5be0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct \hyperlink{struct_model_header}{Model\+Header} -\/ Contains basic information about 3D Model
+
+---Model Object--- 8 bytes(long)-\/\+Model data size(including header) 8 bytes(long)-\/number of sumbeshes -\/---Mesh Object-\/--- 8 bytes(long)-\/buffer size(incuding header) 4 bytes(uint)-\/num of vertices 4 bytes(uint)-\/num of indices Dynamic data -\/ $\ast$ Vertices(float4)
+\begin{DoxyItemize}
+\item Indices-\/(ushort) 
+\end{DoxyItemize}
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+C\+L\+Data/\hyperlink{_scene_buffer_parser_8h}{Scene\+Buffer\+Parser.\+h}\end{DoxyCompactItemize}

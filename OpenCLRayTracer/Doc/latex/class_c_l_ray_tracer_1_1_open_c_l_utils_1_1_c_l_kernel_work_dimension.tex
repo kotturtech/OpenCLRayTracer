@@ -1,0 +1,68 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Kernel\+Work\+Dimension Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}}
+
+
+{\ttfamily \#include $<$C\+L\+Execution\+Context.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a16bab2ce5ac4dcc1f62072222af09a21}{C\+L\+Kernel\+Work\+Dimension} (cl\+\_\+uint work\+Dim,...)
+\item 
+unsigned int \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a855d1646e6140f8a832b3bcffbcf0fb4}{total\+Items} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const cl\+\_\+uint \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_affd23924899b196276bedd7010af3e30}{work\+Dimensions}
+\item 
+const boost\+::shared\+\_\+array$<$ size\+\_\+t $>$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_aabe343f3cd0fb5a0320c73bb50a77ff0}{dimension\+Values}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension}{C\+L\+Kernel\+Work\+Dimension} encapsulates the work dimensions for Open\+CL kernel execution 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}!C\+L\+Kernel\+Work\+Dimension@{C\+L\+Kernel\+Work\+Dimension}}
+\index{C\+L\+Kernel\+Work\+Dimension@{C\+L\+Kernel\+Work\+Dimension}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}}
+\subsubsection[{\texorpdfstring{C\+L\+Kernel\+Work\+Dimension(cl\+\_\+uint work\+Dim,...)}{CLKernelWorkDimension(cl_uint workDim,...)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension\+::\+C\+L\+Kernel\+Work\+Dimension (
+\begin{DoxyParamCaption}
+\item[{cl\+\_\+uint}]{work\+Dim, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a16bab2ce5ac4dcc1f62072222af09a21}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a16bab2ce5ac4dcc1f62072222af09a21}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em work\+Dim} & Number of work dimensions \\
+\hline
+{\em va\+\_\+arg} & Size of the work group along corresponding dimension \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}!total\+Items@{total\+Items}}
+\index{total\+Items@{total\+Items}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}}
+\subsubsection[{\texorpdfstring{total\+Items() const }{totalItems() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension\+::total\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a855d1646e6140f8a832b3bcffbcf0fb4}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_a855d1646e6140f8a832b3bcffbcf0fb4}
+Counts total work items for Dimension object \begin{DoxyReturn}{Returns}
+Sum of all items in all dimensions 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}!dimension\+Values@{dimension\+Values}}
+\index{dimension\+Values@{dimension\+Values}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}}
+\subsubsection[{\texorpdfstring{dimension\+Values}{dimensionValues}}]{\setlength{\rightskip}{0pt plus 5cm}const boost\+::shared\+\_\+array$<$size\+\_\+t$>$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension\+::dimension\+Values}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_aabe343f3cd0fb5a0320c73bb50a77ff0}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_aabe343f3cd0fb5a0320c73bb50a77ff0}
+Dimension extents \index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}!work\+Dimensions@{work\+Dimensions}}
+\index{work\+Dimensions@{work\+Dimensions}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension}}
+\subsubsection[{\texorpdfstring{work\+Dimensions}{workDimensions}}]{\setlength{\rightskip}{0pt plus 5cm}const cl\+\_\+uint C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Kernel\+Work\+Dimension\+::work\+Dimensions}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_affd23924899b196276bedd7010af3e30}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_kernel_work_dimension_affd23924899b196276bedd7010af3e30}
+Number of work dimensions 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_execution_context_8h}{C\+L\+Execution\+Context.\+h}\end{DoxyCompactItemize}

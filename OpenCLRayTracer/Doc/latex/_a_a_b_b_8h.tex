@@ -1,0 +1,97 @@
+\hypertarget{_a_a_b_b_8h}{}\section{Include/\+C\+L\+Data/\+Primitives/\+A\+A\+BB.h File Reference}
+\label{_a_a_b_b_8h}\index{Include/\+C\+L\+Data/\+Primitives/\+A\+A\+B\+B.\+h@{Include/\+C\+L\+Data/\+Primitives/\+A\+A\+B\+B.\+h}}
+{\ttfamily \#include $<$C\+L\+Data\textbackslash{}\+R\+T\+Kernel\+Utils.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries default\+A\+A\+BB}(aabb)~struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} aabb; fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}0\mbox{]}, F\+L\+T\+\_\+\+M\+AX,F\+L\+T\+\_\+\+M\+AX,F\+L\+T\+\_\+\+M\+AX); fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}1\mbox{]},F\+L\+T\+\_\+\+M\+IN,F\+L\+T\+\_\+\+M\+IN,F\+L\+T\+\_\+\+M\+IN);
+\item 
+\#define {\bfseries zero\+A\+A\+BB}(aabb)~struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} aabb; fill\+Vector3(\hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{aabb.\+bounds}\mbox{[}0\mbox{]},0.\+0f,0.\+0f,0.\+0f); fill\+Vector3(aabb.\+bounds\mbox{[}1\mbox{]},0.\+0f,0.\+0f,0.\+0f);
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+X}(dir)~1.\+0f/(dir).\+x
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+Y}(dir)~1.\+0f/(dir).\+y
+\item 
+\#define {\bfseries I\+N\+V\+\_\+\+D\+I\+R\+\_\+Z}(dir)~1.\+0f/(dir).\+z
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X01}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+X2}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y02}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Y1}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z12}(a,  b,  fa,  fb)  
+\item 
+\#define {\bfseries A\+X\+I\+S\+T\+E\+S\+T\+\_\+\+Z0}(a,  b,  fa,  fb)  
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} {\bfseries A\+L\+I\+G\+N\+ED} (16)
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_ga8627c42e218efdd10747f8b512d25035}{calculate\+Triangle\+A\+A\+BB} (C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 v3)
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_gac2da14ffb4b72e1333d2dd4c473930c6}{merge} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b)
+\item 
+struct \hyperlink{struct_a_a_b_b}{A\+A\+BB} \hyperlink{group__g11_ga97d7d3e9ba937b926a2203da642439e5}{merge3} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) c)
+\item 
+C\+L\+\_\+\+F\+L\+O\+AT \hyperlink{group__g11_ga0250138cf6d4bb5c915ef6b5abed12ef}{A\+A\+B\+B\+Intersect} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_ga85d0265d7b57d02084d8992c88c061ee}{find\+T\+Range} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 ro, C\+L\+\_\+\+F\+L\+O\+A\+T3 rd)
+\item 
+bool \hyperlink{group__g11_ga5a4fb2271cfab333894518a428bff56f}{is\+Point\+Inside} (const R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 point)
+\item 
+bool {\bfseries A\+A\+B\+B\+Contains} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) container, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) contained)
+\item 
+bool \hyperlink{group__g11_ga62fd7d801fbcac08fe1ae521b3aa6807}{A\+A\+B\+B\+Overlaps} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) a, R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) b)
+\item 
+float \hyperlink{group__g11_ga4b47e6b8ba1882a00b7fd38a23472a40}{diagonal\+Length} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+float \hyperlink{group__g11_ga412e039493a87f2567e0e1b183fff568}{box\+Volume} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g11_ga7d7ccd70c8a5cf7752ed34398081c607}{box\+Centroid} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_ga1ffa48cc95c3fa9e290d3adc8338398b}{project\+Triangle} (C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T2 \hyperlink{group__g11_gaa4001e65e8afe90e90945723654fcefa}{project\+Box} (R\+EF(struct \hyperlink{struct_a_a_b_b}{A\+A\+BB}) aabb, C\+L\+\_\+\+F\+L\+O\+A\+T3 axis)
+\item 
+bool {\bfseries plane\+Box\+Overlap} (C\+L\+\_\+\+F\+L\+O\+A\+T3 normal, C\+L\+\_\+\+F\+L\+O\+A\+T3 vert, C\+L\+\_\+\+F\+L\+O\+A\+T3 maxbox)
+\item 
+bool \hyperlink{group__g11_ga2b69374423be904cfe32c41bb8c1b75c}{A\+A\+B\+B\+Triangle\+Intersect} (C\+L\+\_\+\+F\+L\+O\+A\+T3 boxcenter, C\+L\+\_\+\+F\+L\+O\+A\+T3 boxhalfsize, C\+L\+\_\+\+F\+L\+O\+A\+T3 v0, C\+L\+\_\+\+F\+L\+O\+A\+T3 v1, C\+L\+\_\+\+F\+L\+O\+A\+T3 v2)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+\_\+\+F\+L\+O\+A\+T4 \hyperlink{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{bounds} \mbox{[}2\mbox{]}
+\item 
+const C\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT C\+L\+\_\+\+F\+L\+O\+A\+T3 \hyperlink{group__g11_gadb5234dc4adddee61354eb8d193da854}{aabb\+Axes} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Data structures and functions related to Axis Aligned Bounding Box (\hyperlink{struct_a_a_b_b}{A\+A\+BB}) 
+
+\subsection{Variable Documentation}
+\index{A\+A\+B\+B.\+h@{A\+A\+B\+B.\+h}!bounds@{bounds}}
+\index{bounds@{bounds}!A\+A\+B\+B.\+h@{A\+A\+B\+B.\+h}}
+\subsubsection[{\texorpdfstring{bounds}{bounds}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+\_\+\+F\+L\+O\+A\+T4 bounds\mbox{[}2\mbox{]}}\hypertarget{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}{}\label{_a_a_b_b_8h_aa6c25d25b398477f624c7658b78a70d4}
+Contains the bounds of the box -\/ Min bounds at index 0 and max bounds at index 1 

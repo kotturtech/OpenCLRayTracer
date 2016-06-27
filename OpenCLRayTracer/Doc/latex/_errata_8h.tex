@@ -1,0 +1,100 @@
+\hypertarget{_errata_8h}{}\section{Include/\+Common/\+Errata.h File Reference}
+\label{_errata_8h}\index{Include/\+Common/\+Errata.\+h@{Include/\+Common/\+Errata.\+h}}
+{\ttfamily \#include $<$sstream$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata}
+\item 
+class \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_c_l_interface_exception}{C\+L\+Ray\+Tracer\+::\+Common\+::\+C\+L\+Interface\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_errata_8h_ae31dab03f32a509564ef55acf5177e8a}{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}(err,  error\+Message)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; err = \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,N\+U\+LL);\}
+\item 
+\#define \hyperlink{_errata_8h_a97189af7edfb6b5da4f87669bd096b03}{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}(err,  error\+Message,  xcpt)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; err = \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,new std\+::exception(xcpt));\}
+\item 
+\#define \hyperlink{_errata_8h_ae626c260078bcc0ca562c1cb29c78fcd}{T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}(error\+Message,  inner\+Exception)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; throw new \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_c_l_interface_exception}{C\+L\+Ray\+Tracer\+::\+Common\+::\+C\+L\+Interface\+Exception}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,inner\+Exception);\}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Result} \{ {\bfseries Success} = 0, 
+{\bfseries Error} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{_errata_8h_a520171b50c78a0be0bb5b336dc8cc18b}{C\+L\+Ray\+Tracer\+::\+Common\+::operator$<$$<$} (std\+::ostream \&o, const Errata \&err)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{C\+L\+Ray\+Tracer\+::\+Common\+::\+Result} {\bfseries C\+L\+Ray\+Tracer\+::\+Common\+::\+A\+L\+I\+G\+N\+ED}\hypertarget{_errata_8h_aad3917476d56a107841b52d140b93e02}{}\label{_errata_8h_aad3917476d56a107841b52d140b93e02}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Sizov \href{mailto:timorgizer@gmail.com}{\tt timorgizer@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+6
+\end{DoxyVersion}
+\hypertarget{_scene_8h_LICENSE}{}\subsection{L\+I\+C\+E\+N\+SE}\label{_scene_8h_LICENSE}
+Copyright (c) 2016 Timur Sizov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.\hypertarget{_scene_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{_scene_8h_DESCRIPTION}
+Part of the Open\+CL wrapper framework. Contains basic error handling structs and macros, that will be used throughout the libraries 
+
+\subsection{Macro Definition Documentation}
+\index{Errata.\+h@{Errata.\+h}!F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA@{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}}
+\index{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA@{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}!Errata.\+h@{Errata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}{FILL_ERRATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA(
+\begin{DoxyParamCaption}
+\item[{}]{err, }
+\item[{}]{error\+Message}
+\end{DoxyParamCaption}
+)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; err = {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,N\+U\+LL);\}}\hypertarget{_errata_8h_ae31dab03f32a509564ef55acf5177e8a}{}\label{_errata_8h_ae31dab03f32a509564ef55acf5177e8a}
+Macro for fast filling of Errata object \index{Errata.\+h@{Errata.\+h}!F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA@{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}}
+\index{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA@{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}!Errata.\+h@{Errata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA}{FILL_ERRATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+L\+L\+\_\+\+E\+R\+R\+A\+TA(
+\begin{DoxyParamCaption}
+\item[{}]{err, }
+\item[{}]{error\+Message, }
+\item[{}]{xcpt}
+\end{DoxyParamCaption}
+)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; err = {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+Errata}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,new std\+::exception(xcpt));\}}\hypertarget{_errata_8h_a97189af7edfb6b5da4f87669bd096b03}{}\label{_errata_8h_a97189af7edfb6b5da4f87669bd096b03}
+Macro for fast filling of Errata object \index{Errata.\+h@{Errata.\+h}!T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON@{T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}
+\index{T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON@{T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}!Errata.\+h@{Errata.\+h}}
+\subsubsection[{\texorpdfstring{T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}{THROW_CL_EXCEPTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+H\+R\+O\+W\+\_\+\+C\+L\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{error\+Message, }
+\item[{}]{inner\+Exception}
+\end{DoxyParamCaption}
+)~\{std\+::stringstream msg; msg $<$$<$ error\+Message; throw new {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+C\+L\+Interface\+Exception}(std\+::string((msg.\+str())),std\+::string(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+),std\+::string(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+),\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,inner\+Exception);\}}\hypertarget{_errata_8h_ae626c260078bcc0ca562c1cb29c78fcd}{}\label{_errata_8h_ae626c260078bcc0ca562c1cb29c78fcd}
+Macro for fast throwing of CL exception on error 
+
+\subsection{Enumeration Type Documentation}
+\index{Errata.\+h@{Errata.\+h}!Result@{Result}}
+\index{Result@{Result}!Errata.\+h@{Errata.\+h}}
+\subsubsection[{\texorpdfstring{Result}{Result}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+L\+Ray\+Tracer\+::\+Common\+::\+Result}}\hypertarget{_errata_8h_file_a389396702f1aff6e71eb21328b0775c1}{}\label{_errata_8h_file_a389396702f1aff6e71eb21328b0775c1}
+enum Result indicates operation result -\/ Success or Error 
+
+\subsection{Function Documentation}
+\index{Errata.\+h@{Errata.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Errata.\+h@{Errata.\+h}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&o, const Errata \&err)}{operator<<(std::ostream &o, const Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& C\+L\+Ray\+Tracer\+::\+Common\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{o, }
+\item[{const {\bf Errata} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_errata_8h_file_a520171b50c78a0be0bb5b336dc8cc18b}{}\label{_errata_8h_file_a520171b50c78a0be0bb5b336dc8cc18b}
+Allows easy output of \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Errata} object
+
+Operator for easy output of error objects 

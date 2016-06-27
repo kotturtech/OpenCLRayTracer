@@ -1,0 +1,22 @@
+﻿Build started 17/03/2016 16:11:39.
+     1>Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\CLRayTracerData\CLRayTracerData.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Packing CL Kernels
+         Source: E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\CLRayTracerData\BVHKernels.cl Target: E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\CLRayTracerData\GeneratedBVHKernelSource.cpp Variable: BVHKernelSource
+       ClCompile:
+         E:\Visual Studio 2012\VC\bin\CL.exe /c /I..\include /I../../Libs/boost/boost_1_59_0 /I"E:\AMD_APP_SDK\AMD_APP_SDK_3.0\AMD APP SDK\3.0\Include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedBVHKernelSource.cpp
+         GeneratedBVHKernelSource.cpp
+       Lib:
+         E:\Visual Studio 2012\VC\bin\Lib.exe /OUT:"E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\CLRayTracerUtils.lib" /NOLOGO Debug\BitonicSort.obj
+         Debug\BVHManager.obj
+         Debug\GeneratedBVHKernelSource.obj
+         Debug\GeneratedSortingKernelSource.obj
+         Debug\MergeSort.obj
+         Debug\Scene.obj
+         Debug\Timing.obj
+         CLRayTracerData.vcxproj -> E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\Debug\CLRayTracerUtils.lib
+     1>Done Building Project "E:\DESKTOP_FOLDER_\courses\FinalPaper-RayTracing\Practical\FinalPaperRayTracer\OpenCLRayTracer\CLRayTracerData\CLRayTracerData.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.55

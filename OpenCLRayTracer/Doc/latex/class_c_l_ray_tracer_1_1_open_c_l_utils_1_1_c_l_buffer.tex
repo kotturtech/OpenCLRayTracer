@@ -1,0 +1,189 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Buffer Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+
+
+{\ttfamily \#include $<$C\+L\+Buffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_ab1c184568385b55a134656e303d333fc}{C\+L\+Buffer} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{C\+L\+Execution\+Context} \&context, size\+\_\+t size, \hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} access)
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9b9c5e69581dbc6ba85f309bf7f6a208}{C\+L\+Buffer} (const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_execution_context}{C\+L\+Execution\+Context} \&context, size\+\_\+t size, void $\ast$source, \hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} access)
+\item 
+void \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aaf79f25d32f359626fe3fb9682996411}{resize} (size\+\_\+t new\+Size)
+\item 
+size\+\_\+t \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a003ca8fcdba1348bf69a53f7a9f74700}{get\+Size} () const 
+\item 
+size\+\_\+t \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a741374ca2c85ccd3e5dfdccf861d1175}{get\+Actual\+Size} () const 
+\item 
+\hyperlink{_c_l_execution_context_8h_a354d4612d8d46b32eb5ad4a71f35694c}{C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a38e74df6a56d3f8975c396f6731183b9}{get\+Access} () const 
+\item 
+const cl\+\_\+mem \& \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a5a79c7ed839e19fb118e84758b241276}{get\+C\+L\+Mem} () const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a08e9f3813a61b58defd4b206a0a4036a}{copy\+To\+Host} (void $\ast$target, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9d187aabadc1ecfd023ae1c2e7638d33}{copy\+To\+Host} (void $\ast$target, size\+\_\+t offset, \hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err) const 
+\item 
+virtual \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aa292571c35f1cf3c0124efc824641ada}{$\sim$\+C\+L\+Buffer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer}{C\+L\+Buffer} Wrapper class for Open\+CL Device Memory 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!C\+L\+Buffer@{C\+L\+Buffer}}
+\index{C\+L\+Buffer@{C\+L\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{C\+L\+Buffer(const C\+L\+Execution\+Context \&context, size\+\_\+t size, C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access access)}{CLBuffer(const CLExecutionContext &context, size_t size, CLBufferFlags::CLBufferAccess access)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::\+C\+L\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Execution\+Context} \&}]{context, }
+\item[{size\+\_\+t}]{size, }
+\item[{{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access}}]{access}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_ab1c184568385b55a134656e303d333fc}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_ab1c184568385b55a134656e303d333fc}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em context} & Open\+CL execution context \\
+\hline
+{\em size} & Size of buffer in bytes \\
+\hline
+{\em access} & Access flags\+: Read\+Only, Read\+Write,etc \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!C\+L\+Buffer@{C\+L\+Buffer}}
+\index{C\+L\+Buffer@{C\+L\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{C\+L\+Buffer(const C\+L\+Execution\+Context \&context, size\+\_\+t size, void $\ast$source, C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access access)}{CLBuffer(const CLExecutionContext &context, size_t size, void *source, CLBufferFlags::CLBufferAccess access)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::\+C\+L\+Buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+L\+Execution\+Context} \&}]{context, }
+\item[{size\+\_\+t}]{size, }
+\item[{void $\ast$}]{source, }
+\item[{{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access}}]{access}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9b9c5e69581dbc6ba85f309bf7f6a208}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9b9c5e69581dbc6ba85f309bf7f6a208}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em context} & Open\+CL execution context \\
+\hline
+{\em size} & Size of buffer in bytes \\
+\hline
+{\em source} & Host memory buffer that should be copied to device \\
+\hline
+{\em access} & Access flags\+: Read\+Only, Read\+Write,etc \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!````~C\+L\+Buffer@{$\sim$\+C\+L\+Buffer}}
+\index{````~C\+L\+Buffer@{$\sim$\+C\+L\+Buffer}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{$\sim$\+C\+L\+Buffer()}{~CLBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::$\sim$\+C\+L\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aa292571c35f1cf3c0124efc824641ada}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aa292571c35f1cf3c0124efc824641ada}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!copy\+To\+Host@{copy\+To\+Host}}
+\index{copy\+To\+Host@{copy\+To\+Host}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{copy\+To\+Host(void $\ast$target, Common\+::\+Errata \&err) const }{copyToHost(void *target, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::copy\+To\+Host (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{target, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a08e9f3813a61b58defd4b206a0a4036a}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a08e9f3813a61b58defd4b206a0a4036a}
+Copies the Device memory associated with this buffer object to host memory 
+\begin{DoxyParams}{Parameters}
+{\em target} & Target host buffer to copy to \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!copy\+To\+Host@{copy\+To\+Host}}
+\index{copy\+To\+Host@{copy\+To\+Host}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{copy\+To\+Host(void $\ast$target, size\+\_\+t offset, Common\+::\+Errata \&err) const }{copyToHost(void *target, size_t offset, Common::Errata &err) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::copy\+To\+Host (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{target, }
+\item[{size\+\_\+t}]{offset, }
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9d187aabadc1ecfd023ae1c2e7638d33}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a9d187aabadc1ecfd023ae1c2e7638d33}
+Copies the Device memory associated with this buffer object to host memory 
+\begin{DoxyParams}{Parameters}
+{\em target} & Target host buffer to copy to \\
+\hline
+{\em offset} & Offset -\/ The starting index at which the copy should start \\
+\hline
+{\em err} & Error info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the operation\+: Success or failure 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!get\+Access@{get\+Access}}
+\index{get\+Access@{get\+Access}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Access() const }{getAccess() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+Buffer\+Flags\+::\+C\+L\+Buffer\+Access} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::get\+Access (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a38e74df6a56d3f8975c396f6731183b9}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a38e74df6a56d3f8975c396f6731183b9}
+Returns the access mode of this buffer \begin{DoxyReturn}{Returns}
+Access mode of this buffer 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!get\+Actual\+Size@{get\+Actual\+Size}}
+\index{get\+Actual\+Size@{get\+Actual\+Size}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Actual\+Size() const }{getActualSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::get\+Actual\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a741374ca2c85ccd3e5dfdccf861d1175}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a741374ca2c85ccd3e5dfdccf861d1175}
+Returns the size of the actually allocated device memory for the buffer object \begin{DoxyReturn}{Returns}
+Actual buffer size in bytes 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!get\+C\+L\+Mem@{get\+C\+L\+Mem}}
+\index{get\+C\+L\+Mem@{get\+C\+L\+Mem}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+C\+L\+Mem() const }{getCLMem() const }}]{\setlength{\rightskip}{0pt plus 5cm}const cl\+\_\+mem\& C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::get\+C\+L\+Mem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a5a79c7ed839e19fb118e84758b241276}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a5a79c7ed839e19fb118e84758b241276}
+Returns the underlying cl\+\_\+mem object of this buffer \begin{DoxyReturn}{Returns}
+Underlying cl\+\_\+mem object of this buffer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Open\+CL buffer access modes enumeration 
+\end{DoxySeeAlso}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{get\+Size() const }{getSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a003ca8fcdba1348bf69a53f7a9f74700}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_a003ca8fcdba1348bf69a53f7a9f74700}
+Returns the used buffer size in bytes \begin{DoxyReturn}{Returns}
+buffer size in bytes 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}!resize@{resize}}
+\index{resize@{resize}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer}}
+\subsubsection[{\texorpdfstring{resize(size\+\_\+t new\+Size)}{resize(size_t newSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Buffer\+::resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{new\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aaf79f25d32f359626fe3fb9682996411}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_buffer_aaf79f25d32f359626fe3fb9682996411}
+Resizes the buffer to the new size. The function actually expands the buffer when the buffer is smaller than the requested new size, and leaves the memory intact when buffer shrinking is requested. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Size} & New size in bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Open\+CL buffer access modes enumeration 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/\hyperlink{_c_l_buffer_8h}{C\+L\+Buffer.\+h}\end{DoxyCompactItemize}

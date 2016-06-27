@@ -1,0 +1,75 @@
+\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface}{}\section{C\+L\+Ray\+Tracer\+:\+:Open\+C\+L\+Utils\+:\+:C\+L\+Interface Class Reference}
+\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface}\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}}
+
+
+{\ttfamily \#include $<$C\+L\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_abb053408e3b3c14ee5fae46ae5b35a99}{C\+L\+Interface} ()
+\item 
+\hyperlink{_errata_8h_a389396702f1aff6e71eb21328b0775c1}{Common\+::\+Result} \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a8a1291f633475c8ac0741f003779b49f}{init\+CL} (\hyperlink{class_c_l_ray_tracer_1_1_common_1_1_errata}{Common\+::\+Errata} \&err)
+\item 
+cl\+\_\+uint \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a9e64a480f2c7cfcec67876574957fb6e}{num\+Of\+Platforms} () const 
+\item 
+const \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_platform}{C\+L\+Platform} $\ast$ \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_aedaeb0bc1cdc1b41fd39282a3270bf39}{get\+Platform\+By\+Index} (const int index) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface}{C\+L\+Interface} provides functionality for initializing Open\+CL and retrieval of Open\+CL Platforms and devices 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}!C\+L\+Interface@{C\+L\+Interface}}
+\index{C\+L\+Interface@{C\+L\+Interface}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}}
+\subsubsection[{\texorpdfstring{C\+L\+Interface()}{CLInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface\+::\+C\+L\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_abb053408e3b3c14ee5fae46ae5b35a99}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_abb053408e3b3c14ee5fae46ae5b35a99}
+Constructor 
+
+\subsection{Member Function Documentation}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}!get\+Platform\+By\+Index@{get\+Platform\+By\+Index}}
+\index{get\+Platform\+By\+Index@{get\+Platform\+By\+Index}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}}
+\subsubsection[{\texorpdfstring{get\+Platform\+By\+Index(const int index) const }{getPlatformByIndex(const int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\+L\+Platform}$\ast$ C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface\+::get\+Platform\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{const int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_aedaeb0bc1cdc1b41fd39282a3270bf39}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_aedaeb0bc1cdc1b41fd39282a3270bf39}
+Retrieves Open\+CL Platform by index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the desired platform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object that encapsulates Open\+CL platform at specified index 
+\end{DoxyReturn}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}!init\+CL@{init\+CL}}
+\index{init\+CL@{init\+CL}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}}
+\subsubsection[{\texorpdfstring{init\+C\+L(\+Common\+::\+Errata \&err)}{initCL(Common::Errata &err)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Common\+::\+Result} C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface\+::init\+CL (
+\begin{DoxyParamCaption}
+\item[{{\bf Common\+::\+Errata} \&}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a8a1291f633475c8ac0741f003779b49f}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a8a1291f633475c8ac0741f003779b49f}
+Initializes Open\+CL. Must be called before any Open\+CL operation 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\index{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}!num\+Of\+Platforms@{num\+Of\+Platforms}}
+\index{num\+Of\+Platforms@{num\+Of\+Platforms}!C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface@{C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface}}
+\subsubsection[{\texorpdfstring{num\+Of\+Platforms() const }{numOfPlatforms() const }}]{\setlength{\rightskip}{0pt plus 5cm}cl\+\_\+uint C\+L\+Ray\+Tracer\+::\+Open\+C\+L\+Utils\+::\+C\+L\+Interface\+::num\+Of\+Platforms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a9e64a480f2c7cfcec67876574957fb6e}{}\label{class_c_l_ray_tracer_1_1_open_c_l_utils_1_1_c_l_interface_a9e64a480f2c7cfcec67876574957fb6e}
+Returns number of Open\+CL platforms on this computer \begin{DoxyReturn}{Returns}
+Number of Open\+CL platforms on this computer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Include/\+Open\+C\+L\+Utils/C\+L\+Interface.\+h\end{DoxyCompactItemize}
