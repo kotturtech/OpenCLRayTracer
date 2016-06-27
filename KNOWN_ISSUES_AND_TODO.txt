@@ -1,0 +1,49 @@
+This issues list is related to version 0.6 of the libraries.
+You are encouraged to update the document with additional issues, or 
+update solved issues if you are a contributor.
+
+1.Known Bugs
+
+	1.1.Not all models are rendered successfully - Mostly those with textures or complex
+            materials have problems, but that is mostly because shading that currently implemented
+            in the demo is degenerate, but also worth checking more models and see whether this is the
+            only reason.
+	1.2.Check memory management correctness - There are occasional crashes when closing the demo,
+	    this has something to do with deleting smart pointer twice - Postponed solving it because 
+            it is not critical, but need to solve it eventually
+        1.3.Portability issues - The Prefix Sum kernels are taken from AMD APP SDK examples. They produce
+            completely incorrect results on Intel graphic cards, making the Grid completely unusable on
+            that hardware. Need to replace the Prefix Sum kernels with something that works on all hardware
+            or to fix the existing ones. Examining the existing kernel didn't raise any suspicions - Strange stuff...
+	1.4.Portability issues 2 - Some models produce different results on Intel and AMD hardware - The differences
+            may be not so signifficant at times, but sometimes they are. Anyway, need to try on additional models
+            of hardware and resolve this somehow.
+
+2.Extension of functionality
+	
+	2.1.Adding KD trees - Construction may be based on method which is used to construct the
+            BVH (See README for references) - Since KD tree traversal is relatively fast, using
+            fast construction algorithm could yield better performance
+        2.2.Add handling of Shadow, Reflection, and Refraction rays. A way to do this could be,
+            generating rays from viewing rays-scene contacts, and execute ray tracing kernel
+            in loop as many times as specified by ray tracing depth. At each iteration, another
+            set of rays will be generated from the contacts that were found at the previous iteration.
+	2.3.Improve shading - A complimentary to 2.2
+	2.4.Add supersampling support to camera, to enable features such as anti-aliasing and
+            depth of field.
+
+3.Optimizations
+
+	3.1.Optimizing tree traversal
+            The tree traversal algorithm is currently pretty slow and runs at poor occupancy.
+	    Maybe it is worth trying stackless tree traversal algorithms to at least improve
+            occupancy and compare running times using hardware profiler
+        3.2.Optimizing the bottleneck kernels in Two Level Grid construction.
+            It is worth playing a bit with top level resolution - Reducing it should give signifficant
+            performance improvement in Two Level Grid Construction
+	
+	What have I already tried?
+	1. Using more vector math instead of scalars - Just produced slight slowdown on my hardware, not worth it
+	2. Persistent threads - Perform horribly with OpenCL, producing unacceptable performance
+  
+                                   

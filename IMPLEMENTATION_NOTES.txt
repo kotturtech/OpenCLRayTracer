@@ -1,0 +1,9 @@
+
+* The implemented BVH construction algorithm explained at this source:
+  https://devblogs.nvidia.com/parallelforall/thinking-parallel-part-iii-tree-construction-gpu/
+  and also, the related paper.
+
+* The implemented Two Level Grid algorithm is based on this source:
+  http://www.kalojanov.com/data/two_level_grids.pdf
+
+* See the source files for additional references, where applicable

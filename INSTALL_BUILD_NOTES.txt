@@ -1,0 +1,30 @@
+To build the libraries succesfully you will need:
+
+	1.BOOST libraries - At version 0.6 - No necessary to build. I used BOOST 1_59_0 for this project
+	2.OpenCL SDK - I used AMD APP SDK, however I tried to minimize dependence on specific SDK as much as I could.
+        	       You may also try and use another SDK (Intel, for example) - Should work too, but I didn't test it
+	3.glut and OpenGL libraries - Those usually come with the OpenCL SDK examples
+
+Once you got the libraries, add their "include" directories to 
+"Additional Include Directories" in Visual Studio property pages, for each project.
+Also, make sure that the path to headers of the library is also set correctly.
+
+Also, don't forget to add the additional libraries to:
+	Linker->Input->Additional Dependencies
+or      
+	Librarian->Additional dependencies
+
+in Visual Studio Property Pages.
+
+Following libraries should be added:
+OpenCL.lib
+opengl32.lib
+glu32.lib
+glut32.lib
+glew32.lib
+GLEW32.lib
+
+Once that is done - You are ready to go!
+Use batch files in "bin" directory to run the demo and see some ray traced models.
+
+For known issues and bugs, check the KNOWN_ISSUES.txt file.
